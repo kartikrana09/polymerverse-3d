@@ -115,11 +115,34 @@ export default function PolymerDetailPage() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          {/* 2D Chemical Structure */}
+          {polymer.image2D && (
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <Card className="p-6 bg-card/50 backdrop-blur-sm border-secondary/30">
+                <h2 className="text-2xl font-bold mb-4 text-secondary">2D Chemical Structure</h2>
+                <div className="aspect-square rounded-lg overflow-hidden border-2 border-secondary/20 bg-white flex items-center justify-center">
+                  <img 
+                    src={polymer.image2D} 
+                    alt={`${polymer.name} 2D structure`}
+                    className="w-full h-full object-contain p-4"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground mt-4 text-center">
+                  Molecular structure diagram
+                </p>
+              </Card>
+            </motion.div>
+          )}
+          
           {/* 3D Visualization */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-primary/30">
               <h2 className="text-2xl font-bold mb-4 text-primary">3D Molecular Structure</h2>
@@ -133,38 +156,39 @@ export default function PolymerDetailPage() {
               </p>
             </Card>
           </motion.div>
-
-          {/* Basic Information */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <Card className="p-6 bg-card/50 backdrop-blur-sm border-secondary/30 h-full">
-              <h2 className="text-2xl font-bold mb-4 text-secondary">Basic Information</h2>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm font-semibold text-muted-foreground mb-1">Molar Mass</p>
-                  <p className="text-lg">{polymer.molarMass}</p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-muted-foreground mb-1">Structure</p>
-                  <p className="text-lg">{polymer.structure}</p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-muted-foreground mb-1">Synthesis</p>
-                  <p className="text-lg">{polymer.synthesis}</p>
-                </div>
-              </div>
-            </Card>
-          </motion.div>
         </div>
+
+        {/* Basic Information - Full Width */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mb-8"
+        >
+          <Card className="p-6 bg-card/50 backdrop-blur-sm border-secondary/30">
+            <h2 className="text-2xl font-bold mb-4 text-secondary">Basic Information</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <p className="text-sm font-semibold text-muted-foreground mb-1">Molar Mass</p>
+                <p className="text-lg">{polymer.molarMass}</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-muted-foreground mb-1">Structure</p>
+                <p className="text-lg">{polymer.structure}</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-muted-foreground mb-1">Synthesis</p>
+                <p className="text-lg">{polymer.synthesis}</p>
+              </div>
+            </div>
+          </Card>
+        </motion.div>
 
         {/* Detailed Information Tabs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
         >
           <Tabs defaultValue="properties" className="w-full">
             <TabsList className="grid w-full grid-cols-4 bg-card/50 backdrop-blur-sm">

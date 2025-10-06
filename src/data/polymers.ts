@@ -6,6 +6,7 @@ export interface Polymer {
   molarMass: string;
   structure: string;
   synthesis: string;
+  image2D?: string;
   properties: {
     meltingPoint?: string;
     boilingPoint?: string;
@@ -53,6 +54,7 @@ export const samplePolymers: Polymer[] = [
     molarMass: '93.13 g/mol (repeat unit)',
     structure: 'Linear conjugated polymer with alternating single and double bonds',
     synthesis: 'Oxidative polymerization of aniline in acidic medium using oxidants like ammonium persulfate',
+    image2D: '/src/assets/polymers/polyaniline-2d.png',
     properties: {
       conductivity: '1-100 S/cm (doped)',
       density: '1.3-1.4 g/cm³',
@@ -91,6 +93,7 @@ export const samplePolymers: Polymer[] = [
     molarMass: '67.09 g/mol (repeat unit)',
     structure: 'Conjugated heterocyclic polymer',
     synthesis: 'Chemical or electrochemical oxidation of pyrrole monomers',
+    image2D: '/src/assets/polymers/polypyrrole-2d.png',
     properties: {
       conductivity: '10-100 S/cm',
       density: '1.5 g/cm³',
@@ -282,6 +285,7 @@ export const samplePolymers: Polymer[] = [
     molarMass: '142.15 g/mol (repeat unit)',
     structure: 'Conjugated polymer with thiophene rings',
     synthesis: 'Oxidative polymerization of EDOT monomer',
+    image2D: '/src/assets/polymers/polythiophene-2d.png',
     properties: {
       conductivity: '300-500 S/cm (with PSS)',
       density: '1.5 g/cm³',
@@ -310,6 +314,399 @@ export const samplePolymers: Polymer[] = [
       recyclability: 'Difficult to recycle',
       toxicity: 'Low toxicity',
       sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'polythiophene',
+    name: 'Polythiophene (PTh)',
+    category: 'conducting',
+    formula: '(C₄H₄S)ₙ',
+    molarMass: '84.14 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with thiophene rings',
+    synthesis: 'Electrochemical or chemical oxidative polymerization of thiophene',
+    image2D: '/src/assets/polymers/polythiophene-2d.png',
+    properties: {
+      conductivity: '10-100 S/cm (doped)',
+      density: '1.5 g/cm³',
+      solubility: 'Insoluble in common solvents'
+    },
+    uses: [
+      'Organic field-effect transistors',
+      'Photovoltaic cells',
+      'Light-emitting diodes',
+      'Sensors',
+      'Electrochromic devices'
+    ],
+    advantages: [
+      'Good environmental stability',
+      'High conductivity when doped',
+      'Processability can be improved with side chains',
+      'Tunable optical properties'
+    ],
+    limitations: [
+      'Poor solubility in pure form',
+      'Requires doping for high conductivity',
+      'Photooxidation can occur'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - chemical synthesis required'
+    }
+  },
+  {
+    id: 'polyacetylene',
+    name: 'Polyacetylene (PA)',
+    category: 'conducting',
+    formula: '(C₂H₂)ₙ',
+    molarMass: '26.04 g/mol (repeat unit)',
+    structure: 'Linear conjugated polymer with alternating single and double bonds',
+    synthesis: 'Ziegler-Natta polymerization of acetylene gas',
+    image2D: '/src/assets/polymers/polyacetylene-2d.png',
+    properties: {
+      conductivity: '1,000-10,000 S/cm (heavily doped)',
+      density: '1.16 g/cm³',
+      solubility: 'Insoluble in all solvents'
+    },
+    uses: [
+      'Conductive films',
+      'Electromagnetic shielding',
+      'Antistatic materials',
+      'Battery electrodes',
+      'Research applications'
+    ],
+    advantages: [
+      'Very high conductivity when doped',
+      'First discovered conducting polymer',
+      'Simple structure',
+      'Historical significance'
+    ],
+    limitations: [
+      'Extremely unstable in air',
+      'Degrades rapidly',
+      'Completely insoluble',
+      'Difficult to process'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - unstable and difficult to use'
+    }
+  },
+  {
+    id: 'polyphenylene',
+    name: 'Poly(p-phenylene) (PPP)',
+    category: 'conducting',
+    formula: '(C₆H₄)ₙ',
+    molarMass: '76.10 g/mol (repeat unit)',
+    structure: 'Rigid aromatic polymer with benzene rings',
+    synthesis: 'Coupling reactions of benzene derivatives',
+    image2D: '/src/assets/polymers/polyphenylene-2d.png',
+    properties: {
+      conductivity: '1-500 S/cm (doped)',
+      density: '1.3 g/cm³',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: [
+      'High-temperature materials',
+      'Conductive composites',
+      'Protective coatings',
+      'Electronic applications',
+      'Structural materials'
+    ],
+    advantages: [
+      'Excellent thermal stability',
+      'Chemical resistance',
+      'Rigid structure',
+      'Good mechanical properties'
+    ],
+    limitations: [
+      'Extremely difficult to process',
+      'Insoluble and infusible',
+      'Expensive synthesis',
+      'Limited commercial availability'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex synthesis'
+    }
+  },
+  {
+    id: 'ppv',
+    name: 'Poly(p-phenylene vinylene) (PPV)',
+    category: 'conducting',
+    formula: '(C₈H₆)ₙ',
+    molarMass: '104.15 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with phenylene and vinylene units',
+    synthesis: 'Wittig or Heck coupling reactions',
+    image2D: '/src/assets/polymers/ppv-2d.png',
+    properties: {
+      conductivity: '0.1-10 S/cm (doped)',
+      density: '1.2 g/cm³',
+      solubility: 'Soluble derivatives available'
+    },
+    uses: [
+      'Polymer LEDs (PLEDs)',
+      'Organic solar cells',
+      'Photonic devices',
+      'Sensors',
+      'Display technology'
+    ],
+    advantages: [
+      'Efficient electroluminescence',
+      'Good film-forming properties',
+      'Tunable bandgap',
+      'Processable derivatives available'
+    ],
+    limitations: [
+      'Photooxidation sensitivity',
+      'Moderate conductivity',
+      'Device stability issues',
+      'Limited color range'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'polyfluorene',
+    name: 'Polyfluorene (PF)',
+    category: 'conducting',
+    formula: '(C₁₃H₈)ₙ',
+    molarMass: '166.22 g/mol (repeat unit)',
+    structure: 'Rigid conjugated polymer with fluorene units',
+    synthesis: 'Suzuki or Yamamoto coupling of fluorene monomers',
+    image2D: '/src/assets/polymers/polyfluorene-2d.png',
+    properties: {
+      conductivity: '0.001-1 S/cm (doped)',
+      density: '1.1 g/cm³',
+      solubility: 'Soluble in organic solvents with side chains'
+    },
+    uses: [
+      'Blue light-emitting diodes',
+      'Polymer lasers',
+      'Organic transistors',
+      'Solar cells',
+      'Sensors'
+    ],
+    advantages: [
+      'Excellent blue emission',
+      'High photoluminescence efficiency',
+      'Good solubility with side chains',
+      'Thermal stability'
+    ],
+    limitations: [
+      'Can form ketone defects',
+      'Green emission from defects',
+      'Relatively expensive',
+      'Processing challenges'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not easily recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'polycarbazole',
+    name: 'Polycarbazole (PCz)',
+    category: 'conducting',
+    formula: '(C₁₂H₈N)ₙ',
+    molarMass: '167.21 g/mol (repeat unit)',
+    structure: 'Nitrogen-containing aromatic polymer',
+    synthesis: 'Electrochemical or chemical oxidative polymerization',
+    image2D: '/src/assets/polymers/polycarbazole-2d.png',
+    properties: {
+      conductivity: '0.01-10 S/cm (doped)',
+      density: '1.2 g/cm³',
+      solubility: 'Insoluble, soluble derivatives available'
+    },
+    uses: [
+      'Hole transport layers',
+      'Electrochromic devices',
+      'Organic photovoltaics',
+      'Memory devices',
+      'Sensors'
+    ],
+    advantages: [
+      'Good electrochemical stability',
+      'High hole mobility',
+      'Tunable properties',
+      'Good film-forming ability'
+    ],
+    limitations: [
+      'Lower conductivity than some alternatives',
+      'Requires modification for solubility',
+      'Limited commercial scale production'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'polyindole',
+    name: 'Polyindole (PIN)',
+    category: 'conducting',
+    formula: '(C₈H₆N)ₙ',
+    molarMass: '117.15 g/mol (repeat unit)',
+    structure: 'Heterocyclic conducting polymer',
+    synthesis: 'Electrochemical or chemical oxidative polymerization of indole',
+    properties: {
+      conductivity: '1-100 S/cm (doped)',
+      density: '1.4 g/cm³',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: [
+      'Biosensors',
+      'Electrochromic displays',
+      'Capacitors',
+      'Corrosion protection',
+      'Electrocatalysis'
+    ],
+    advantages: [
+      'Good electrochemical activity',
+      'Biocompatibility',
+      'Stable in various pH ranges',
+      'Fast switching'
+    ],
+    limitations: [
+      'Limited processability',
+      'Lower conductivity than polyaniline',
+      'Requires doping'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'pedot-pss',
+    name: 'PEDOT:PSS',
+    category: 'conducting',
+    formula: 'PEDOT doped with PSS',
+    molarMass: 'Complex mixture',
+    structure: 'PEDOT polymer doped with poly(styrene sulfonate)',
+    synthesis: 'Aqueous dispersion polymerization',
+    properties: {
+      conductivity: '1-1000 S/cm (optimized)',
+      density: '1.0-1.1 g/cm³',
+      solubility: 'Water-dispersible'
+    },
+    uses: [
+      'Transparent conductive coatings',
+      'Touchscreens',
+      'Organic LEDs',
+      'Solar cells',
+      'Flexible electronics'
+    ],
+    advantages: [
+      'Commercially available',
+      'Water-processable',
+      'Transparent and flexible',
+      'Excellent stability'
+    ],
+    limitations: [
+      'Acidic nature can corrode',
+      'Hygroscopic',
+      'Lower conductivity than ITO',
+      'Can swell in humid conditions'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - water-based processing'
+    }
+  },
+  {
+    id: 'pani-graphene',
+    name: 'Polyaniline-Graphene Composite',
+    category: 'conducting',
+    formula: 'PANI/Graphene nanocomposite',
+    molarMass: 'Composite material',
+    structure: 'Polyaniline chains integrated with graphene sheets',
+    synthesis: 'In-situ polymerization or mixing of components',
+    properties: {
+      conductivity: '100-10,000 S/cm',
+      density: '1.4-1.6 g/cm³',
+      tensileStrength: '50-200 MPa'
+    },
+    uses: [
+      'Supercapacitors',
+      'Batteries',
+      'Electromagnetic shielding',
+      'Sensors',
+      'Flexible electronics'
+    ],
+    advantages: [
+      'Enhanced conductivity',
+      'Improved mechanical properties',
+      'High surface area',
+      'Synergistic effects'
+    ],
+    limitations: [
+      'More expensive than PANI alone',
+      'Processing complexity',
+      'Dispersion challenges',
+      'Scalability issues'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Very difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex processing'
+    }
+  },
+  {
+    id: 'ppy-cnt',
+    name: 'Polypyrrole-Carbon Nanotube Composite',
+    category: 'conducting',
+    formula: 'PPy/CNT nanocomposite',
+    molarMass: 'Composite material',
+    structure: 'Polypyrrole coating on carbon nanotubes',
+    synthesis: 'In-situ polymerization on CNT surfaces',
+    properties: {
+      conductivity: '100-1,000 S/cm',
+      density: '1.3-1.5 g/cm³',
+      tensileStrength: '100-500 MPa'
+    },
+    uses: [
+      'Supercapacitors',
+      'Actuators',
+      'Biosensors',
+      'Energy storage',
+      'Flexible electronics'
+    ],
+    advantages: [
+      'Excellent electrical properties',
+      'High mechanical strength',
+      'Large electroactive surface',
+      'Fast charge/discharge'
+    ],
+    limitations: [
+      'Expensive',
+      'CNT dispersion challenges',
+      'Processing complexity',
+      'Limited scalability'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'CNT toxicity concerns',
+      sustainability: 'Low - energy-intensive production'
     }
   },
   {
