@@ -2398,5 +2398,840 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Generally low toxicity',
       sustainability: 'Low - complex synthesis'
     }
+  },
+  {
+    id: 'pla',
+    name: 'Polylactic Acid (PLA)',
+    category: 'biomedical',
+    formula: '(C₃H₄O₂)ₙ',
+    molarMass: '72.06 g/mol (repeat unit)',
+    structure: 'Aliphatic polyester with chiral carbon centers',
+    synthesis: 'Ring-opening polymerization of lactide or direct condensation of lactic acid',
+    image2D: '/src/assets/polymers/pla-2d.png',
+    properties: {
+      meltingPoint: '150-175°C',
+      density: '1.21-1.43 g/cm³',
+      tensileStrength: '50-70 MPa',
+      solubility: 'Soluble in chlorinated solvents, hot benzene'
+    },
+    uses: [
+      'Biodegradable sutures',
+      'Orthopedic fixation devices',
+      'Drug delivery systems',
+      'Tissue engineering scaffolds',
+      'Biodegradable implants'
+    ],
+    advantages: [
+      'Biocompatible',
+      'Biodegradable',
+      'FDA approved',
+      'Good mechanical properties',
+      'Derived from renewable resources'
+    ],
+    limitations: [
+      'Slow degradation rate',
+      'Acidic degradation products',
+      'Limited thermal stability',
+      'Brittle at room temperature'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (6-24 months)',
+      recyclability: 'Chemically recyclable',
+      toxicity: 'Non-toxic, biocompatible',
+      sustainability: 'High - made from corn starch or sugarcane'
+    }
+  },
+  {
+    id: 'pga',
+    name: 'Polyglycolic Acid (PGA)',
+    category: 'biomedical',
+    formula: '(C₂H₂O₂)ₙ',
+    molarMass: '58.04 g/mol (repeat unit)',
+    structure: 'Simplest linear aliphatic polyester',
+    synthesis: 'Ring-opening polymerization of glycolide',
+    image2D: '/src/assets/polymers/pga-2d.png',
+    properties: {
+      meltingPoint: '225-230°C',
+      density: '1.50-1.69 g/cm³',
+      tensileStrength: '60-100 MPa',
+      solubility: 'Insoluble in most organic solvents'
+    },
+    uses: [
+      'Absorbable sutures (Dexon)',
+      'Drug delivery carriers',
+      'Tissue engineering',
+      'Wound closure devices',
+      'Temporary medical implants'
+    ],
+    advantages: [
+      'Rapid biodegradation (2-4 weeks)',
+      'High tensile strength',
+      'Excellent biocompatibility',
+      'Complete absorption'
+    ],
+    limitations: [
+      'Very fast degradation',
+      'Poor solubility',
+      'Rapid loss of mechanical strength',
+      'Acidic degradation'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Rapidly biodegradable (2-4 weeks)',
+      recyclability: 'Not typically recycled',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - fully biodegradable'
+    }
+  },
+  {
+    id: 'plga',
+    name: 'Poly(lactic-co-glycolic acid) (PLGA)',
+    category: 'biomedical',
+    formula: '(C₃H₄O₂)ₓ(C₂H₂O₂)ᵧ',
+    molarMass: 'Variable (depends on ratio)',
+    structure: 'Random or block copolymer of lactic and glycolic acid',
+    synthesis: 'Ring-opening copolymerization of lactide and glycolide',
+    image2D: '/src/assets/polymers/plga-2d.png',
+    properties: {
+      meltingPoint: '40-60°C (depends on ratio)',
+      density: '1.34-1.60 g/cm³',
+      tensileStrength: '40-55 MPa',
+      solubility: 'Soluble in acetone, chloroform, ethyl acetate'
+    },
+    uses: [
+      'Controlled drug delivery systems',
+      'Microspheres and nanoparticles',
+      'Tissue engineering scaffolds',
+      'Sutures',
+      'Bone fixation devices'
+    ],
+    advantages: [
+      'Tunable degradation rate',
+      'FDA and EMA approved',
+      'Excellent biocompatibility',
+      'Versatile processing',
+      'Controlled drug release'
+    ],
+    limitations: [
+      'Acidic degradation',
+      'Loss of mechanical integrity',
+      'Potential inflammatory response',
+      'Expensive'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (1-12 months)',
+      recyclability: 'Not typically recycled',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biodegradable medical polymer'
+    }
+  },
+  {
+    id: 'pcl-biomed',
+    name: 'Polycaprolactone (PCL) - Biomedical',
+    category: 'biomedical',
+    formula: '(C₆H₁₀O₂)ₙ',
+    molarMass: '114.14 g/mol (repeat unit)',
+    structure: 'Semi-crystalline aliphatic polyester',
+    synthesis: 'Ring-opening polymerization of ε-caprolactone',
+    image2D: '/src/assets/polymers/pcl-biomed-2d.png',
+    properties: {
+      meltingPoint: '58-60°C',
+      density: '1.145 g/cm³',
+      tensileStrength: '16-20 MPa',
+      solubility: 'Soluble in chloroform, dichloromethane'
+    },
+    uses: [
+      'Long-term drug delivery',
+      'Tissue engineering scaffolds',
+      'Contraceptive devices',
+      'Suture materials',
+      'Wound dressings'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Slow degradation (2-3 years)',
+      'Easy to process',
+      'Low cost',
+      'FDA approved'
+    ],
+    limitations: [
+      'Very slow degradation',
+      'Low mechanical strength',
+      'Hydrophobic nature',
+      'Low melting point'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (2-3 years)',
+      recyclability: 'Can be recycled',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biodegradable'
+    }
+  },
+  {
+    id: 'peg',
+    name: 'Polyethylene Glycol (PEG)',
+    category: 'biomedical',
+    formula: 'HO(C₂H₄O)ₙH',
+    molarMass: 'Variable (300-10,000,000 g/mol)',
+    structure: 'Linear or branched polyether',
+    synthesis: 'Ring-opening polymerization of ethylene oxide',
+    image2D: '/src/assets/polymers/peg-2d.png',
+    properties: {
+      meltingPoint: '4-8°C (low MW) to 60-65°C (high MW)',
+      density: '1.1-1.2 g/cm³',
+      solubility: 'Soluble in water and many organic solvents'
+    },
+    uses: [
+      'Protein conjugation (PEGylation)',
+      'Drug delivery vehicles',
+      'Laxatives',
+      'Hydrogels',
+      'Surface modification'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Non-immunogenic',
+      'Water soluble',
+      'FDA approved',
+      'Versatile molecular weights'
+    ],
+    limitations: [
+      'Not biodegradable',
+      'Can undergo oxidation',
+      'Immunogenicity with repeated use',
+      'Accumulation in tissues'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Generally non-toxic',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'chitosan',
+    name: 'Chitosan',
+    category: 'biomedical',
+    formula: '(C₆H₁₁NO₄)ₙ',
+    molarMass: '161.16 g/mol (repeat unit)',
+    structure: 'Linear polysaccharide of β-(1→4)-linked D-glucosamine',
+    synthesis: 'Deacetylation of chitin from crustacean shells',
+    image2D: '/src/assets/polymers/chitosan-2d.png',
+    properties: {
+      density: '1.35-1.40 g/cm³',
+      solubility: 'Soluble in acidic aqueous solutions',
+      tensileStrength: '40-100 MPa (films)'
+    },
+    uses: [
+      'Wound healing dressings',
+      'Drug delivery systems',
+      'Tissue engineering',
+      'Antimicrobial coatings',
+      'Hemostatic agents'
+    ],
+    advantages: [
+      'Biocompatible and biodegradable',
+      'Antimicrobial properties',
+      'Hemostatic activity',
+      'Derived from natural sources',
+      'Promotes tissue regeneration'
+    ],
+    limitations: [
+      'Limited solubility',
+      'Batch variability',
+      'Potential allergenicity',
+      'Poor mechanical properties when wet'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Highly biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - derived from waste crustacean shells'
+    }
+  },
+  {
+    id: 'alginate',
+    name: 'Alginate',
+    category: 'biomedical',
+    formula: '(C₆H₈O₆)ₙ',
+    molarMass: '176.13 g/mol (average repeat unit)',
+    structure: 'Linear polysaccharide of β-D-mannuronic and α-L-guluronic acid',
+    synthesis: 'Extracted from brown seaweed',
+    image2D: '/src/assets/polymers/alginate-2d.png',
+    properties: {
+      density: '1.60 g/cm³',
+      solubility: 'Soluble in water',
+      tensileStrength: 'Variable (depends on crosslinking)'
+    },
+    uses: [
+      'Cell encapsulation',
+      'Tissue engineering scaffolds',
+      'Wound dressings',
+      'Drug delivery matrices',
+      'Injectable hydrogels'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Mild gelation conditions',
+      'Natural origin',
+      'Easy to process',
+      'Non-immunogenic'
+    ],
+    limitations: [
+      'Limited mechanical strength',
+      'Uncontrolled degradation',
+      'Batch-to-batch variation',
+      'Limited cell adhesion'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - marine-derived'
+    }
+  },
+  {
+    id: 'hyaluronic-acid',
+    name: 'Hyaluronic Acid (HA)',
+    category: 'biomedical',
+    formula: '(C₁₄H₂₁NO₁₁)ₙ',
+    molarMass: '379.33 g/mol (disaccharide unit)',
+    structure: 'Linear polysaccharide of D-glucuronic acid and N-acetyl-D-glucosamine',
+    synthesis: 'Bacterial fermentation or extraction from rooster combs',
+    image2D: '/src/assets/polymers/hyaluronic-acid-2d.png',
+    properties: {
+      density: '1.0-1.1 g/cm³',
+      solubility: 'Highly soluble in water',
+      tensileStrength: 'Variable'
+    },
+    uses: [
+      'Dermal fillers',
+      'Osteoarthritis treatment',
+      'Ophthalmic surgery',
+      'Wound healing',
+      'Drug delivery'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Natural ECM component',
+      'Non-immunogenic',
+      'Viscoelastic properties',
+      'Promotes tissue healing'
+    ],
+    limitations: [
+      'Rapid enzymatic degradation',
+      'Expensive',
+      'Requires chemical modification',
+      'Poor mechanical properties'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Rapidly biodegradable',
+      recyclability: 'Not applicable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biofermentation'
+    }
+  },
+  {
+    id: 'collagen',
+    name: 'Collagen',
+    category: 'biomedical',
+    formula: '(Gly-X-Y)ₙ (X and Y are often Pro or Hyp)',
+    molarMass: 'Variable (typically 300,000 g/mol)',
+    structure: 'Triple helix protein structure',
+    synthesis: 'Extracted from animal tissues (bovine, porcine, marine)',
+    image2D: '/src/assets/polymers/collagen-2d.png',
+    properties: {
+      meltingPoint: 'Denaturation at 37-40°C',
+      density: '1.3-1.4 g/cm³',
+      tensileStrength: '50-100 MPa',
+      solubility: 'Soluble in acidic solutions'
+    },
+    uses: [
+      'Tissue engineering scaffolds',
+      'Wound dressings',
+      'Artificial skin',
+      'Drug delivery',
+      'Cosmetic implants'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Natural ECM component',
+      'Promotes cell adhesion',
+      'Biodegradable',
+      'Low immunogenicity (when purified)'
+    ],
+    limitations: [
+      'Batch variability',
+      'Risk of disease transmission',
+      'Poor mechanical strength',
+      'Fast degradation',
+      'Potential allergenicity'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Not applicable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - animal-derived'
+    }
+  },
+  {
+    id: 'gelatin',
+    name: 'Gelatin',
+    category: 'biomedical',
+    formula: 'Derived from collagen',
+    molarMass: 'Variable (15,000-400,000 g/mol)',
+    structure: 'Denatured collagen with disrupted triple helix',
+    synthesis: 'Thermal or chemical hydrolysis of collagen',
+    image2D: '/src/assets/polymers/gelatin-2d.png',
+    properties: {
+      meltingPoint: 'Sol-gel transition 25-35°C',
+      density: '1.3-1.4 g/cm³',
+      solubility: 'Soluble in water at elevated temperatures'
+    },
+    uses: [
+      'Drug delivery capsules',
+      'Tissue engineering',
+      'Wound dressings',
+      'Hemostatic sponges',
+      'Bioink for 3D printing'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Low cost',
+      'FDA approved',
+      'Easy to process',
+      'Biodegradable'
+    ],
+    limitations: [
+      'Low mechanical strength',
+      'Temperature-sensitive gelation',
+      'Batch variability',
+      'Rapid enzymatic degradation',
+      'Potential allergenicity'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Not applicable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - animal byproduct'
+    }
+  },
+  {
+    id: 'fibrin',
+    name: 'Fibrin',
+    category: 'biomedical',
+    formula: 'Protein polymer',
+    molarMass: '340,000 g/mol (fibrinogen monomer)',
+    structure: 'Network of crosslinked fibrin proteins',
+    synthesis: 'Polymerization of fibrinogen by thrombin',
+    image2D: '/src/assets/polymers/fibrin-2d.png',
+    properties: {
+      density: '1.3 g/cm³',
+      tensileStrength: '0.1-1 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: [
+      'Surgical sealants',
+      'Tissue engineering scaffolds',
+      'Hemostatic agents',
+      'Drug delivery',
+      'Cell culture substrates'
+    ],
+    advantages: [
+      'Autologous material available',
+      'Excellent biocompatibility',
+      'Natural wound healing',
+      'Injectable',
+      'Biodegradable'
+    ],
+    limitations: [
+      'Rapid degradation',
+      'Low mechanical strength',
+      'Risk of disease transmission',
+      'Batch variability',
+      'Expensive to produce'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Rapidly biodegradable',
+      recyclability: 'Not applicable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - blood-derived'
+    }
+  },
+  {
+    id: 'pmma-biomed',
+    name: 'Polymethyl Methacrylate (PMMA) - Biomedical',
+    category: 'biomedical',
+    formula: '(C₅H₈O₂)ₙ',
+    molarMass: '100.12 g/mol (repeat unit)',
+    structure: 'Linear vinyl polymer with ester side chains',
+    synthesis: 'Free radical polymerization of methyl methacrylate',
+    image2D: '/src/assets/polymers/pmma-2d.png',
+    properties: {
+      meltingPoint: '130-140°C (glass transition)',
+      density: '1.17-1.20 g/cm³',
+      tensileStrength: '48-76 MPa',
+      solubility: 'Soluble in chloroform, THF'
+    },
+    uses: [
+      'Bone cement',
+      'Intraocular lenses',
+      'Dental prosthetics',
+      'Cranioplasty',
+      'Drug delivery devices'
+    ],
+    advantages: [
+      'Excellent optical clarity',
+      'Good biocompatibility',
+      'High mechanical strength',
+      'Long-term stability',
+      'Easy to process'
+    ],
+    limitations: [
+      'Non-biodegradable',
+      'Exothermic polymerization',
+      'Monomer toxicity',
+      'Brittle',
+      'Permanent implant'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'pva-biomed',
+    name: 'Polyvinyl Alcohol (PVA) - Biomedical',
+    category: 'biomedical',
+    formula: '(C₂H₄O)ₙ',
+    molarMass: '44.05 g/mol (repeat unit)',
+    structure: 'Linear polymer with hydroxyl groups',
+    synthesis: 'Hydrolysis of polyvinyl acetate',
+    image2D: '/src/assets/polymers/pva-2d.png',
+    properties: {
+      meltingPoint: '180-228°C',
+      density: '1.19-1.31 g/cm³',
+      tensileStrength: '30-50 MPa',
+      solubility: 'Soluble in water'
+    },
+    uses: [
+      'Contact lenses',
+      'Cartilage replacement',
+      'Embolization particles',
+      'Drug delivery',
+      'Artificial organs'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Hydrophilic',
+      'Good mechanical properties',
+      'Non-toxic',
+      'Easy to process'
+    ],
+    limitations: [
+      'Non-biodegradable',
+      'Sensitive to moisture',
+      'Limited stability in body',
+      'Swelling in water'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Partially biodegradable',
+      recyclability: 'Can be recycled',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'polydioxanone',
+    name: 'Polydioxanone (PDO)',
+    category: 'biomedical',
+    formula: '(C₄H₆O₃)ₙ',
+    molarMass: '102.09 g/mol (repeat unit)',
+    structure: 'Aliphatic polyester with ether linkages',
+    synthesis: 'Ring-opening polymerization of p-dioxanone',
+    image2D: '/src/assets/polymers/pdo-2d.png',
+    properties: {
+      meltingPoint: '110-115°C',
+      density: '1.31 g/cm³',
+      tensileStrength: '500-700 MPa',
+      solubility: 'Soluble in hexafluoroisopropanol'
+    },
+    uses: [
+      'Monofilament sutures',
+      'Surgical mesh',
+      'Bone fixation devices',
+      'Drug delivery',
+      'Cosmetic threads'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Flexible and strong',
+      'Predictable degradation',
+      'Minimal tissue reaction',
+      'Maintains strength longer'
+    ],
+    limitations: [
+      'Relatively expensive',
+      'Slower degradation than PGA',
+      'Limited solubility',
+      'Requires specific processing'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (6 months)',
+      recyclability: 'Not typically recycled',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biodegradable'
+    }
+  },
+  {
+    id: 'polyurethane-biomed',
+    name: 'Biomedical Polyurethane',
+    category: 'biomedical',
+    formula: 'R-NH-CO-O-R\'',
+    molarMass: 'Variable',
+    structure: 'Block copolymer with urethane linkages',
+    synthesis: 'Polyaddition of diisocyanates with polyols',
+    image2D: '/src/assets/polymers/polyurethane-biomed-2d.png',
+    properties: {
+      density: '1.1-1.3 g/cm³',
+      tensileStrength: '30-55 MPa',
+      solubility: 'Variable depending on composition'
+    },
+    uses: [
+      'Vascular grafts',
+      'Heart valves',
+      'Pacemaker leads',
+      'Catheters',
+      'Wound dressings'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'High elasticity',
+      'Tunable properties',
+      'Good blood compatibility',
+      'Durable'
+    ],
+    limitations: [
+      'Non-biodegradable',
+      'Potential degradation in vivo',
+      'Complex synthesis',
+      'Variable biocompatibility'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity when stabilized',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'silk-fibroin',
+    name: 'Silk Fibroin',
+    category: 'biomedical',
+    formula: '(Gly-Ala-Gly-Ala-Gly-Ser)ₙ',
+    molarMass: 'Variable (370,000 g/mol average)',
+    structure: 'Protein polymer with β-sheet crystalline domains',
+    synthesis: 'Extracted from silkworm cocoons (Bombyx mori)',
+    image2D: '/src/assets/polymers/silk-fibroin-2d.png',
+    properties: {
+      density: '1.3-1.4 g/cm³',
+      tensileStrength: '500-740 MPa',
+      solubility: 'Soluble in lithium bromide, formic acid'
+    },
+    uses: [
+      'Tissue engineering scaffolds',
+      'Drug delivery systems',
+      'Surgical sutures',
+      'Wound dressings',
+      'Bone regeneration'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'High mechanical strength',
+      'Biodegradable',
+      'Natural origin',
+      'Versatile processing'
+    ],
+    limitations: [
+      'Batch variability',
+      'Slow degradation',
+      'Limited availability',
+      'Complex processing',
+      'Potential immunogenicity'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (months to years)',
+      recyclability: 'Not applicable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - natural renewable resource'
+    }
+  },
+  {
+    id: 'cellulose-acetate',
+    name: 'Cellulose Acetate',
+    category: 'biomedical',
+    formula: '(C₆H₇O₂(OH)ₓ(OCOCH₃)y)ₙ where x+y=3',
+    molarMass: 'Variable',
+    structure: 'Cellulose with acetyl substituents',
+    synthesis: 'Acetylation of cellulose with acetic anhydride',
+    image2D: '/src/assets/polymers/cellulose-acetate-2d.png',
+    properties: {
+      density: '1.28-1.32 g/cm³',
+      tensileStrength: '25-50 MPa',
+      solubility: 'Soluble in acetone, acetic acid'
+    },
+    uses: [
+      'Dialysis membranes',
+      'Drug delivery',
+      'Wound dressings',
+      'Chromatography',
+      'Tissue engineering'
+    ],
+    advantages: [
+      'Biocompatible',
+      'Biodegradable',
+      'Natural origin',
+      'Good mechanical properties',
+      'Easy to process'
+    ],
+    limitations: [
+      'Sensitive to pH',
+      'Slow degradation',
+      'Limited solubility',
+      'Weak mechanical properties when wet'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (3-6 months)',
+      recyclability: 'Can be composted',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - plant-derived'
+    }
+  },
+  {
+    id: 'peo-biomed',
+    name: 'Polyethylene Oxide (PEO)',
+    category: 'biomedical',
+    formula: '(C₂H₄O)ₙ',
+    molarMass: 'Variable (high MW form of PEG)',
+    structure: 'High molecular weight polyether',
+    synthesis: 'Anionic ring-opening polymerization of ethylene oxide',
+    image2D: '/src/assets/polymers/peo-2d.png',
+    properties: {
+      meltingPoint: '65-70°C',
+      density: '1.13-1.21 g/cm³',
+      solubility: 'Highly water soluble',
+      tensileStrength: '10-30 MPa'
+    },
+    uses: [
+      'Mucoadhesive drug delivery',
+      'Hydrogels',
+      'Protein resistance coatings',
+      'Wound dressings',
+      'Cell encapsulation'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Non-immunogenic',
+      'Water soluble',
+      'FDA approved',
+      'Mucoadhesive properties'
+    ],
+    limitations: [
+      'Non-biodegradable',
+      'Oxidation susceptibility',
+      'Limited mechanical strength',
+      'Swelling behavior'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Non-toxic',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'plla',
+    name: 'Poly-L-lactic Acid (PLLA)',
+    category: 'biomedical',
+    formula: '(C₃H₄O₂)ₙ',
+    molarMass: '72.06 g/mol (repeat unit)',
+    structure: 'Stereoregular polyester with L-enantiomer',
+    synthesis: 'Ring-opening polymerization of L-lactide',
+    image2D: '/src/assets/polymers/plla-2d.png',
+    properties: {
+      meltingPoint: '170-180°C',
+      density: '1.24-1.26 g/cm³',
+      tensileStrength: '60-70 MPa',
+      solubility: 'Soluble in chlorinated solvents'
+    },
+    uses: [
+      'Orthopedic screws and plates',
+      'Facial volumizers',
+      'Tissue engineering',
+      'Drug-eluting stents',
+      'Surgical mesh'
+    ],
+    advantages: [
+      'High crystallinity',
+      'Better mechanical properties than racemic PLA',
+      'Biodegradable',
+      'FDA approved',
+      'Longer degradation time'
+    ],
+    limitations: [
+      'Slow degradation (2-5 years)',
+      'Acidic degradation products',
+      'Inflammatory response possible',
+      'Expensive'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (2-5 years)',
+      recyclability: 'Chemically recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - renewable resource'
+    }
+  },
+  {
+    id: 'ppf',
+    name: 'Poly(propylene fumarate) (PPF)',
+    category: 'biomedical',
+    formula: '(C₆H₈O₄)ₙ',
+    molarMass: '144.13 g/mol (repeat unit)',
+    structure: 'Unsaturated linear polyester',
+    synthesis: 'Polycondensation of diethyl fumarate with propylene glycol',
+    image2D: '/src/assets/polymers/ppf-2d.png',
+    properties: {
+      density: '1.2-1.3 g/cm³',
+      tensileStrength: '10-40 MPa',
+      solubility: 'Soluble in chloroform, methylene chloride'
+    },
+    uses: [
+      'Injectable bone cements',
+      'Bone tissue engineering',
+      'Craniofacial reconstruction',
+      'Spinal fusion',
+      'Orthopedic fixation'
+    ],
+    advantages: [
+      'Biodegradable',
+      'Injectable formulations',
+      'Crosslinkable',
+      'Osteoconductive',
+      'Tunable mechanical properties'
+    ],
+    limitations: [
+      'Slow degradation',
+      'Complex synthesis',
+      'Exothermic curing',
+      'Limited commercial availability',
+      'Requires crosslinking agents'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (6-12 months)',
+      recyclability: 'Not typically recycled',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate'
+    }
   }
 ];
