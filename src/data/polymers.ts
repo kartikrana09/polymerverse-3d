@@ -1397,5 +1397,286 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Non-toxic',
       sustainability: 'Moderate'
     }
+  },
+  {
+    id: 'polynaphthalene',
+    name: 'Polynaphthalene',
+    category: 'conducting',
+    formula: '(C₁₀H₈)ₙ',
+    molarMass: '128.17 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with fused aromatic naphthalene rings',
+    synthesis: 'Oxidative or electrochemical polymerization of naphthalene derivatives',
+    image2D: '/src/assets/polymers/polynaphthalene-2d.png',
+    properties: {
+      conductivity: '0.1-10 S/cm (doped)',
+      density: '1.15-1.25 g/cm³',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: [
+      'Organic electronics',
+      'Conductive coatings',
+      'Chemical sensors',
+      'Battery electrodes',
+      'Antistatic materials'
+    ],
+    advantages: [
+      'Good thermal stability',
+      'Extended conjugation for charge transport',
+      'Tunable properties through substitution',
+      'High aromatic character'
+    ],
+    limitations: [
+      'Lower conductivity than polythiophene',
+      'Difficult to process',
+      'Limited commercial availability',
+      'Degradation under UV exposure'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Moderate - aromatic compound',
+      sustainability: 'Low - requires chemical synthesis'
+    }
+  },
+  {
+    id: 'polythiazole',
+    name: 'Polythiazole',
+    category: 'conducting',
+    formula: '(C₃H₃NS)ₙ',
+    molarMass: '85.13 g/mol (repeat unit)',
+    structure: 'Conjugated heterocyclic polymer with nitrogen and sulfur atoms',
+    synthesis: 'Oxidative polymerization of thiazole monomers or electropolymerization',
+    image2D: '/src/assets/polymers/polythiazole-2d.png',
+    properties: {
+      conductivity: '1-50 S/cm (doped)',
+      density: '1.4-1.5 g/cm³',
+      solubility: 'Insoluble in common solvents'
+    },
+    uses: [
+      'Electrochromic devices',
+      'Organic solar cells',
+      'Chemical sensors',
+      'Supercapacitors',
+      'Conductive textiles'
+    ],
+    advantages: [
+      'Good electrochemical stability',
+      'High charge storage capacity',
+      'Fast redox switching',
+      'Tunable electronic properties'
+    ],
+    limitations: [
+      'Complex synthesis',
+      'Poor mechanical properties',
+      'Limited processability',
+      'Requires doping for high conductivity'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Moderate - heterocyclic compound',
+      sustainability: 'Low - requires specialized synthesis'
+    }
+  },
+  {
+    id: 'polyazulene',
+    name: 'Polyazulene',
+    category: 'conducting',
+    formula: '(C₁₀H₈)ₙ',
+    molarMass: '128.17 g/mol (repeat unit)',
+    structure: 'Non-benzenoid aromatic polymer with 5- and 7-membered rings',
+    synthesis: 'Electrochemical polymerization of azulene in organic electrolytes',
+    image2D: '/src/assets/polymers/polyazulene-2d.png',
+    properties: {
+      conductivity: '0.01-1 S/cm (doped)',
+      density: '1.2-1.3 g/cm³',
+      solubility: 'Soluble in organic solvents when substituted'
+    },
+    uses: [
+      'Electrochromic displays',
+      'Organic light-emitting devices',
+      'Chemical sensors',
+      'Smart windows',
+      'Energy storage devices'
+    ],
+    advantages: [
+      'Unique blue color in neutral state',
+      'Good electrochromic properties',
+      'Reversible redox behavior',
+      'Interesting optical properties'
+    ],
+    limitations: [
+      'Low electrical conductivity',
+      'Limited stability',
+      'Expensive monomer',
+      'Complex synthesis pathway'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - requires rare starting materials'
+    }
+  },
+  {
+    id: 'polyfuran',
+    name: 'Polyfuran (PFu)',
+    category: 'conducting',
+    formula: '(C₄H₂O)ₙ',
+    molarMass: '66.06 g/mol (repeat unit)',
+    structure: 'Conjugated heterocyclic polymer with oxygen-containing furan rings',
+    synthesis: 'Oxidative or electrochemical polymerization of furan derivatives',
+    image2D: '/src/assets/polymers/polyfuran-2d.png',
+    properties: {
+      conductivity: '0.001-0.1 S/cm (doped)',
+      density: '1.3-1.4 g/cm³',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: [
+      'Corrosion inhibitors',
+      'Biosensors',
+      'Battery electrodes',
+      'Electrochromic devices',
+      'Supercapacitors'
+    ],
+    advantages: [
+      'Biocompatible',
+      'Good electrochemical properties',
+      'Potential from renewable sources (furfural)',
+      'Good adhesion to metals'
+    ],
+    limitations: [
+      'Lower conductivity than polythiophene',
+      'Susceptible to oxidation',
+      'Poor stability in air',
+      'Limited processability'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Potentially biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low to moderate toxicity',
+      sustainability: 'High - can be derived from biomass'
+    }
+  },
+  {
+    id: 'polyselenophene',
+    name: 'Polyselenophene',
+    category: 'conducting',
+    formula: '(C₄H₂Se)ₙ',
+    molarMass: '129.02 g/mol (repeat unit)',
+    structure: 'Conjugated heterocyclic polymer with selenium atoms',
+    synthesis: 'Electrochemical or chemical oxidative polymerization of selenophene',
+    image2D: '/src/assets/polymers/polyselenophene-2d.png',
+    properties: {
+      conductivity: '10-100 S/cm (doped)',
+      density: '1.6-1.8 g/cm³',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: [
+      'Organic photovoltaics',
+      'Field-effect transistors',
+      'Electrochromic devices',
+      'Chemical sensors',
+      'Thermoelectric materials'
+    ],
+    advantages: [
+      'Higher conductivity than polythiophene',
+      'Better charge mobility',
+      'Enhanced π-π stacking',
+      'Lower band gap for solar applications'
+    ],
+    limitations: [
+      'Expensive selenium monomer',
+      'Air-sensitive',
+      'Toxicity concerns',
+      'Limited commercial availability'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'High - selenium compounds can be toxic',
+      sustainability: 'Low - requires rare selenium element'
+    }
+  },
+  {
+    id: 'doped-polyacetylene',
+    name: 'Doped Polyacetylene (AsF₅-doped PA)',
+    category: 'conducting',
+    formula: '(C₂H₂)ₙ · (AsF₅)ₓ',
+    molarMass: '26.04 g/mol (repeat unit) + dopant',
+    structure: 'Conjugated carbon backbone with alternating double bonds, intercalated with AsF₅ dopant',
+    synthesis: 'Ziegler-Natta polymerization of acetylene followed by doping with arsenic pentafluoride vapor',
+    image2D: '/src/assets/polymers/doped-polyacetylene-2d.png',
+    properties: {
+      conductivity: '10³-10⁵ S/cm (heavily doped)',
+      density: '1.1-1.3 g/cm³',
+      solubility: 'Insoluble'
+    },
+    uses: [
+      'Research on conductive polymers',
+      'Prototype electronic devices',
+      'Educational demonstrations',
+      'Fundamental materials science studies',
+      'Historical significance in Nobel Prize research'
+    ],
+    advantages: [
+      'Highest conductivity among organic polymers',
+      'First discovered conducting polymer',
+      'Simple chemical structure',
+      'Important for understanding polymer electronics'
+    ],
+    limitations: [
+      'Highly unstable in air and moisture',
+      'Toxic dopant (AsF₅)',
+      'Degrades rapidly',
+      'Not commercially viable',
+      'Poor mechanical properties'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Very high - contains toxic arsenic compounds',
+      sustainability: 'Very low - hazardous materials, research-only use'
+    }
+  },
+  {
+    id: 'polythiophene-vinylene',
+    name: 'Poly(thiophene-vinylene)',
+    category: 'conducting',
+    formula: '(C₆H₄S)ₙ',
+    molarMass: '108.16 g/mol (repeat unit)',
+    structure: 'Alternating conjugated polymer with thiophene rings and vinylene bridges',
+    synthesis: 'Stille coupling, Heck coupling, or electropolymerization of thiophene-vinylene monomers',
+    image2D: '/src/assets/polymers/polythiophene-vinylene-2d.png',
+    properties: {
+      conductivity: '0.1-10 S/cm (doped)',
+      density: '1.3-1.5 g/cm³',
+      solubility: 'Soluble in organic solvents when substituted'
+    },
+    uses: [
+      'Organic solar cells',
+      'Organic light-emitting diodes',
+      'Field-effect transistors',
+      'Photodetectors',
+      'Electrochromic devices'
+    ],
+    advantages: [
+      'Extended conjugation',
+      'Tunable band gap',
+      'Good charge transport properties',
+      'Suitable for solution processing'
+    ],
+    limitations: [
+      'Complex synthesis',
+      'Moderate stability',
+      'Lower efficiency than newer materials',
+      'Sensitive to oxidation'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low to moderate toxicity',
+      sustainability: 'Moderate - requires metal catalysts for synthesis'
+    }
   }
 ];
