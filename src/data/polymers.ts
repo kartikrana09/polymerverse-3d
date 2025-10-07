@@ -1678,5 +1678,725 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Low to moderate toxicity',
       sustainability: 'Moderate - requires metal catalysts for synthesis'
     }
+  },
+  {
+    id: 'pnipam',
+    name: 'Poly(N-isopropylacrylamide) (PNIPAM)',
+    category: 'smart',
+    formula: '(C₆H₁₁NO)ₙ',
+    molarMass: '113.16 g/mol (repeat unit)',
+    structure: 'Linear polymer with N-isopropylacrylamide side chains',
+    synthesis: 'Free radical polymerization of N-isopropylacrylamide using AIBN or persulfate initiators',
+    image2D: '/src/assets/polymers/pnipam-2d.png',
+    properties: {
+      meltingPoint: 'LCST ~32°C in water',
+      density: '1.1 g/cm³',
+      solubility: 'Water-soluble below LCST, phase separates above'
+    },
+    uses: [
+      'Drug delivery systems',
+      'Tissue engineering scaffolds',
+      'Biosensors',
+      'Smart hydrogels',
+      'Cell culture surfaces'
+    ],
+    advantages: [
+      'Biocompatible',
+      'Reversible phase transition',
+      'LCST near body temperature',
+      'Easy to synthesize'
+    ],
+    limitations: [
+      'Limited mechanical strength',
+      'Narrow response temperature range',
+      'Non-biodegradable',
+      'Can aggregate irreversibly'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity, biocompatible',
+      sustainability: 'Moderate - petroleum-based monomers'
+    }
+  },
+  {
+    id: 'pvme',
+    name: 'Poly(vinyl methyl ether) (PVME)',
+    category: 'smart',
+    formula: '(C₃H₆O)ₙ',
+    molarMass: '58.08 g/mol (repeat unit)',
+    structure: 'Linear polymer with methoxy side groups',
+    synthesis: 'Cationic polymerization of vinyl methyl ether',
+    image2D: '/src/assets/polymers/pvme-2d.png',
+    properties: {
+      meltingPoint: 'LCST ~37°C in water',
+      density: '1.0 g/cm³',
+      solubility: 'Water-soluble below LCST'
+    },
+    uses: [
+      'Temperature-responsive drug delivery',
+      'Adhesives',
+      'Coatings',
+      'Thickening agents',
+      'Biomedical devices'
+    ],
+    advantages: [
+      'Sharp phase transition',
+      'Non-toxic',
+      'Good film-forming properties',
+      'Tunable LCST'
+    ],
+    limitations: [
+      'Sensitive to pH changes',
+      'Limited mechanical properties',
+      'Oxidation susceptibility',
+      'Hygroscopic'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Limited recyclability',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'pvcl',
+    name: 'Poly(N-vinylcaprolactam) (PVCL)',
+    category: 'smart',
+    formula: '(C₈H₁₃NO)ₙ',
+    molarMass: '139.19 g/mol (repeat unit)',
+    structure: 'Linear polymer with caprolactam ring pendant groups',
+    synthesis: 'Free radical polymerization of N-vinylcaprolactam',
+    image2D: '/src/assets/polymers/pvcl-2d.png',
+    properties: {
+      meltingPoint: 'LCST ~32-35°C in water',
+      density: '1.1 g/cm³',
+      solubility: 'Water-soluble below LCST'
+    },
+    uses: [
+      'Biomedical applications',
+      'Drug delivery systems',
+      'Contact lenses',
+      'Cosmetics',
+      'Smart hydrogels'
+    ],
+    advantages: [
+      'Excellent biocompatibility',
+      'Non-toxic',
+      'Stable phase transition',
+      'Good mechanical properties'
+    ],
+    limitations: [
+      'Expensive monomer',
+      'Complex synthesis',
+      'Limited availability',
+      'Non-biodegradable'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Non-toxic, biocompatible',
+      sustainability: 'Moderate - complex synthesis'
+    }
+  },
+  {
+    id: 'paa-smart',
+    name: 'Poly(acrylic acid) (PAA)',
+    category: 'smart',
+    formula: '(C₃H₄O₂)ₙ',
+    molarMass: '72.06 g/mol (repeat unit)',
+    structure: 'Linear polymer with carboxylic acid groups',
+    synthesis: 'Free radical polymerization of acrylic acid',
+    image2D: '/src/assets/polymers/paa-2d.png',
+    properties: {
+      meltingPoint: 'Decomposes above 106°C',
+      density: '1.1 g/cm³',
+      solubility: 'Highly water-soluble, pH-responsive'
+    },
+    uses: [
+      'pH-responsive drug delivery',
+      'Superabsorbent polymers',
+      'Hydrogels',
+      'Water treatment',
+      'Adhesives'
+    ],
+    advantages: [
+      'Strong pH-responsiveness',
+      'High water absorption',
+      'Biocompatible',
+      'Easy to functionalize'
+    ],
+    limitations: [
+      'Poor mechanical strength',
+      'Sensitive to ionic strength',
+      'Can swell excessively',
+      'Degrades at high pH'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Limited recyclability',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - petroleum-based'
+    }
+  },
+  {
+    id: 'pmaa-smart',
+    name: 'Poly(methacrylic acid) (PMAA)',
+    category: 'smart',
+    formula: '(C₄H₆O₂)ₙ',
+    molarMass: '86.09 g/mol (repeat unit)',
+    structure: 'Linear polymer with methyl and carboxylic acid groups',
+    synthesis: 'Free radical polymerization of methacrylic acid',
+    image2D: '/src/assets/polymers/pmaa-2d.png',
+    properties: {
+      meltingPoint: '228°C',
+      density: '1.2 g/cm³',
+      solubility: 'Water-soluble, pH-dependent'
+    },
+    uses: [
+      'pH-sensitive drug delivery',
+      'Controlled release systems',
+      'Coatings',
+      'Dental materials',
+      'Biosensors'
+    ],
+    advantages: [
+      'pH-responsive swelling',
+      'Good biocompatibility',
+      'Strong mucoadhesive properties',
+      'Stable in physiological conditions'
+    ],
+    limitations: [
+      'Brittle when dry',
+      'Limited mechanical strength',
+      'Requires crosslinking for stability',
+      'Slow response time'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - petroleum-based'
+    }
+  },
+  {
+    id: 'pdmaema',
+    name: 'Poly(2-(dimethylamino)ethyl methacrylate) (PDMAEMA)',
+    category: 'smart',
+    formula: '(C₈H₁₅NO₂)ₙ',
+    molarMass: '157.21 g/mol (repeat unit)',
+    structure: 'Linear polymer with tertiary amine groups',
+    synthesis: 'Reversible addition-fragmentation chain transfer (RAFT) or ATRP polymerization',
+    image2D: '/src/assets/polymers/pdmaema-2d.png',
+    properties: {
+      meltingPoint: 'UCST behavior',
+      density: '1.04 g/cm³',
+      solubility: 'pH and temperature responsive in water'
+    },
+    uses: [
+      'Gene delivery vectors',
+      'Antimicrobial coatings',
+      'pH-responsive drug delivery',
+      'Flocculants',
+      'Ion exchange materials'
+    ],
+    advantages: [
+      'Dual pH and temperature responsive',
+      'Antimicrobial properties',
+      'DNA complexation ability',
+      'Easy to modify'
+    ],
+    limitations: [
+      'Cytotoxic at high concentrations',
+      'Sensitive to ionic strength',
+      'Hydrolytic degradation',
+      'Limited stability'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Moderate toxicity',
+      sustainability: 'Low - complex synthesis'
+    }
+  },
+  {
+    id: 'azobenzene-polymer',
+    name: 'Azobenzene-based Polymers',
+    category: 'smart',
+    formula: 'Variable (contains -N=N- chromophore)',
+    molarMass: 'Variable',
+    structure: 'Polymer backbone with azobenzene side groups or in main chain',
+    synthesis: 'Polymerization of azobenzene-functionalized monomers or post-polymerization modification',
+    image2D: '/src/assets/polymers/azobenzene-polymer-2d.png',
+    properties: {
+      meltingPoint: 'Variable',
+      density: '1.1-1.3 g/cm³',
+      solubility: 'Depends on backbone, photoisomerizable'
+    },
+    uses: [
+      'Optical data storage',
+      'Photoresponsive surfaces',
+      'Molecular switches',
+      'Light-controlled drug release',
+      'Smart coatings'
+    ],
+    advantages: [
+      'Reversible photoisomerization',
+      'Fast response to light',
+      'Multiple switching cycles',
+      'Precise spatial control'
+    ],
+    limitations: [
+      'UV degradation over time',
+      'Limited thermal stability',
+      'Complex synthesis',
+      'Requires UV/visible light'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low to moderate toxicity',
+      sustainability: 'Low - complex synthesis'
+    }
+  },
+  {
+    id: 'spiropyran-polymer',
+    name: 'Spiropyran-containing Polymers',
+    category: 'smart',
+    formula: 'Variable (contains spiropyran unit)',
+    molarMass: 'Variable',
+    structure: 'Polymer with spiropyran photochromic moieties',
+    synthesis: 'Copolymerization with spiropyran-functionalized monomers',
+    image2D: '/src/assets/polymers/spiropyran-polymer-2d.png',
+    properties: {
+      meltingPoint: 'Variable',
+      density: '1.1-1.2 g/cm³',
+      solubility: 'Photochromic, changes with UV/visible light'
+    },
+    uses: [
+      'Photochromic lenses',
+      'Security inks',
+      'Sensors',
+      'Light-responsive drug delivery',
+      'Smart windows'
+    ],
+    advantages: [
+      'Dramatic color change',
+      'Reversible photoswitching',
+      'pH and metal ion sensing',
+      'Good fatigue resistance'
+    ],
+    limitations: [
+      'Degradation under prolonged UV',
+      'Expensive synthesis',
+      'Limited commercial availability',
+      'Slow thermal back-reaction'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex organic synthesis'
+    }
+  },
+  {
+    id: 'magnetite-hydrogel',
+    name: 'Magnetite (Fe₃O₄)-filled Hydrogels',
+    category: 'smart',
+    formula: 'Hydrogel matrix + Fe₃O₄ nanoparticles',
+    molarMass: 'Variable (composite)',
+    structure: 'Crosslinked hydrogel network with embedded magnetic nanoparticles',
+    synthesis: 'In situ precipitation of Fe₃O₄ in hydrogel or mixing preformed nanoparticles',
+    image2D: '/src/assets/polymers/magnetite-hydrogel-2d.png',
+    properties: {
+      density: '1.2-1.8 g/cm³',
+      solubility: 'Swells in water',
+      conductivity: 'Magnetically responsive'
+    },
+    uses: [
+      'Targeted drug delivery',
+      'Magnetic hyperthermia',
+      'Tissue engineering',
+      'Bioseparation',
+      'MRI contrast agents'
+    ],
+    advantages: [
+      'Remote magnetic control',
+      'Biocompatible',
+      'Multifunctional',
+      'Stimuli-responsive'
+    ],
+    limitations: [
+      'Particle aggregation',
+      'Complex preparation',
+      'Potential toxicity of free nanoparticles',
+      'Stability issues'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Partially biodegradable (hydrogel)',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity when properly encapsulated',
+      sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'magneto-elastomer',
+    name: 'Magneto-sensitive Elastomers',
+    category: 'smart',
+    formula: 'Elastomer matrix + magnetic particles',
+    molarMass: 'Variable (composite)',
+    structure: 'Elastomeric polymer with embedded magnetic particles',
+    synthesis: 'Mixing magnetic particles with liquid elastomer precursor followed by curing',
+    image2D: '/src/assets/polymers/magneto-elastomer-2d.png',
+    properties: {
+      density: '1.5-2.5 g/cm³',
+      tensileStrength: '1-10 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: [
+      'Vibration dampers',
+      'Soft actuators',
+      'Sensors',
+      'Seals and gaskets',
+      'Adaptive structures'
+    ],
+    advantages: [
+      'Tunable stiffness',
+      'Fast response to magnetic field',
+      'Reversible deformation',
+      'No external power needed'
+    ],
+    limitations: [
+      'Limited force generation',
+      'Particle sedimentation',
+      'Reduced mechanical properties',
+      'Requires strong magnetic field'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - composite material'
+    }
+  },
+  {
+    id: 'pu-smp',
+    name: 'Polyurethane-based Shape Memory Polymers',
+    category: 'smart',
+    formula: 'Variable (-NHCOO- linkages)',
+    molarMass: 'Variable',
+    structure: 'Segmented copolymer with hard and soft segments',
+    synthesis: 'Step-growth polymerization of diisocyanates with polyols',
+    image2D: '/src/assets/polymers/pu-smp-2d.png',
+    properties: {
+      meltingPoint: 'Transition temp 40-60°C (tunable)',
+      density: '1.0-1.2 g/cm³',
+      tensileStrength: '20-50 MPa'
+    },
+    uses: [
+      'Biomedical stents',
+      'Smart textiles',
+      'Self-deploying structures',
+      'Actuators',
+      'Aerospace applications'
+    ],
+    advantages: [
+      'Tunable transition temperature',
+      'High shape recovery',
+      'Biocompatible variants available',
+      'Good mechanical properties'
+    ],
+    limitations: [
+      'Degradation in moisture',
+      'Limited recovery stress',
+      'Isocyanate toxicity in synthesis',
+      'Complex processing'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Some variants biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity in final form',
+      sustainability: 'Moderate - petroleum-based'
+    }
+  },
+  {
+    id: 'pcl-smp',
+    name: 'Poly(ε-caprolactone) (PCL)-based SMPs',
+    category: 'smart',
+    formula: '(C₆H₁₀O₂)ₙ',
+    molarMass: '114.14 g/mol (repeat unit)',
+    structure: 'Semi-crystalline aliphatic polyester',
+    synthesis: 'Ring-opening polymerization of ε-caprolactone',
+    image2D: '/src/assets/polymers/pcl-smp-2d.png',
+    properties: {
+      meltingPoint: '58-60°C',
+      density: '1.145 g/cm³',
+      tensileStrength: '16-25 MPa'
+    },
+    uses: [
+      'Biodegradable sutures',
+      'Drug delivery devices',
+      'Tissue engineering scaffolds',
+      'Self-tightening sutures',
+      'Smart implants'
+    ],
+    advantages: [
+      'Biodegradable',
+      'Biocompatible',
+      'FDA approved for medical use',
+      'Predictable shape memory behavior'
+    ],
+    limitations: [
+      'Low transition temperature',
+      'Slow degradation rate',
+      'Hydrophobic',
+      'Limited mechanical strength'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (slow)',
+      recyclability: 'Limited recyclability',
+      toxicity: 'Non-toxic, biocompatible',
+      sustainability: 'Moderate - petroleum-based but biodegradable'
+    }
+  },
+  {
+    id: 'microcapsule-polymer',
+    name: 'Microcapsule-based Self-healing Polymers',
+    category: 'smart',
+    formula: 'Variable (composite)',
+    molarMass: 'Variable',
+    structure: 'Polymer matrix with embedded microcapsules containing healing agent',
+    synthesis: 'Dispersion of microcapsules in polymer matrix followed by curing',
+    image2D: '/src/assets/polymers/microcapsule-polymer-2d.png',
+    properties: {
+      density: '1.1-1.3 g/cm³',
+      tensileStrength: 'Similar to base polymer',
+      solubility: 'Depends on matrix'
+    },
+    uses: [
+      'Protective coatings',
+      'Structural composites',
+      'Electronics encapsulation',
+      'Automotive parts',
+      'Construction materials'
+    ],
+    advantages: [
+      'Autonomous healing',
+      'Single-time healing effective',
+      'Compatible with various matrices',
+      'Proven technology'
+    ],
+    limitations: [
+      'One-time healing only',
+      'Microcapsule preparation complexity',
+      'Reduced mechanical properties',
+      'Limited shelf life'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Depends on matrix and healing agent',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Depends on healing agent',
+      sustainability: 'Moderate - extends material life'
+    }
+  },
+  {
+    id: 'dynamic-covalent-polymer',
+    name: 'Dynamic Covalent Bond Polymers',
+    category: 'smart',
+    formula: 'Variable (contains reversible bonds)',
+    molarMass: 'Variable',
+    structure: 'Polymer network with dynamic covalent bonds (disulfide, imine, boronic ester)',
+    synthesis: 'Polymerization with monomers containing reversible covalent linkages',
+    image2D: '/src/assets/polymers/dynamic-covalent-2d.png',
+    properties: {
+      meltingPoint: 'Variable',
+      density: '1.0-1.3 g/cm³',
+      solubility: 'Variable, can be reprocessable'
+    },
+    uses: [
+      'Recyclable thermosets',
+      'Self-healing materials',
+      'Adaptive networks',
+      'Shape memory materials',
+      'Vitrimers'
+    ],
+    advantages: [
+      'Multiple healing cycles',
+      'Reprocessable',
+      'Tunable properties',
+      'Intrinsic healing mechanism'
+    ],
+    limitations: [
+      'Requires specific conditions (heat, pH, catalyst)',
+      'Slower healing than supramolecular',
+      'Complex design',
+      'Potential stability issues'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Variable',
+      recyclability: 'Highly recyclable',
+      toxicity: 'Depends on specific chemistry',
+      sustainability: 'High - reprocessable'
+    }
+  },
+  {
+    id: 'peptide-hydrogel',
+    name: 'Peptide-crosslinked Hydrogels',
+    category: 'smart',
+    formula: 'Variable (polymer + peptide crosslinks)',
+    molarMass: 'Variable',
+    structure: 'Hydrogel network crosslinked by enzyme-cleavable peptide sequences',
+    synthesis: 'Crosslinking hydrophilic polymers with bifunctional peptides',
+    image2D: '/src/assets/polymers/peptide-hydrogel-2d.png',
+    properties: {
+      density: '1.0-1.1 g/cm³',
+      solubility: 'Swells in aqueous media',
+      tensileStrength: '0.1-10 kPa'
+    },
+    uses: [
+      'Tissue engineering',
+      'Cell culture matrices',
+      'Controlled drug release',
+      '3D bioprinting',
+      'Wound healing'
+    ],
+    advantages: [
+      'Biocompatible',
+      'Biodegradable',
+      'Cell-responsive degradation',
+      'Biomimetic properties'
+    ],
+    limitations: [
+      'Expensive peptide synthesis',
+      'Low mechanical strength',
+      'Batch-to-batch variability',
+      'Rapid degradation in vivo'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Highly biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Non-toxic, biocompatible',
+      sustainability: 'High - biological components'
+    }
+  },
+  {
+    id: 'dextranase-polymer',
+    name: 'Dextranase-sensitive Polymers',
+    category: 'smart',
+    formula: '(C₆H₁₀O₅)ₙ + modifications',
+    molarMass: 'Variable (10,000-2,000,000 Da)',
+    structure: 'Dextran backbone with enzyme-cleavable α-1,6-glycosidic bonds',
+    synthesis: 'Bacterial fermentation followed by chemical modification',
+    image2D: '/src/assets/polymers/dextranase-polymer-2d.png',
+    properties: {
+      density: '1.5 g/cm³',
+      solubility: 'Highly water-soluble',
+      meltingPoint: 'Decomposes before melting'
+    },
+    uses: [
+      'Colon-specific drug delivery',
+      'Prodrug systems',
+      'Targeted cancer therapy',
+      'Blood plasma expanders',
+      'Microbiome-responsive systems'
+    ],
+    advantages: [
+      'Biocompatible',
+      'Biodegradable',
+      'Site-specific degradation',
+      'Natural polymer'
+    ],
+    limitations: [
+      'Variable molecular weight',
+      'Limited mechanical strength',
+      'Rapid clearance',
+      'Immunogenicity possible'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Highly biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biologically derived'
+    }
+  },
+  {
+    id: 'disulfide-polymer',
+    name: 'Disulfide-containing Polymers',
+    category: 'smart',
+    formula: 'Variable (contains -S-S- bonds)',
+    molarMass: 'Variable',
+    structure: 'Polymer network with disulfide crosslinks or in backbone',
+    synthesis: 'Oxidation of thiol-containing polymers or polymerization of disulfide monomers',
+    image2D: '/src/assets/polymers/disulfide-polymer-2d.png',
+    properties: {
+      density: '1.1-1.3 g/cm³',
+      solubility: 'Variable, redox-responsive',
+      tensileStrength: 'Variable'
+    },
+    uses: [
+      'Redox-responsive drug delivery',
+      'Intracellular drug release',
+      'Self-healing materials',
+      'Protein conjugates',
+      'Gene delivery'
+    ],
+    advantages: [
+      'Cleavable in reducing environment',
+      'Reversible crosslinking',
+      'Biocompatible',
+      'Multiple healing cycles'
+    ],
+    limitations: [
+      'Oxidation sensitivity',
+      'Slow healing kinetics',
+      'Requires specific conditions',
+      'Stability issues in air'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Variable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate'
+    }
+  },
+  {
+    id: 'mechanophore-polymer',
+    name: 'Mechanophore-incorporated Polymers',
+    category: 'smart',
+    formula: 'Variable (contains mechanophore units)',
+    molarMass: 'Variable',
+    structure: 'Polymer with mechanically sensitive molecular units that change upon stress',
+    synthesis: 'Incorporation of mechanophores (spiropyran, cyclobutane, etc.) into polymer backbone',
+    image2D: '/src/assets/polymers/mechanophore-polymer-2d.png',
+    properties: {
+      density: '1.0-1.3 g/cm³',
+      tensileStrength: 'Variable',
+      solubility: 'Depends on polymer matrix'
+    },
+    uses: [
+      'Stress sensing materials',
+      'Damage detection',
+      'Self-reporting materials',
+      'Force-responsive catalysts',
+      'Smart coatings'
+    ],
+    advantages: [
+      'Real-time damage detection',
+      'Visual stress indication',
+      'Autonomous sensing',
+      'Multiple detection mechanisms'
+    ],
+    limitations: [
+      'Complex synthesis',
+      'Expensive mechanophores',
+      'Irreversible in many cases',
+      'Limited commercial availability'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Depends on polymer backbone',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Generally low toxicity',
+      sustainability: 'Low - complex synthesis'
+    }
   }
 ];
