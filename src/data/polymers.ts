@@ -4079,5 +4079,80 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Low toxicity',
       sustainability: 'Moderate - extremely long service life but not recyclable'
     }
+  },
+  {
+    id: 'pha',
+    name: 'Polyhydroxyalkanoate (PHA)',
+    category: 'environmental',
+    formula: '[-O-CHR-CH₂-CO-]ₙ',
+    molarMass: '90-150 g/mol (monomer)',
+    structure: 'Linear polyester with varying alkyl side chains',
+    synthesis: 'Bacterial fermentation of sugars or lipids',
+    image2D: '/src/assets/polymers/pha-2d.png',
+    properties: {
+      meltingPoint: '50-180°C (varies)',
+      density: '1.18-1.26 g/cm³',
+      tensileStrength: '20-40 MPa',
+      solubility: 'Soluble in chloroform'
+    },
+    uses: ['Biodegradable packaging', 'Medical implants', 'Agriculture films', 'Food containers', '3D printing'],
+    advantages: ['Fully biodegradable', 'Bio-based production', 'Biocompatible', 'Compostable', 'Non-toxic'],
+    limitations: ['Higher cost', 'Processing challenges', 'Brittleness', 'Limited availability'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable in soil and marine environments',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - renewable feedstock and complete biodegradation'
+    }
+  },
+  {
+    id: 'pbs',
+    name: 'Polybutylene Succinate (PBS)',
+    category: 'environmental',
+    formula: '[-O-(CH₂)₄-O-CO-(CH₂)₂-CO-]ₙ',
+    molarMass: '~200 g/mol (monomer)',
+    structure: 'Linear aliphatic polyester',
+    synthesis: 'Polycondensation of succinic acid and 1,4-butanediol',
+    image2D: '/src/assets/polymers/pbs-2d.png',
+    properties: {
+      meltingPoint: '90-120°C',
+      density: '1.25-1.27 g/cm³',
+      tensileStrength: '30-50 MPa',
+      solubility: 'Soluble in chloroform, limited in water'
+    },
+    uses: ['Biodegradable films', 'Mulch films', 'Compost bags', 'Food packaging', 'Agricultural applications'],
+    advantages: ['Biodegradable', 'Good mechanical properties', 'Processable like PE', 'Bio-based options'],
+    limitations: ['Moderate cost', 'Lower thermal resistance', 'Hydrolytic degradation'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable in soil and compost',
+      recyclability: 'Compostable and recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Good - can be bio-based'
+    }
+  },
+  {
+    id: 'phb',
+    name: 'Polyhydroxybutyrate (PHB)',
+    category: 'environmental',
+    formula: '[-O-CH(CH₃)-CH₂-CO-]ₙ',
+    molarMass: '86 g/mol (monomer)',
+    structure: 'Linear polyester',
+    synthesis: 'Bacterial fermentation',
+    image2D: '/src/assets/polymers/phb-2d.png',
+    properties: {
+      meltingPoint: '170-180°C',
+      density: '1.18-1.26 g/cm³',
+      tensileStrength: '24-40 MPa',
+      solubility: 'Soluble in chloroform'
+    },
+    uses: ['Medical sutures', 'Drug delivery', 'Packaging films', 'Agricultural films', 'Disposable items'],
+    advantages: ['100% biodegradable', 'Biocompatible', 'Renewable source', 'Non-toxic'],
+    limitations: ['Brittle', 'Expensive', 'Narrow processing window', 'Thermal instability'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - renewable and biodegradable'
+    }
   }
 ];
