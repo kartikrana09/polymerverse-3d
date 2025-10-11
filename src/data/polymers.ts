@@ -4154,5 +4154,430 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Non-toxic',
       sustainability: 'Excellent - renewable and biodegradable'
     }
+  },
+  {
+    id: 'phbv',
+    name: 'Polyhydroxybutyrate-co-valerate (PHBV)',
+    category: 'environmental',
+    formula: '[-O-CH(CH₃)-CH₂-CO-]ₙ[-O-CH(C₂H₅)-CH₂-CO-]ₘ',
+    molarMass: '86-100 g/mol (monomer)',
+    structure: 'Copolymer of hydroxybutyrate and hydroxyvalerate',
+    synthesis: 'Bacterial fermentation with mixed carbon sources',
+    image2D: '/src/assets/polymers/phbv-2d.png',
+    properties: {
+      meltingPoint: '137-170°C',
+      density: '1.23-1.25 g/cm³',
+      tensileStrength: '20-35 MPa',
+      solubility: 'Soluble in chloroform and other organic solvents'
+    },
+    uses: ['Biodegradable films', 'Food packaging', 'Medical devices', 'Agricultural applications', 'Compostable bags'],
+    advantages: ['More flexible than PHB', 'Fully biodegradable', 'Biocompatible', 'Adjustable properties', 'Marine biodegradable'],
+    limitations: ['Expensive production', 'Limited heat resistance', 'Processing challenges', 'Variable properties'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable in soil, compost, and marine environments',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - bio-based and completely biodegradable'
+    }
+  },
+  {
+    id: 'pbat',
+    name: 'Polybutylene Adipate Terephthalate (PBAT)',
+    category: 'environmental',
+    formula: '[-O-(CH₂)₄-O-CO-R-CO-]ₙ',
+    molarMass: '~250 g/mol (repeat unit)',
+    structure: 'Aliphatic-aromatic copolyester',
+    synthesis: 'Polycondensation of adipic acid, terephthalic acid, and 1,4-butanediol',
+    image2D: '/src/assets/polymers/pbat-2d.png',
+    properties: {
+      meltingPoint: '110-120°C',
+      density: '1.25-1.27 g/cm³',
+      tensileStrength: '15-35 MPa',
+      solubility: 'Soluble in chloroform'
+    },
+    uses: ['Compostable bags', 'Mulch films', 'Food packaging', 'Agricultural films', 'Flexible packaging'],
+    advantages: ['Good flexibility', 'Biodegradable', 'Easy to process', 'Good tear resistance', 'Compatible with PLA blends'],
+    limitations: ['Moderate cost', 'Lower strength than conventional plastics', 'Requires industrial composting'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable in industrial composting conditions',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Good - biodegradable but partly petroleum-based'
+    }
+  },
+  {
+    id: 'pef',
+    name: 'Polyethylene Furanoate (PEF)',
+    category: 'environmental',
+    formula: '[-O-CH₂-CH₂-O-CO-C₄H₂O-CO-]ₙ',
+    molarMass: '~194 g/mol (repeat unit)',
+    structure: 'Aromatic polyester with furan rings',
+    synthesis: 'Polycondensation of furandicarboxylic acid (FDCA) and ethylene glycol',
+    image2D: '/src/assets/polymers/pef-2d.png',
+    properties: {
+      meltingPoint: '210-220°C',
+      density: '1.45 g/cm³',
+      tensileStrength: '50-80 MPa',
+      solubility: 'Low solubility in common solvents'
+    },
+    uses: ['Bottles and containers', 'Food packaging', 'Textiles', 'Films', 'Automotive parts'],
+    advantages: ['100% bio-based', 'Better barrier properties than PET', 'Recyclable', 'Lower carbon footprint', 'Good mechanical properties'],
+    limitations: ['Still in commercialization', 'Higher cost than PET', 'Limited availability', 'New recycling infrastructure needed'],
+    environmentalImpact: {
+      biodegradability: 'Not readily biodegradable',
+      recyclability: 'Fully recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - 100% bio-based from renewable sources'
+    }
+  },
+  {
+    id: 'ppc',
+    name: 'Polypropylene Carbonate (PPC)',
+    category: 'environmental',
+    formula: '[-O-CH(CH₃)-CH₂-O-CO-]ₙ',
+    molarMass: '102 g/mol (repeat unit)',
+    structure: 'Aliphatic polycarbonate',
+    synthesis: 'Copolymerization of CO₂ and propylene oxide',
+    image2D: '/src/assets/polymers/ppc-2d.png',
+    properties: {
+      meltingPoint: 'Amorphous - Tg 35-40°C',
+      density: '1.3 g/cm³',
+      tensileStrength: '20-30 MPa',
+      solubility: 'Soluble in chloroform, THF'
+    },
+    uses: ['Packaging films', 'Barrier coatings', 'Adhesives', 'Biodegradable plastics', 'Oxygen barrier layers'],
+    advantages: ['Uses CO₂ as feedstock', 'Biodegradable', 'Good oxygen barrier', 'Non-toxic', 'Carbon-negative production'],
+    limitations: ['Low thermal stability', 'Limited mechanical properties', 'Moisture sensitivity', 'Processing challenges'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - CO₂ utilization and biodegradability'
+    }
+  },
+  {
+    id: 'tps',
+    name: 'Thermoplastic Starch (TPS)',
+    category: 'environmental',
+    formula: '(C₆H₁₀O₅)ₙ',
+    molarMass: '~162 g/mol (monomer)',
+    structure: 'Plasticized starch with disrupted crystallinity',
+    synthesis: 'Thermal processing of starch with plasticizers (glycerol, water)',
+    image2D: '/src/assets/polymers/tps-2d.png',
+    properties: {
+      meltingPoint: '110-180°C (process temperature)',
+      density: '1.3-1.5 g/cm³',
+      tensileStrength: '5-25 MPa',
+      solubility: 'Water-sensitive'
+    },
+    uses: ['Loose-fill packaging', 'Disposable cutlery', 'Food packaging', 'Agricultural films', 'Compostable bags'],
+    advantages: ['Very low cost', 'Abundant renewable source', 'Fully biodegradable', 'Compostable', 'Non-toxic'],
+    limitations: ['Poor water resistance', 'Mechanical properties vary', 'Aging sensitivity', 'Limited thermal stability'],
+    environmentalImpact: {
+      biodegradability: 'Fully and rapidly biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic and edible',
+      sustainability: 'Excellent - abundant, renewable, and completely biodegradable'
+    }
+  },
+  {
+    id: 'bio-pe',
+    name: 'Bio-based Polyethylene (Bio-PE)',
+    category: 'environmental',
+    formula: '(CH₂-CH₂)ₙ',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Linear polyethylene identical to conventional PE',
+    synthesis: 'Polymerization of ethylene derived from bioethanol (sugarcane)',
+    image2D: '/src/assets/polymers/bio-pe-2d.png',
+    properties: {
+      meltingPoint: '120-130°C (HDPE)',
+      density: '0.91-0.97 g/cm³',
+      tensileStrength: '20-40 MPa',
+      solubility: 'Insoluble in most solvents at room temperature'
+    },
+    uses: ['Bottles and containers', 'Shopping bags', 'Packaging films', 'Cosmetic packaging', 'Toys'],
+    advantages: ['Drop-in replacement for PE', 'Renewable carbon source', 'Recyclable in existing streams', 'Identical properties to PE', 'Lower carbon footprint'],
+    limitations: ['Not biodegradable', 'Same disposal issues as conventional PE', 'Higher cost', 'Feedstock competition with food'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Fully recyclable with conventional PE',
+      toxicity: 'Non-toxic',
+      sustainability: 'Good - renewable source but not biodegradable'
+    }
+  },
+  {
+    id: 'bio-pet',
+    name: 'Bio-based PET (Bio-PET)',
+    category: 'environmental',
+    formula: '[-O-CH₂-CH₂-O-CO-C₆H₄-CO-]ₙ',
+    molarMass: '192 g/mol (repeat unit)',
+    structure: 'Aromatic polyester (partially or fully bio-based)',
+    synthesis: 'Polycondensation using bio-based ethylene glycol and/or bio-based terephthalic acid',
+    image2D: '/src/assets/polymers/bio-pet-2d.png',
+    properties: {
+      meltingPoint: '250-260°C',
+      density: '1.38-1.40 g/cm³',
+      tensileStrength: '50-70 MPa',
+      solubility: 'Insoluble in most common solvents'
+    },
+    uses: ['Beverage bottles', 'Food containers', 'Textile fibers', 'Packaging films', 'Engineering applications'],
+    advantages: ['Partially renewable', 'Same properties as conventional PET', 'Recyclable in existing systems', 'Reduced carbon footprint', 'Drop-in replacement'],
+    limitations: ['Not fully bio-based yet', 'Not biodegradable', 'Higher cost than conventional PET', 'Still fossil-fuel dependent (TA)'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Fully recyclable with conventional PET',
+      toxicity: 'Non-toxic',
+      sustainability: 'Good - partially renewable (30-100% bio-content possible)'
+    }
+  },
+  {
+    id: 'ptt',
+    name: 'Polytrimethylene Terephthalate (PTT)',
+    category: 'environmental',
+    formula: '[-O-(CH₂)₃-O-CO-C₆H₄-CO-]ₙ',
+    molarMass: '206 g/mol (repeat unit)',
+    structure: 'Aromatic polyester with three-carbon diol',
+    synthesis: 'Polycondensation of terephthalic acid and 1,3-propanediol (bio-based)',
+    image2D: '/src/assets/polymers/ptt-2d.png',
+    properties: {
+      meltingPoint: '227-230°C',
+      density: '1.33-1.35 g/cm³',
+      tensileStrength: '50-70 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['Carpet fibers', 'Apparel textiles', 'Automotive interiors', 'Films', 'Engineering plastics'],
+    advantages: ['Excellent elastic recovery', 'Soft hand feel', 'Partially bio-based (37%)', 'Good chemical resistance', 'Recyclable'],
+    limitations: ['Higher cost than PET', 'Not biodegradable', 'Limited commercial availability', 'Processing equipment similar to PET needed'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Good - partially bio-based with lower environmental impact than PET'
+    }
+  },
+  {
+    id: 'lignin-polymer',
+    name: 'Lignin-based Polymer',
+    category: 'environmental',
+    formula: 'Complex phenolic polymer',
+    molarMass: '1,000-20,000 g/mol',
+    structure: 'Complex three-dimensional phenolic biopolymer',
+    synthesis: 'Extracted from wood and plant biomass, modified chemically',
+    image2D: '/src/assets/polymers/lignin-2d.png',
+    properties: {
+      meltingPoint: 'No definite melting point (softens 140-200°C)',
+      density: '1.3-1.4 g/cm³',
+      tensileStrength: 'Varies widely depending on formulation',
+      solubility: 'Soluble in alkaline solutions and some organic solvents'
+    },
+    uses: ['Biocomposites', 'Adhesives', 'Carbon fiber precursor', 'Dispersants', 'Antioxidants'],
+    advantages: ['Abundant waste product', 'Renewable', 'UV-protective', 'Antioxidant properties', 'Low cost'],
+    limitations: ['Variable properties', 'Complex structure', 'Difficult to process', 'Color limitations (brown)', 'Heterogeneous'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable but slow',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - waste valorization from pulp industry'
+    }
+  },
+  {
+    id: 'bacterial-cellulose',
+    name: 'Bacterial Cellulose',
+    category: 'environmental',
+    formula: '(C₆H₁₀O₅)ₙ',
+    molarMass: '162.14 g/mol (monomer)',
+    structure: 'Ultra-fine cellulose nanofiber network',
+    synthesis: 'Biosynthesis by Acetobacter bacteria in culture medium',
+    image2D: '/src/assets/polymers/bacterial-cellulose-2d.png',
+    properties: {
+      meltingPoint: 'Decomposes before melting (~260°C)',
+      density: '1.5 g/cm³',
+      tensileStrength: '200-300 MPa (dry)',
+      solubility: 'Insoluble in water and most solvents'
+    },
+    uses: ['Wound dressings', 'Artificial blood vessels', 'Speaker diaphragms', 'Food products (nata de coco)', 'Paper and textiles'],
+    advantages: ['High purity', 'Excellent mechanical properties', 'Biocompatible', 'High water holding capacity', 'Moldable when wet'],
+    limitations: ['Expensive production', 'Slow growth rate', 'Limited scalability', 'Requires sterile conditions'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - renewable and biodegradable'
+    }
+  },
+  {
+    id: 'chitin-polymer',
+    name: 'Chitin',
+    category: 'environmental',
+    formula: '(C₈H₁₃NO₅)ₙ',
+    molarMass: '203.19 g/mol (repeat unit)',
+    structure: 'Linear polysaccharide with N-acetylglucosamine units',
+    synthesis: 'Extracted from crustacean shells, insect exoskeletons, and fungi',
+    image2D: '/src/assets/polymers/chitin-2d.png',
+    properties: {
+      meltingPoint: 'Decomposes before melting',
+      density: '1.4-1.5 g/cm³',
+      tensileStrength: '40-70 MPa',
+      solubility: 'Insoluble in water and most organic solvents'
+    },
+    uses: ['Wound healing materials', 'Surgical sutures', 'Agriculture', 'Water treatment', 'Food industry'],
+    advantages: ['Abundant natural resource', 'Biodegradable', 'Biocompatible', 'Antimicrobial', 'Non-toxic'],
+    limitations: ['Poor solubility', 'Difficult to process', 'Variable quality', 'Extraction challenges'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - waste valorization from seafood industry'
+    }
+  },
+  {
+    id: 'pcl-biomed',
+    name: 'Polycaprolactone (PCL) - Biomedical',
+    category: 'environmental',
+    formula: '[-O-(CH₂)₅-CO-]ₙ',
+    molarMass: '114.14 g/mol (repeat unit)',
+    structure: 'Semi-crystalline aliphatic polyester',
+    synthesis: 'Ring-opening polymerization of ε-caprolactone',
+    image2D: '/src/assets/polymers/pcl-biomed-2d.png',
+    properties: {
+      meltingPoint: '58-60°C',
+      density: '1.145 g/cm³',
+      tensileStrength: '16-21 MPa',
+      solubility: 'Soluble in chloroform, dichloromethane, and other organic solvents'
+    },
+    uses: ['Biodegradable sutures', 'Drug delivery systems', 'Tissue engineering scaffolds', '3D printing', 'Compostable packaging'],
+    advantages: ['Biodegradable', 'Biocompatible', 'Easy to process', 'Good blend compatibility', 'Low melting point'],
+    limitations: ['Low mechanical strength', 'Slow degradation rate', 'Hydrophobic', 'Limited thermal stability'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (6 months - 2 years)',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic and FDA approved',
+      sustainability: 'Good - biodegradable but currently petroleum-based'
+    }
+  },
+  {
+    id: 'starch-polymer',
+    name: 'Starch-based Bioplastic',
+    category: 'environmental',
+    formula: '(C₆H₁₀O₅)ₙ',
+    molarMass: '162.14 g/mol (monomer)',
+    structure: 'Amylose and amylopectin blend with plasticizers',
+    synthesis: 'Modification of natural starch with additives and processing',
+    image2D: '/src/assets/polymers/starch-bioplastic-2d.png',
+    properties: {
+      meltingPoint: 'Processing temperature 90-180°C',
+      density: '1.2-1.4 g/cm³',
+      tensileStrength: '10-40 MPa (depends on formulation)',
+      solubility: 'Water-sensitive'
+    },
+    uses: ['Food packaging', 'Disposable utensils', 'Packing peanuts', 'Agricultural films', 'Bags and containers'],
+    advantages: ['Very low cost', 'Renewable and abundant', 'Fully compostable', 'Food-safe', 'Good processability'],
+    limitations: ['Moisture sensitivity', 'Limited barrier properties', 'Variable mechanical properties', 'Short shelf life in humid conditions'],
+    environmentalImpact: {
+      biodegradability: 'Rapidly biodegradable',
+      recyclability: 'Fully compostable',
+      toxicity: 'Non-toxic and edible',
+      sustainability: 'Excellent - renewable, abundant, and fully biodegradable'
+    }
+  },
+  {
+    id: 'pha-phb-blend',
+    name: 'PHA-PHB Blend',
+    category: 'environmental',
+    formula: 'Blend of various PHAs',
+    molarMass: 'Variable',
+    structure: 'Blend of different polyhydroxyalkanoates',
+    synthesis: 'Bacterial co-fermentation or blending of different PHAs',
+    image2D: '/src/assets/polymers/pha-phb-2d.png',
+    properties: {
+      meltingPoint: '120-170°C',
+      density: '1.20-1.25 g/cm³',
+      tensileStrength: '20-40 MPa',
+      solubility: 'Soluble in chloroform'
+    },
+    uses: ['Flexible packaging', 'Agricultural films', 'Medical applications', 'Compostable products', 'Marine-safe applications'],
+    advantages: ['Tunable properties', 'Fully biodegradable', 'Marine degradable', 'Bio-based', 'Balanced flexibility and strength'],
+    limitations: ['Higher cost', 'Processing challenges', 'Limited availability', 'Property variations'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable in all environments',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - renewable and completely biodegradable'
+    }
+  },
+  {
+    id: 'bio-nylon',
+    name: 'Bio-based Nylon (PA 11/PA 10,10)',
+    category: 'environmental',
+    formula: 'Variable based on type',
+    molarMass: 'Variable',
+    structure: 'Polyamide from renewable sources',
+    synthesis: 'Polymerization of bio-based monomers from castor oil or other plant sources',
+    image2D: '/src/assets/polymers/bio-nylon-2d.png',
+    properties: {
+      meltingPoint: '180-190°C (PA 11)',
+      density: '1.02-1.05 g/cm³',
+      tensileStrength: '50-60 MPa',
+      solubility: 'Insoluble in common solvents'
+    },
+    uses: ['Automotive parts', 'Sports equipment', 'Textiles', 'Electrical connectors', '3D printing'],
+    advantages: ['Partially/fully bio-based', 'Good mechanical properties', 'Chemical resistance', 'Lower moisture absorption than PA 6', 'Recyclable'],
+    limitations: ['Higher cost', 'Not biodegradable', 'Limited suppliers', 'Processing similar to conventional nylon'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Good - renewable source with reduced carbon footprint'
+    }
+  },
+  {
+    id: 'cnc',
+    name: 'Cellulose Nanocrystals (CNC)',
+    category: 'environmental',
+    formula: '(C₆H₁₀O₅)ₙ',
+    molarMass: '162.14 g/mol (monomer)',
+    structure: 'Crystalline cellulose nanoparticles (rod-like)',
+    synthesis: 'Acid hydrolysis of cellulose fibers',
+    image2D: '/src/assets/polymers/cnc-2d.png',
+    properties: {
+      meltingPoint: 'Decomposes before melting',
+      density: '1.5-1.6 g/cm³',
+      tensileStrength: '7-10 GPa (theoretical)',
+      solubility: 'Forms stable colloidal suspensions in water'
+    },
+    uses: ['Polymer nanocomposites', 'Barrier films', 'Rheology modifiers', 'Biomedical applications', 'Packaging reinforcement'],
+    advantages: ['Exceptional strength', 'Renewable', 'Biodegradable', 'Low density', 'High surface area'],
+    limitations: ['Expensive production', 'Moisture sensitivity', 'Aggregation issues', 'Scale-up challenges'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - derived from abundant renewable resources'
+    }
+  },
+  {
+    id: 'mycelium',
+    name: 'Mycelium-based Composite',
+    category: 'environmental',
+    formula: 'Chitin/chitosan + cellulose + proteins',
+    molarMass: 'Complex mixture',
+    structure: 'Natural composite of fungal biomass',
+    synthesis: 'Growth of mycelium on agricultural waste substrate',
+    image2D: '/src/assets/polymers/mycelium-2d.png',
+    properties: {
+      meltingPoint: 'Not applicable (decomposes)',
+      density: '0.05-0.5 g/cm³',
+      tensileStrength: '0.5-2 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Packaging materials', 'Building insulation', 'Acoustic panels', 'Leather alternatives', 'Furniture'],
+    advantages: ['Completely renewable', 'Uses agricultural waste', 'Biodegradable', 'Low energy production', 'Home compostable'],
+    limitations: ['Low mechanical strength', 'Moisture sensitive', 'Slow growth (1-2 weeks)', 'Variable properties', 'Limited scalability'],
+    environmentalImpact: {
+      biodegradability: 'Fully and rapidly biodegradable',
+      recyclability: 'Home compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - carbon-negative, uses waste, fully biodegradable'
+    }
   }
 ];
