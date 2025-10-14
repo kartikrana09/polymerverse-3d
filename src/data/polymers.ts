@@ -5080,5 +5080,355 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Low toxicity (dopants may be toxic)',
       sustainability: 'Low - unstable and impractical for most applications'
     }
+  },
+  {
+    id: 'polyacetylene',
+    name: 'Polyacetylene',
+    category: 'optoelectronic',
+    formula: '(C₂H₂)ₙ',
+    molarMass: '26.04 g/mol (repeat unit)',
+    structure: 'Conjugated linear polymer with alternating single and double bonds',
+    synthesis: 'Ziegler-Natta polymerization of acetylene gas, ring-opening metathesis polymerization',
+    image2D: '/src/assets/polymers/polyacetylene-2d.png',
+    properties: {
+      conductivity: '10⁻⁵ S/cm (undoped), up to 10⁵ S/cm (doped)',
+      density: '1.16 g/cm³',
+      tensileStrength: 'Very poor mechanical properties',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['Conductive films', 'Battery electrodes', 'Antistatic materials', 'Research on organic conductors', 'Historical significance in conducting polymers'],
+    advantages: ['First discovered conducting polymer (Nobel Prize 2000)', 'Very high conductivity when doped', 'Lightweight', 'Tunable electronic properties'],
+    limitations: ['Extremely air sensitive', 'Degrades rapidly', 'Poor processability', 'Brittle', 'Difficult to handle'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - unstable and impractical for widespread use'
+    }
+  },
+  {
+    id: 'polythiophene',
+    name: 'Polythiophene (PT)',
+    category: 'optoelectronic',
+    formula: '(C₄H₂S)ₙ',
+    molarMass: '84.14 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with thiophene rings',
+    synthesis: 'Chemical oxidation, electropolymerization, or cross-coupling reactions of thiophene monomers',
+    image2D: '/src/assets/polymers/polythiophene-2d.png',
+    properties: {
+      conductivity: '10-1000 S/cm (doped)',
+      density: '1.5 g/cm³',
+      solubility: 'Insoluble (substituted versions are soluble)',
+      tensileStrength: 'Moderate mechanical properties'
+    },
+    uses: ['Organic solar cells', 'OLEDs', 'Transistors', 'Sensors', 'Electrochromic devices', 'Antistatic coatings'],
+    advantages: ['Good stability', 'High conductivity', 'Excellent processability (when substituted)', 'Tunable bandgap', 'Good charge transport'],
+    limitations: ['Oxidative degradation', 'Limited solubility (unsubstituted)', 'Lower hole mobility than some alternatives'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - requires chemical synthesis'
+    }
+  },
+  {
+    id: 'polypyrrole-opto',
+    name: 'Polypyrrole (PPy)',
+    category: 'optoelectronic',
+    formula: '(C₄H₃N)ₙ',
+    molarMass: '67.09 g/mol (repeat unit)',
+    structure: 'Conjugated heterocyclic polymer with nitrogen',
+    synthesis: 'Chemical or electrochemical oxidation of pyrrole',
+    image2D: '/src/assets/polymers/polypyrrole-2d.png',
+    properties: {
+      conductivity: '10-100 S/cm (doped)',
+      density: '1.5 g/cm³',
+      solubility: 'Insoluble in most solvents',
+      tensileStrength: 'Moderate'
+    },
+    uses: ['Biosensors', 'Actuators', 'Supercapacitors', 'Neural interfaces', 'Antistatic coatings', 'EMI shielding'],
+    advantages: ['Biocompatible', 'Easy synthesis', 'Good stability in air', 'High capacitance', 'Tunable properties'],
+    limitations: ['Brittle when dried', 'Limited processability', 'Conductivity degrades over time', 'Insoluble'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity, biocompatible',
+      sustainability: 'Moderate - requires chemical synthesis'
+    }
+  },
+  {
+    id: 'polyaniline-opto',
+    name: 'Polyaniline (PANI)',
+    category: 'optoelectronic',
+    formula: '(C₆H₅NH)ₙ',
+    molarMass: '93.13 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with alternating single and double bonds, nitrogen in backbone',
+    synthesis: 'Oxidative polymerization of aniline in acidic medium',
+    image2D: '/src/assets/polymers/polyaniline-2d.png',
+    properties: {
+      conductivity: '1-100 S/cm (doped)',
+      density: '1.3-1.4 g/cm³',
+      solubility: 'Insoluble in water, soluble in organic solvents when doped',
+      tensileStrength: 'Moderate'
+    },
+    uses: ['Rechargeable batteries', 'Corrosion protection', 'Sensors', 'EMI shielding', 'Electrochromic displays', 'Supercapacitors'],
+    advantages: ['High conductivity', 'Easy synthesis', 'Good environmental stability', 'Tunable through doping', 'Low cost'],
+    limitations: ['Limited processability', 'Brittle', 'Conductivity decreases over time', 'Requires doping for conductivity'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - requires chemical synthesis'
+    }
+  },
+  {
+    id: 'ppv',
+    name: 'Poly(p-phenylene vinylene) (PPV)',
+    category: 'optoelectronic',
+    formula: '(C₈H₆)ₙ',
+    molarMass: '104.15 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with alternating phenylene and vinylene units',
+    synthesis: 'Precursor route (sulfonium polyelectrolyte), Wittig polycondensation, Heck coupling',
+    image2D: '/src/assets/polymers/ppv-2d.png',
+    properties: {
+      conductivity: '10⁻⁸ - 10⁻⁵ S/cm (undoped)',
+      density: '1.1-1.2 g/cm³',
+      solubility: 'Insoluble (substituted versions are soluble)',
+      tensileStrength: 'Moderate'
+    },
+    uses: ['OLEDs', 'Polymer LEDs', 'Photovoltaics', 'Light-emitting displays', 'Optical sensors'],
+    advantages: ['High luminescence efficiency', 'Tunable emission color', 'Good film-forming properties', 'Stable electroluminescence'],
+    limitations: ['Photo-oxidative degradation', 'Limited solubility', 'Requires encapsulation', 'Lower efficiency than modern alternatives'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex synthesis, limited lifetime'
+    }
+  },
+  {
+    id: 'polyfluorene',
+    name: 'Polyfluorene (PF)',
+    category: 'optoelectronic',
+    formula: '(C₁₃H₈)ₙ',
+    molarMass: '166.22 g/mol (repeat unit)',
+    structure: 'Rigid conjugated polymer with fluorene units',
+    synthesis: 'Suzuki coupling, Yamamoto coupling, Stille coupling of fluorene monomers',
+    image2D: '/src/assets/polymers/polyfluorene-2d.png',
+    properties: {
+      conductivity: '10⁻¹² - 10⁻⁸ S/cm',
+      density: '1.0-1.1 g/cm³',
+      solubility: 'Soluble in organic solvents (with alkyl side chains)',
+      tensileStrength: 'Good mechanical properties'
+    },
+    uses: ['Blue OLEDs', 'Polymer solar cells', 'Organic transistors', 'Light-emitting displays', 'Fluorescent sensors'],
+    advantages: ['High photoluminescence quantum yield', 'Excellent blue emission', 'Good solubility', 'High charge mobility', 'Thermal stability'],
+    limitations: ['Ketone defect formation', 'Green emission from aggregation', 'Photo-oxidation', 'High cost'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex synthesis'
+    }
+  },
+  {
+    id: 'polycarbazole',
+    name: 'Polycarbazole (PCz)',
+    category: 'optoelectronic',
+    formula: '(C₁₂H₇N)ₙ',
+    molarMass: '167.21 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with carbazole units containing nitrogen',
+    synthesis: 'Electropolymerization or chemical oxidation of carbazole',
+    image2D: '/src/assets/polymers/polycarbazole-2d.png',
+    properties: {
+      conductivity: '10⁻⁴ - 10⁻² S/cm',
+      density: '1.2 g/cm³',
+      solubility: 'Insoluble (substituted versions are soluble)',
+      tensileStrength: 'Good mechanical properties'
+    },
+    uses: ['Hole transport layers', 'OLEDs', 'Electrochromic devices', 'Organic transistors', 'Photovoltaics'],
+    advantages: ['Excellent hole mobility', 'High thermal stability', 'Good electrochemical stability', 'Tunable optoelectronic properties'],
+    limitations: ['Limited solubility', 'Lower conductivity than other conducting polymers', 'Requires doping for high conductivity'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - requires chemical synthesis'
+    }
+  },
+  {
+    id: 'polyphenylene',
+    name: 'Poly(p-phenylene) (PPP)',
+    category: 'optoelectronic',
+    formula: '(C₆H₄)ₙ',
+    molarMass: '76.10 g/mol (repeat unit)',
+    structure: 'Rigid rod conjugated polymer with para-linked benzene rings',
+    synthesis: 'Suzuki coupling, oxidative coupling, or Yamamoto coupling',
+    image2D: '/src/assets/polymers/polyphenylene-2d.png',
+    properties: {
+      conductivity: '10⁻¹² S/cm (undoped)',
+      density: '1.3 g/cm³',
+      solubility: 'Insoluble (substituted versions are soluble)',
+      tensileStrength: 'Very high, rigid structure'
+    },
+    uses: ['High-strength fibers', 'OLEDs', 'Blue light emission', 'Liquid crystal displays', 'Sensors'],
+    advantages: ['High thermal stability', 'Excellent mechanical strength', 'Good blue emission', 'High rigidity'],
+    limitations: ['Very poor solubility', 'Difficult to process', 'Brittle', 'Expensive synthesis'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex synthesis, processing difficulties'
+    }
+  },
+  {
+    id: 'polynaphthalene',
+    name: 'Polynaphthalene',
+    category: 'optoelectronic',
+    formula: '(C₁₀H₆)ₙ',
+    molarMass: '128.17 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with naphthalene units',
+    synthesis: 'Oxidative polymerization or coupling reactions of naphthalene derivatives',
+    image2D: '/src/assets/polymers/polynaphthalene-2d.png',
+    properties: {
+      conductivity: '10⁻⁸ - 10⁻⁶ S/cm',
+      density: '1.15 g/cm³',
+      solubility: 'Insoluble (substituted versions may be soluble)',
+      tensileStrength: 'Moderate to high'
+    },
+    uses: ['OLEDs', 'Photovoltaics', 'Organic semiconductors', 'Fluorescent materials', 'Research applications'],
+    advantages: ['Extended conjugation', 'Good charge transport', 'Tunable optical properties', 'Thermal stability'],
+    limitations: ['Poor solubility', 'Limited processability', 'Aggregation in solution', 'Lower efficiency than alternatives'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low to moderate toxicity',
+      sustainability: 'Low - complex synthesis'
+    }
+  },
+  {
+    id: 'polythiophene-vinylene',
+    name: 'Polythiophene Vinylene (PTV)',
+    category: 'optoelectronic',
+    formula: '(C₆H₄S)ₙ',
+    molarMass: '108.16 g/mol (repeat unit)',
+    structure: 'Conjugated polymer combining thiophene and vinylene units',
+    synthesis: 'Wittig-type polycondensation, Stille coupling, or Heck coupling',
+    image2D: '/src/assets/polymers/polythiophene-vinylene-2d.png',
+    properties: {
+      conductivity: '10⁻⁶ - 10⁻⁴ S/cm',
+      density: '1.3 g/cm³',
+      solubility: 'Moderate in organic solvents (with substituents)',
+      tensileStrength: 'Moderate'
+    },
+    uses: ['Organic solar cells', 'LEDs', 'Field-effect transistors', 'Photodetectors', 'Electrochromic devices'],
+    advantages: ['Extended conjugation', 'Tunable bandgap', 'Good charge mobility', 'Red/near-IR emission'],
+    limitations: ['Photo-oxidative degradation', 'Limited stability', 'Lower efficiency than modern materials', 'Synthesis complexity'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex synthesis'
+    }
+  },
+  {
+    id: 'polyazulene',
+    name: 'Polyazulene',
+    category: 'optoelectronic',
+    formula: '(C₁₀H₆)ₙ',
+    molarMass: '128.17 g/mol (repeat unit)',
+    structure: 'Non-benzenoid conjugated polymer with azulene units (fused 5- and 7-membered rings)',
+    synthesis: 'Electropolymerization or chemical oxidation of azulene',
+    image2D: '/src/assets/polymers/polyazulene-2d.png',
+    properties: {
+      conductivity: '10⁻⁴ - 10⁻² S/cm',
+      density: '1.2 g/cm³',
+      solubility: 'Insoluble',
+      tensileStrength: 'Moderate'
+    },
+    uses: ['Electrochromic devices', 'Organic semiconductors', 'Sensors', 'Research on non-benzenoid aromatics', 'Optical materials'],
+    advantages: ['Unique non-benzenoid structure', 'Interesting optical properties', 'Good electrochemical stability', 'Colorful'],
+    limitations: ['Expensive azulene monomer', 'Limited applications', 'Poor processability', 'Lower conductivity than other conducting polymers'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - expensive and rare monomer'
+    }
+  },
+  {
+    id: 'polyfuran',
+    name: 'Polyfuran',
+    category: 'optoelectronic',
+    formula: '(C₄H₂O)ₙ',
+    molarMass: '68.07 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with furan rings',
+    synthesis: 'Chemical or electrochemical oxidation of furan',
+    image2D: '/src/assets/polymers/polyfuran-2d.png',
+    properties: {
+      conductivity: '10⁻⁶ - 10⁻⁴ S/cm',
+      density: '1.4 g/cm³',
+      solubility: 'Insoluble',
+      tensileStrength: 'Poor'
+    },
+    uses: ['Corrosion protection', 'Sensors', 'Research on conducting polymers', 'Electrochemical capacitors'],
+    advantages: ['Renewable monomer source (furfural from biomass)', 'Low cost monomer', 'Biocompatible'],
+    limitations: ['Low conductivity', 'Poor stability', 'Over-oxidation during synthesis', 'Limited applications'],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - can be derived from biomass'
+    }
+  },
+  {
+    id: 'polyselenophene',
+    name: 'Polyselenophene',
+    category: 'optoelectronic',
+    formula: '(C₄H₂Se)ₙ',
+    molarMass: '131.04 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with selenophene rings',
+    synthesis: 'Electropolymerization or chemical oxidation of selenophene',
+    image2D: '/src/assets/polymers/polyselenophene-2d.png',
+    properties: {
+      conductivity: '1-10 S/cm (doped)',
+      density: '1.8 g/cm³',
+      solubility: 'Insoluble (substituted versions may be soluble)',
+      tensileStrength: 'Moderate'
+    },
+    uses: ['Organic solar cells', 'Transistors', 'Sensors', 'Research on heavy atom effects', 'Photodetectors'],
+    advantages: ['Lower bandgap than polythiophene', 'Enhanced spin-orbit coupling', 'Good charge mobility', 'Near-IR absorption'],
+    limitations: ['Selenium toxicity', 'Expensive monomer', 'Air sensitive', 'Limited commercial availability'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Moderate to high (selenium compounds)',
+      sustainability: 'Low - toxic element, expensive'
+    }
+  },
+  {
+    id: 'polythiazole',
+    name: 'Polythiazole',
+    category: 'optoelectronic',
+    formula: '(C₃HNS)ₙ',
+    molarMass: '85.12 g/mol (repeat unit)',
+    structure: 'Conjugated polymer with thiazole rings (nitrogen and sulfur heterocycle)',
+    synthesis: 'Chemical oxidation or cross-coupling polymerization of thiazole monomers',
+    image2D: '/src/assets/polymers/polythiazole-2d.png',
+    properties: {
+      conductivity: '10⁻⁵ - 10⁻³ S/cm',
+      density: '1.4 g/cm³',
+      solubility: 'Insoluble (substituted versions may be soluble)',
+      tensileStrength: 'Moderate'
+    },
+    uses: ['Organic semiconductors', 'Sensors', 'Corrosion protection', 'Research applications', 'Electrochromic materials'],
+    advantages: ['Good thermal stability', 'Electron-accepting properties', 'Tunable electronic properties', 'Bioactive'],
+    limitations: ['Lower conductivity than polythiophene', 'Limited commercial use', 'Synthesis challenges', 'Poor processability'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low to moderate toxicity',
+      sustainability: 'Low - limited applications, complex synthesis'
+    }
   }
 ];
