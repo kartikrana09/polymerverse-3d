@@ -976,41 +976,539 @@ export const samplePolymers: Polymer[] = [
     }
   },
   {
+    id: 'polyurethane-adhesive',
+    name: 'Polyurethane Adhesive',
+    category: 'adhesive',
+    formula: 'Variable (-NHCOO- linkages)',
+    molarMass: 'Variable (depends on formulation)',
+    structure: 'Segmented polymer with urethane linkages between polyol and diisocyanate',
+    synthesis: 'Step-growth polymerization of polyols with diisocyanates',
+    image2D: '/src/assets/polymers/polyurethane-adhesive-2d.png',
+    properties: {
+      meltingPoint: 'Variable (can be amorphous)',
+      density: '1.05-1.25 g/cm³',
+      tensileStrength: '20-70 MPa',
+      solubility: 'Depends on formulation - water-based or solvent-based'
+    },
+    uses: [
+      'Structural bonding',
+      'Automotive assembly',
+      'Construction adhesives',
+      'Footwear manufacturing',
+      'Flexible packaging laminates',
+      'Wood bonding'
+    ],
+    advantages: [
+      'Excellent adhesion to diverse substrates',
+      'High flexibility and toughness',
+      'Good chemical and moisture resistance',
+      'Fast curing options available',
+      'Wide range of formulations'
+    ],
+    limitations: [
+      'Sensitive to moisture during cure',
+      'Isocyanate toxicity in production',
+      'Can yellow with UV exposure',
+      'Difficult to recycle',
+      'Short shelf life once opened'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Very difficult to recycle',
+      toxicity: 'Moderate - isocyanates toxic during manufacturing',
+      sustainability: 'Low - petroleum-based, limited bio-based options emerging'
+    }
+  },
+  {
     id: 'epoxy',
     name: 'Epoxy Resin',
     category: 'adhesive',
-    formula: 'Variable epoxide structure',
+    formula: 'Variable (epoxide groups)',
     molarMass: '340-400 g/mol (DGEBA)',
-    structure: 'Crosslinked polymer with epoxide groups',
-    synthesis: 'Reaction of epichlorohydrin with bisphenol A',
+    structure: 'Thermosetting polymer formed by crosslinking epoxide groups with hardener',
+    synthesis: 'Reaction of epichlorohydrin with bisphenol A, cured with amines or anhydrides',
+    image2D: '/src/assets/polymers/epoxy-2d.png',
     properties: {
+      meltingPoint: 'Thermosetting (does not melt after cure)',
       density: '1.1-1.4 g/cm³',
-      tensileStrength: '55-130 MPa'
+      tensileStrength: '55-130 MPa',
+      solubility: 'Insoluble once cured'
     },
     uses: [
-      'Adhesives',
-      'Coatings',
-      'Composite materials',
-      'Electronic encapsulation',
-      'Construction materials'
+      'High-strength adhesives',
+      'Protective coatings',
+      'Composite materials (carbon fiber, fiberglass)',
+      'Electronic encapsulation and PCBs',
+      'Construction materials',
+      'Marine coatings'
     ],
     advantages: [
-      'Excellent adhesion',
-      'Chemical resistance',
-      'Low shrinkage',
-      'Good mechanical properties'
+      'Exceptional adhesion to metals, glass, ceramics',
+      'Excellent chemical and solvent resistance',
+      'Very low shrinkage during cure',
+      'High mechanical strength and rigidity',
+      'Good electrical insulation'
     ],
     limitations: [
-      'Brittle when cured',
-      'Long cure times',
-      'Skin irritant (uncured)',
-      'Not recyclable'
+      'Brittle when fully cured',
+      'Long cure times (hours to days)',
+      'Skin and respiratory irritant (uncured)',
+      'Cannot be reshaped or recycled (thermoset)',
+      'UV degradation without additives'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable (crosslinked thermoset)',
+      toxicity: 'Moderate - uncured resin and hardener toxic, cured form inert',
+      sustainability: 'Low - petroleum-based, some bio-based epoxies in development'
+    }
+  },
+  {
+    id: 'acrylic-adhesive',
+    name: 'Acrylic Adhesive',
+    category: 'adhesive',
+    formula: '(C₅H₈O₂)ₙ (variable composition)',
+    molarMass: 'Variable',
+    structure: 'Polymer based on acrylic or methacrylic esters',
+    synthesis: 'Free radical polymerization of acrylic/methacrylic monomers',
+    image2D: '/src/assets/polymers/acrylic-adhesive-2d.png',
+    properties: {
+      meltingPoint: 'Variable (often pressure-sensitive at room temp)',
+      density: '1.05-1.20 g/cm³',
+      tensileStrength: '10-30 MPa',
+      solubility: 'Solvent or water-based formulations'
+    },
+    uses: [
+      'Pressure-sensitive adhesives (tapes, labels)',
+      'Structural bonding',
+      'Automotive assembly',
+      'Medical adhesives',
+      'Aerospace bonding',
+      'Graphics and signage'
+    ],
+    advantages: [
+      'Excellent UV and weathering resistance',
+      'Good optical clarity',
+      'High bond strength and durability',
+      'Can be formulated for instant or curable types',
+      'Good resistance to plasticizer migration'
+    ],
+    limitations: [
+      'Can be expensive',
+      'Some formulations have strong odor',
+      'Limited high-temperature performance',
+      'Surface preparation often required'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity once cured, monomers can be irritants',
+      sustainability: 'Moderate - petroleum-based'
+    }
+  },
+  {
+    id: 'silicone-adhesive',
+    name: 'Silicone Adhesive',
+    category: 'adhesive',
+    formula: '[Si(CH₃)₂O]ₙ (PDMS base)',
+    molarMass: 'Variable',
+    structure: 'Polysiloxane backbone with organic side groups',
+    synthesis: 'Hydrolysis and polycondensation of organochlorosilanes or ring-opening polymerization',
+    image2D: '/src/assets/polymers/silicone-adhesive-2d.png',
+    properties: {
+      meltingPoint: 'Low Tg (-120°C), no melting point',
+      density: '0.97-1.07 g/cm³',
+      tensileStrength: '2-10 MPa',
+      solubility: 'Insoluble in water, soluble in some organic solvents'
+    },
+    uses: [
+      'High-temperature sealing',
+      'Electrical and electronic bonding',
+      'Medical device assembly',
+      'Automotive gaskets and seals',
+      'Construction sealants',
+      'Aerospace applications'
+    ],
+    advantages: [
+      'Extreme temperature resistance (-55°C to +300°C)',
+      'Excellent flexibility and elasticity',
+      'Good electrical insulation',
+      'Biocompatible (medical grade)',
+      'UV and weathering resistant',
+      'Low surface tension'
+    ],
+    limitations: [
+      'Lower bond strength than epoxy or acrylics',
+      'Expensive',
+      'Slow cure in some formulations',
+      'Poor adhesion without primers on some substrates'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity, biocompatible grades available',
+      sustainability: 'Moderate - silicon abundant but energy-intensive processing'
+    }
+  },
+  {
+    id: 'cyanoacrylate',
+    name: 'Cyanoacrylate (Super Glue)',
+    category: 'adhesive',
+    formula: 'CH₂=C(CN)COOR (monomer), polymerizes to [CH₂C(CN)COOR]ₙ',
+    molarMass: '~111-141 g/mol (monomer, R=methyl to butyl)',
+    structure: 'Linear polymer with cyano and ester groups on alternating carbons',
+    synthesis: 'Anionic polymerization initiated by surface moisture',
+    image2D: '/src/assets/polymers/cyanoacrylate-2d.png',
+    properties: {
+      meltingPoint: '~150-165°C (polymer)',
+      density: '1.05-1.10 g/cm³',
+      tensileStrength: '18-28 MPa',
+      solubility: 'Insoluble once polymerized'
+    },
+    uses: [
+      'Instant bonding adhesive',
+      'Medical sutures and wound closure',
+      'Forensic fingerprint detection',
+      'Electronics assembly',
+      'Hobby and crafts',
+      'Emergency repairs'
+    ],
+    advantages: [
+      'Extremely fast curing (seconds)',
+      'No mixing required (single component)',
+      'High bond strength on many materials',
+      'Room temperature cure',
+      'Transparent bond line'
+    ],
+    limitations: [
+      'Brittle bond',
+      'Poor gap-filling ability',
+      'Limited water and heat resistance',
+      'Skin bonding hazard',
+      'Short shelf life',
+      'Bonds skin instantly (safety issue)'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Moderate - irritant, releases formaldehyde during cure',
+      sustainability: 'Moderate - small quantities used'
+    }
+  },
+  {
+    id: 'pvac',
+    name: 'Polyvinyl Acetate (PVAc)',
+    category: 'adhesive',
+    formula: '(C₄H₆O₂)ₙ',
+    molarMass: '86.09 g/mol (repeat unit)',
+    structure: 'Linear polymer with acetate ester side groups',
+    synthesis: 'Free radical polymerization of vinyl acetate monomer',
+    image2D: '/src/assets/polymers/pvac-2d.png',
+    properties: {
+      meltingPoint: '~230°C (decomposes before melting)',
+      density: '1.19 g/cm³',
+      tensileStrength: '20-35 MPa',
+      solubility: 'Insoluble in water (used as emulsion), soluble in alcohols and ketones'
+    },
+    uses: [
+      'Wood glue (white glue, carpenter glue)',
+      'Paper and packaging adhesives',
+      'Bookbinding',
+      'Paints and coatings base',
+      'Textile sizing',
+      'Chewing gum base'
+    ],
+    advantages: [
+      'Non-toxic and safe',
+      'Easy to apply and clean up with water',
+      'Good adhesion to porous materials (wood, paper)',
+      'Inexpensive',
+      'Clear and flexible bond',
+      'Low odor'
+    ],
+    limitations: [
+      'Not water-resistant (hydrolyzes)',
+      'Creeps under sustained load',
+      'Poor heat resistance (softens ~50-60°C)',
+      'Limited outdoor durability',
+      'Weak bond on non-porous surfaces'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable under specific conditions',
+      recyclability: 'Limited recyclability',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - petroleum-based but low environmental impact'
+    }
+  },
+  {
+    id: 'hot-melt',
+    name: 'Hot Melt Adhesives (EVA-based)',
+    category: 'adhesive',
+    formula: '(C₂H₄)ₙ(C₄H₆O₂)ₘ (Ethylene-Vinyl Acetate copolymer)',
+    molarMass: 'Variable',
+    structure: 'Random copolymer of ethylene and vinyl acetate',
+    synthesis: 'High-pressure copolymerization of ethylene and vinyl acetate',
+    image2D: '/src/assets/polymers/hot-melt-2d.png',
+    properties: {
+      meltingPoint: '70-120°C (application temperature)',
+      density: '0.93-0.95 g/cm³',
+      tensileStrength: '10-25 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: [
+      'Packaging sealing',
+      'Bookbinding',
+      'Product assembly',
+      'Woodworking edge banding',
+      'Textile bonding',
+      'Carton sealing'
+    ],
+    advantages: [
+      'Very fast setting (seconds)',
+      'No solvents (100% solids)',
+      'Long shelf life',
+      'Easy to apply with glue guns',
+      'Reversible by reheating',
+      'Cost-effective'
+    ],
+    limitations: [
+      'Limited high-temperature resistance',
+      'Requires heating equipment',
+      'Lower bond strength than structural adhesives',
+      'Can string or drip during application',
+      'Poor low-temperature flexibility'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to separate from substrates',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - petroleum-based, no VOCs'
+    }
+  },
+  {
+    id: 'psa',
+    name: 'Pressure-Sensitive Adhesive (PSA)',
+    category: 'adhesive',
+    formula: 'Variable (acrylics, silicones, rubber-based)',
+    molarMass: 'Variable',
+    structure: 'Typically high molecular weight viscoelastic polymer',
+    synthesis: 'Depends on type - polymerization of acrylates, silicones, or rubber compounding',
+    image2D: '/src/assets/polymers/psa-2d.png',
+    properties: {
+      meltingPoint: 'Typically pressure-sensitive at room temperature (Tg below RT)',
+      density: '0.9-1.2 g/cm³',
+      tensileStrength: '0.5-5 MPa',
+      solubility: 'Variable'
+    },
+    uses: [
+      'Tapes (masking, packaging, duct tape)',
+      'Labels and stickers',
+      'Medical adhesive bandages',
+      'Post-it notes',
+      'Automotive trim attachment',
+      'Graphic films and decals'
+    ],
+    advantages: [
+      'No curing or activation needed',
+      'Instant tack and adhesion',
+      'Removable and repositionable (some types)',
+      'Bonds to wide range of surfaces',
+      'Flexible and conformable',
+      'Easy to apply'
+    ],
+    limitations: [
+      'Lower bond strength than structural adhesives',
+      'Temperature-sensitive performance',
+      'Can leave residue',
+      'Aging and creep under load',
+      'UV degradation (some types)'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Contaminates recycling streams',
+      toxicity: 'Generally low toxicity',
+      sustainability: 'Moderate - depends on chemistry'
+    }
+  },
+  {
+    id: 'uv-coating',
+    name: 'UV-Curable Coatings',
+    category: 'adhesive',
+    formula: 'Variable (acrylate or methacrylate oligomers)',
+    molarMass: 'Variable (500-10,000 g/mol for oligomers)',
+    structure: 'Multifunctional acrylate oligomers with photoinitiators',
+    synthesis: 'UV-initiated free radical polymerization and crosslinking',
+    image2D: '/src/assets/polymers/uv-coating-2d.png',
+    properties: {
+      meltingPoint: 'Thermosetting (crosslinked)',
+      density: '1.0-1.3 g/cm³',
+      tensileStrength: '20-80 MPa (cured)',
+      solubility: 'Insoluble once cured'
+    },
+    uses: [
+      'Wood floor finishes',
+      'Automotive clear coats',
+      'Electronics conformal coatings',
+      'Printing inks',
+      'Optical fiber coatings',
+      'Industrial metal coatings'
+    ],
+    advantages: [
+      'Extremely fast cure (seconds)',
+      'Solvent-free (low VOC)',
+      'High durability and scratch resistance',
+      'Energy efficient',
+      'Excellent adhesion and hardness',
+      'On-demand curing'
+    ],
+    limitations: [
+      'Requires UV light equipment',
+      'Limited depth of cure (shadowing)',
+      'Photoinitiator residues can yellow',
+      'Cannot cure pigmented/opaque coatings fully',
+      'Initial equipment cost'
     ],
     environmentalImpact: {
       biodegradability: 'Non-biodegradable',
       recyclability: 'Not recyclable (thermoset)',
-      toxicity: 'Moderate - uncured resin toxic',
-      sustainability: 'Low - petroleum-based'
+      toxicity: 'Low toxicity once cured, uncured can be irritant',
+      sustainability: 'Moderate - low VOC, energy-efficient cure'
+    }
+  },
+  {
+    id: 'powder-coating',
+    name: 'Powder Coatings',
+    category: 'adhesive',
+    formula: 'Variable (epoxy, polyester, hybrid, polyurethane)',
+    molarMass: 'Variable',
+    structure: 'Thermosetting or thermoplastic polymer powder',
+    synthesis: 'Melt-mixing of resin, hardener, pigments, and additives, then grinding',
+    image2D: '/src/assets/polymers/powder-coating-2d.png',
+    properties: {
+      meltingPoint: '150-200°C (curing temperature)',
+      density: '1.2-1.7 g/cm³',
+      tensileStrength: '40-80 MPa (cured)',
+      solubility: 'Insoluble'
+    },
+    uses: [
+      'Metal furniture and appliances',
+      'Automotive parts',
+      'Architectural aluminum',
+      'Industrial equipment',
+      'Bicycle frames',
+      'Electrical enclosures'
+    ],
+    advantages: [
+      'Zero VOC emissions',
+      'Excellent durability and corrosion resistance',
+      'Uniform thick coating (50-100 μm)',
+      'High transfer efficiency (>95%)',
+      'Wide range of colors and finishes',
+      'Overspray recyclable'
+    ],
+    limitations: [
+      'Requires oven curing',
+      'Limited to heat-resistant substrates',
+      'Difficult to achieve thin films',
+      'Color change is time-consuming',
+      'Cannot coat assembled products with heat-sensitive parts'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to strip and recycle',
+      toxicity: 'Low toxicity, no solvents',
+      sustainability: 'High - no VOCs, minimal waste, overspray recyclable'
+    }
+  },
+  {
+    id: 'water-coating',
+    name: 'Water-Based Coatings',
+    category: 'adhesive',
+    formula: 'Variable (acrylic, polyurethane, epoxy emulsions)',
+    molarMass: 'Variable',
+    structure: 'Polymer emulsion or dispersion in water',
+    synthesis: 'Emulsion polymerization or dispersing resin in water with surfactants',
+    image2D: '/src/assets/polymers/water-coating-2d.png',
+    properties: {
+      meltingPoint: 'Variable depending on polymer',
+      density: '1.0-1.2 g/cm³',
+      tensileStrength: '10-50 MPa (cured)',
+      solubility: 'Water-based before cure, insoluble after'
+    },
+    uses: [
+      'Architectural paints',
+      'Automotive water-based paints',
+      'Wood finishes',
+      'Paper coatings',
+      'Concrete sealers',
+      'Metal protective coatings'
+    ],
+    advantages: [
+      'Low VOC emissions',
+      'Easy cleanup with water',
+      'Non-flammable',
+      'Low odor',
+      'Safer for workers and environment',
+      'Good color retention'
+    ],
+    limitations: [
+      'Slower drying than solvent-based',
+      'Sensitive to application temperature and humidity',
+      'Can cause rusting on bare metal',
+      'Lower chemical resistance than solvent types',
+      'May require multiple coats'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable (polymer), water evaporates',
+      recyclability: 'Limited recyclability',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - low VOC, water-based, environmentally friendly'
+    }
+  },
+  {
+    id: 'fluoropolymer-coating',
+    name: 'Fluoropolymer Coatings',
+    category: 'adhesive',
+    formula: 'PVDF: (CH₂CF₂)ₙ, PTFE: (CF₂CF₂)ₙ',
+    molarMass: '64.04 g/mol (PVDF unit), 100.02 g/mol (PTFE unit)',
+    structure: 'Fluorinated polymer - fully or partially fluorinated carbon backbone',
+    synthesis: 'Polymerization of fluorinated ethylene monomers',
+    image2D: '/src/assets/polymers/fluoropolymer-coating-2d.png',
+    properties: {
+      meltingPoint: '170°C (PVDF), 327°C (PTFE)',
+      density: '1.76-1.78 g/cm³ (PVDF), 2.2 g/cm³ (PTFE)',
+      tensileStrength: '30-50 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: [
+      'Non-stick cookware coatings (Teflon)',
+      'Architectural metal panels',
+      'Chemical processing equipment',
+      'Wire and cable insulation',
+      'Aerospace coatings',
+      'High-performance industrial coatings'
+    ],
+    advantages: [
+      'Exceptional chemical resistance',
+      'Extreme temperature resistance',
+      'Very low friction coefficient',
+      'Excellent weathering and UV resistance',
+      'Non-stick properties',
+      'Electrical insulation'
+    ],
+    limitations: [
+      'Very expensive',
+      'Difficult to apply (requires high temperature)',
+      'Poor adhesion (requires surface treatment/primer)',
+      'Limited color options',
+      'Environmental concerns (PFAS)',
+      'Can degrade at very high temperatures'
+    ],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable, extremely persistent',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity when intact, toxic fumes if overheated, PFAS concerns',
+      sustainability: 'Low - environmental persistence, bioaccumulation concerns, energy-intensive'
     }
   },
   {
