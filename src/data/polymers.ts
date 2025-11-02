@@ -6303,5 +6303,865 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Non-toxic',
       sustainability: 'High - renewable resource, captures CO₂ during sugarcane growth, reduces fossil fuel dependency'
     }
+  },
+  // Elastomers
+  {
+    id: 'natural-rubber',
+    name: 'Natural Rubber (Polyisoprene)',
+    category: 'elastomers',
+    formula: '(C₅H₈)ₙ',
+    molarMass: '68.12 g/mol (repeat unit)',
+    structure: 'cis-1,4-Polyisoprene with high molecular weight',
+    synthesis: 'Extracted from latex of rubber trees (Hevea brasiliensis)',
+    image2D: '/src/assets/polymers/natural-rubber-2d.png',
+    properties: {
+      density: '0.92-0.93 g/cm³',
+      tensileStrength: '25-30 MPa',
+      solubility: 'Soluble in aromatic and chlorinated solvents'
+    },
+    uses: ['Tires', 'Gloves', 'Seals and gaskets', 'Footwear', 'Industrial belts and hoses'],
+    advantages: ['Excellent elasticity', 'High resilience', 'Good abrasion resistance', 'Renewable resource', 'Biodegradable'],
+    limitations: ['Poor ozone and UV resistance', 'Limited oil resistance', 'Temperature sensitivity', 'Latex allergies'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (slow, years to decades)',
+      recyclability: 'Difficult to recycle, often downcycled',
+      toxicity: 'Non-toxic but can cause allergies',
+      sustainability: 'High - renewable resource from trees'
+    }
+  },
+  {
+    id: 'sbr',
+    name: 'Styrene-Butadiene Rubber (SBR)',
+    category: 'elastomers',
+    formula: '(C₈H₈·C₄H₆)ₙ',
+    molarMass: 'Variable (copolymer)',
+    structure: 'Random copolymer of styrene and butadiene',
+    synthesis: 'Emulsion or solution polymerization of styrene and butadiene',
+    image2D: '/src/assets/polymers/sbr-2d.png',
+    properties: {
+      density: '0.94 g/cm³',
+      tensileStrength: '20-25 MPa',
+      solubility: 'Insoluble in water, soluble in organic solvents'
+    },
+    uses: ['Tire treads', 'Shoe soles', 'Belts and hoses', 'Gaskets', 'Floor mats'],
+    advantages: ['Good abrasion resistance', 'Lower cost than natural rubber', 'Better aging than natural rubber', 'Good processability'],
+    limitations: ['Lower tensile strength', 'Poor oil resistance', 'Limited heat resistance', 'Non-renewable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based synthetic rubber'
+    }
+  },
+  {
+    id: 'nbr',
+    name: 'Nitrile Rubber (NBR)',
+    category: 'elastomers',
+    formula: '(C₄H₆·C₃H₃N)ₙ',
+    molarMass: 'Variable (copolymer)',
+    structure: 'Copolymer of butadiene and acrylonitrile',
+    synthesis: 'Emulsion polymerization of butadiene and acrylonitrile',
+    image2D: '/src/assets/polymers/nbr-2d.png',
+    properties: {
+      density: '1.0 g/cm³',
+      tensileStrength: '15-25 MPa',
+      solubility: 'Insoluble in water, resistant to oils'
+    },
+    uses: ['Oil seals', 'O-rings', 'Fuel hoses', 'Gloves', 'Automotive gaskets'],
+    advantages: ['Excellent oil resistance', 'Good abrasion resistance', 'Wide temperature range', 'Chemical resistance'],
+    limitations: ['Poor ozone resistance', 'Not biodegradable', 'Limited low-temperature flexibility', 'Moderate cost'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity in cured form',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'epdm',
+    name: 'Ethylene Propylene Diene Monomer (EPDM)',
+    category: 'elastomers',
+    formula: '(C₂H₄·C₃H₆·Diene)ₙ',
+    molarMass: 'Variable (terpolymer)',
+    structure: 'Terpolymer of ethylene, propylene, and a diene',
+    synthesis: 'Copolymerization using Ziegler-Natta catalysts',
+    image2D: '/src/assets/polymers/epdm-2d.png',
+    properties: {
+      density: '0.86 g/cm³',
+      tensileStrength: '10-20 MPa',
+      solubility: 'Insoluble in water, swells in oils'
+    },
+    uses: ['Weather stripping', 'Roofing membranes', 'Automotive seals', 'Electrical insulation', 'Hoses'],
+    advantages: ['Excellent weather resistance', 'Good ozone resistance', 'Wide temperature range', 'Electrical insulation'],
+    limitations: ['Poor oil and fuel resistance', 'Limited adhesion', 'Moderate cost', 'Non-renewable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Challenging to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'silicone-rubber',
+    name: 'Silicone Rubber (PDMS)',
+    category: 'elastomers',
+    formula: '[Si(CH₃)₂O]ₙ',
+    molarMass: '74.09 g/mol (repeat unit)',
+    structure: 'Siloxane backbone with organic side groups',
+    synthesis: 'Hydrolysis and polycondensation of dichlorosilanes',
+    image2D: '/src/assets/polymers/silicone-rubber-2d.png',
+    properties: {
+      density: '0.97-1.02 g/cm³',
+      tensileStrength: '6-9 MPa',
+      solubility: 'Insoluble in water, swells in some solvents'
+    },
+    uses: ['Medical devices', 'Sealants', 'Gaskets', 'Cooking utensils', 'Electrical insulation'],
+    advantages: ['Extreme temperature range (-60 to 250°C)', 'Biocompatible', 'Chemically inert', 'Flexible', 'UV resistant'],
+    limitations: ['Low tensile strength', 'Expensive', 'Poor tear resistance', 'Not biodegradable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Limited recyclability',
+      toxicity: 'Very low toxicity, food safe',
+      sustainability: 'Moderate - silicon abundant but energy-intensive'
+    }
+  },
+  // Composite & Structural
+  {
+    id: 'gfrp',
+    name: 'Glass Fiber Reinforced Polymer (GFRP)',
+    category: 'composite',
+    formula: 'Composite material',
+    molarMass: 'N/A (composite)',
+    structure: 'Glass fibers embedded in polymer matrix (typically epoxy or polyester)',
+    synthesis: 'Layup, pultrusion, or molding of glass fibers with resin',
+    image2D: '/src/assets/polymers/gfrp-2d.png',
+    properties: {
+      density: '1.5-2.0 g/cm³',
+      tensileStrength: '200-500 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Marine hulls', 'Automotive body panels', 'Wind turbine blades', 'Storage tanks', 'Construction materials'],
+    advantages: ['High strength-to-weight ratio', 'Corrosion resistant', 'Design flexibility', 'Lower cost than carbon fiber'],
+    limitations: ['Difficult to recycle', 'Brittle failure mode', 'Lower strength than carbon fiber', 'Environmental persistence'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Very difficult to recycle',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Low - difficult end-of-life management'
+    }
+  },
+  {
+    id: 'cfrp',
+    name: 'Carbon Fiber Reinforced Polymer (CFRP)',
+    category: 'composite',
+    formula: 'Composite material',
+    molarMass: 'N/A (composite)',
+    structure: 'Carbon fibers (graphite) embedded in polymer matrix',
+    synthesis: 'Layup and curing of carbon fiber prepreg with epoxy resin',
+    image2D: '/src/assets/polymers/carbon-fiber-2d.png',
+    properties: {
+      density: '1.5-1.6 g/cm³',
+      tensileStrength: '600-1000 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Aerospace structures', 'High-performance vehicles', 'Sports equipment', 'Prosthetics', 'Industrial machinery'],
+    advantages: ['Exceptional strength-to-weight ratio', 'High stiffness', 'Fatigue resistant', 'Corrosion resistant'],
+    limitations: ['Very expensive', 'Difficult to recycle', 'Brittle', 'Conductive (electrical issues)'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Very difficult and expensive to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - energy-intensive production, difficult recycling'
+    }
+  },
+  {
+    id: 'kevlar',
+    name: 'Aramid Fiber (Kevlar)',
+    category: 'composite',
+    formula: '(C₁₄H₁₀N₂O₂)ₙ',
+    molarMass: '238.24 g/mol (repeat unit)',
+    structure: 'Para-aramid with aromatic polyamide structure',
+    synthesis: 'Polycondensation of para-phenylenediamine and terephthaloyl chloride',
+    image2D: '/src/assets/polymers/kevlar-2d.png',
+    properties: {
+      density: '1.44 g/cm³',
+      tensileStrength: '3000-3600 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['Bulletproof vests', 'Helmets', 'Tires', 'Cables', 'Aerospace components'],
+    advantages: ['Extremely high strength', 'Excellent cut resistance', 'Heat resistant', 'Lightweight', 'Impact resistant'],
+    limitations: ['Expensive', 'UV degradation', 'Difficult to process', 'Poor compression strength'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex synthesis, long-lasting applications'
+    }
+  },
+  {
+    id: 'frp-basalt',
+    name: 'Basalt Fiber Reinforced Polymer',
+    category: 'composite',
+    formula: 'Composite material',
+    molarMass: 'N/A (composite)',
+    structure: 'Basalt fibers in polymer matrix',
+    synthesis: 'Melting basalt rock and drawing fibers, then embedding in resin',
+    image2D: '/src/assets/polymers/gfrp-2d.png',
+    properties: {
+      density: '1.8-2.0 g/cm³',
+      tensileStrength: '300-500 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Marine applications', 'Construction reinforcement', 'Automotive parts', 'Fire-resistant materials'],
+    advantages: ['Good strength', 'Excellent chemical resistance', 'Fire resistant', 'Natural material', 'Better than glass fiber in many properties'],
+    limitations: ['Higher cost than glass fiber', 'Limited availability', 'Difficult to recycle', 'Relatively new technology'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - natural rock source but energy-intensive'
+    }
+  },
+  // Recyclable/Green Polymers
+  {
+    id: 'rpet',
+    name: 'Recycled PET (rPET)',
+    category: 'recyclable',
+    formula: '(C₁₀H₈O₄)ₙ',
+    molarMass: '192.17 g/mol (repeat unit)',
+    structure: 'Same as virgin PET, mechanically or chemically recycled',
+    synthesis: 'Mechanical recycling (sorting, washing, melting) or chemical depolymerization',
+    image2D: '/src/assets/polymers/rpet-2d.png',
+    properties: {
+      meltingPoint: '250-260°C',
+      density: '1.38-1.41 g/cm³',
+      tensileStrength: '45-70 MPa (may be slightly lower than virgin)',
+      solubility: 'Same as virgin PET'
+    },
+    uses: ['Bottles', 'Textile fibers (fleece)', 'Packaging', 'Carpet fibers', 'Automotive parts'],
+    advantages: ['Reduces plastic waste', 'Lower carbon footprint than virgin PET', 'Similar properties', 'Widely available', 'Circular economy'],
+    limitations: ['Quality degradation after multiple cycles', 'Contamination issues', 'Sorting challenges', 'Energy-intensive recycling'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Highly recyclable (multiple cycles possible)',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - reduces virgin plastic demand, closes material loop'
+    }
+  },
+  {
+    id: 'rhdpe',
+    name: 'Recycled HDPE (rHDPE)',
+    category: 'recyclable',
+    formula: '(C₂H₄)ₙ',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Linear polyethylene, recycled from post-consumer or post-industrial sources',
+    synthesis: 'Mechanical recycling: collection, sorting, cleaning, shredding, melting, pelletizing',
+    image2D: '/src/assets/polymers/rhdpe-2d.png',
+    properties: {
+      meltingPoint: '120-130°C',
+      density: '0.941-0.965 g/cm³',
+      tensileStrength: '22-30 MPa',
+      solubility: 'Same as virgin HDPE'
+    },
+    uses: ['Bottles', 'Trash bins', 'Lumber replacement', 'Piping', 'Packaging'],
+    advantages: ['Reduces landfill waste', 'Lower energy than virgin production', 'Good properties retention', 'Well-established recycling'],
+    limitations: ['Property degradation', 'Color limitations', 'Contamination sensitivity', 'Limited food-grade applications'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Highly recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - diverts waste, conserves resources'
+    }
+  },
+  {
+    id: 'rpp',
+    name: 'Recycled Polypropylene (rPP)',
+    category: 'recyclable',
+    formula: '(C₃H₆)ₙ',
+    molarMass: '42.08 g/mol (repeat unit)',
+    structure: 'Same as virgin PP, recycled',
+    synthesis: 'Mechanical or advanced recycling from post-consumer/industrial waste',
+    image2D: '/src/assets/polymers/pp-2d.png',
+    properties: {
+      meltingPoint: '130-171°C',
+      density: '0.895-0.92 g/cm³',
+      tensileStrength: '25-35 MPa',
+      solubility: 'Insoluble in cold solvents'
+    },
+    uses: ['Automotive parts', 'Containers', 'Textile fibers', 'Furniture', 'Packaging'],
+    advantages: ['Reduces waste', 'Good property retention', 'Lightweight', 'Chemical resistance', 'Lower carbon footprint'],
+    limitations: ['Quality varies', 'Degradation over cycles', 'Sorting challenges', 'Lower acceptance than rPET'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (improving infrastructure)',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - circular economy, resource conservation'
+    }
+  },
+  {
+    id: 'green-pe',
+    name: 'Green Polyethylene',
+    category: 'recyclable',
+    formula: '(C₂H₄)ₙ',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Identical to conventional PE but from renewable sources',
+    synthesis: 'Polymerization of bio-ethylene from sugarcane or other biomass',
+    image2D: '/src/assets/polymers/bio-pe-2d.png',
+    properties: {
+      meltingPoint: '105-135°C',
+      density: '0.91-0.97 g/cm³',
+      tensileStrength: '8-33 MPa',
+      solubility: 'Same as fossil PE'
+    },
+    uses: ['Packaging', 'Bottles', 'Films', 'Bags', 'All PE applications'],
+    advantages: ['Renewable carbon', 'Carbon negative during growth', 'Drop-in replacement', 'Recyclable', 'Reduces fossil fuel use'],
+    limitations: ['Land use concerns', 'Not biodegradable', 'Higher cost', 'Limited production capacity'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Fully recyclable with conventional PE',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - renewable, sequesters CO₂'
+    }
+  },
+  {
+    id: 'ocean-plastic',
+    name: 'Ocean Plastic Recycled Polymer',
+    category: 'recyclable',
+    formula: 'Mixed (primarily PE, PP, PET)',
+    molarMass: 'Variable',
+    structure: 'Blend of recycled ocean-collected plastics',
+    synthesis: 'Collection from oceans, sorting, cleaning, processing into usable material',
+    image2D: '/src/assets/polymers/rpet-2d.png',
+    properties: {
+      density: 'Variable (0.9-1.4 g/cm³)',
+      tensileStrength: 'Variable (20-50 MPa)',
+      solubility: 'Depends on composition'
+    },
+    uses: ['Consumer products', 'Packaging', 'Textiles', 'Furniture', 'Accessories'],
+    advantages: ['Removes ocean pollution', 'Raises awareness', 'Creates value from waste', 'Circular economy'],
+    limitations: ['Inconsistent quality', 'High collection costs', 'Contamination', 'Degraded properties', 'Limited scalability'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Variable depending on composition',
+      toxicity: 'Requires testing due to contamination',
+      sustainability: 'Very high - environmental cleanup, waste valorization'
+    }
+  },
+  // Additional Biodegradable Polymers
+  {
+    id: 'pla-biodeg',
+    name: 'Polylactic Acid (PLA) - Biodegradable',
+    category: 'biodegradable',
+    formula: '(C₃H₄O₂)ₙ',
+    molarMass: '72.06 g/mol (repeat unit)',
+    structure: 'Aliphatic polyester derived from renewable resources',
+    synthesis: 'Ring-opening polymerization of lactide from fermented plant starch',
+    image2D: '/src/assets/polymers/pla-2d.png',
+    properties: {
+      meltingPoint: '150-160°C',
+      density: '1.24 g/cm³',
+      tensileStrength: '50-70 MPa',
+      solubility: 'Insoluble in water, soluble in chlorinated solvents'
+    },
+    uses: ['3D printing', 'Food packaging', 'Medical implants', 'Disposable cutlery', 'Agricultural films'],
+    advantages: ['Bio-based and biodegradable', 'Good mechanical properties', 'Transparent', 'Compostable', 'Low toxicity'],
+    limitations: ['Low heat resistance', 'Brittle', 'Slow degradation without industrial composting', 'Moisture sensitive'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable in industrial composting (3-6 months)',
+      recyclability: 'Technically recyclable but limited infrastructure',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - renewable, compostable, carbon neutral'
+    }
+  },
+  {
+    id: 'pcl-biodeg',
+    name: 'Polycaprolactone (PCL) - Biodegradable',
+    category: 'biodegradable',
+    formula: '(C₆H₁₀O₂)ₙ',
+    molarMass: '114.14 g/mol (repeat unit)',
+    structure: 'Aliphatic polyester with slow degradation rate',
+    synthesis: 'Ring-opening polymerization of ε-caprolactone',
+    image2D: '/src/assets/polymers/pcl-biomed-2d.png',
+    properties: {
+      meltingPoint: '58-60°C',
+      density: '1.145 g/cm³',
+      tensileStrength: '16-20 MPa',
+      solubility: 'Soluble in chloroform, methylene chloride'
+    },
+    uses: ['Drug delivery', 'Tissue engineering', 'Biodegradable sutures', '3D printing', 'Packaging'],
+    advantages: ['Excellent biocompatibility', 'Slow degradation (2-4 years)', 'Good processability', 'Blends well with other polymers'],
+    limitations: ['Low melting point', 'Slow degradation', 'Limited mechanical strength', 'Hydrophobic'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (2-4 years in soil)',
+      recyclability: 'Limited',
+      toxicity: 'Non-toxic, biocompatible',
+      sustainability: 'High - biodegradable, used in medical applications'
+    }
+  },
+  {
+    id: 'pbat-biodeg',
+    name: 'PBAT - Biodegradable Copolyester',
+    category: 'biodegradable',
+    formula: '(C₁₆H₁₈O₆)ₙ',
+    molarMass: '306.31 g/mol (average)',
+    structure: 'Random copolyester of adipic acid, terephthalic acid, and butanediol',
+    synthesis: 'Polycondensation reaction',
+    image2D: '/src/assets/polymers/pbat-2d.png',
+    properties: {
+      meltingPoint: '110-120°C',
+      density: '1.25-1.27 g/cm³',
+      tensileStrength: '15-35 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['Compostable bags', 'Mulch films', 'Food packaging', 'Flexible films', 'Coatings'],
+    advantages: ['Flexible like LDPE', 'Compostable', 'Good processability', 'Blends well with PLA'],
+    limitations: ['Higher cost', 'Requires industrial composting', 'Lower strength than conventional plastics'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (EN 13432 certified, 3-6 months)',
+      recyclability: 'Limited due to biodegradable nature',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biodegradable alternative to conventional plastics'
+    }
+  },
+  {
+    id: 'pbs-biodeg',
+    name: 'Polybutylene Succinate (PBS)',
+    category: 'biodegradable',
+    formula: '(C₈H₁₂O₄)ₙ',
+    molarMass: '172.18 g/mol (repeat unit)',
+    structure: 'Aliphatic polyester',
+    synthesis: 'Polycondensation of succinic acid and 1,4-butanediol',
+    image2D: '/src/assets/polymers/pbs-2d.png',
+    properties: {
+      meltingPoint: '90-120°C',
+      density: '1.26 g/cm³',
+      tensileStrength: '30-50 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['Packaging', 'Agricultural mulch', 'Disposable products', 'Fibers', 'Medical uses'],
+    advantages: ['Good mechanical properties', 'Processable like conventional plastics', 'Can be bio-based', 'Heat sealable'],
+    limitations: ['Higher cost', 'Limited availability', 'Hydrolysis susceptibility'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable in soil and compost',
+      recyclability: 'Limited',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - can be fully bio-based'
+    }
+  },
+  {
+    id: 'pha-biodeg',
+    name: 'Polyhydroxyalkanoate (PHA)',
+    category: 'biodegradable',
+    formula: '[-O-CHR-CH₂-CO-]ₙ',
+    molarMass: '86-100 g/mol (repeat unit)',
+    structure: 'Polyester produced by bacterial fermentation',
+    synthesis: 'Bacterial fermentation of sugars or lipids',
+    image2D: '/src/assets/polymers/pha-2d.png',
+    properties: {
+      meltingPoint: '170-180°C (PHB)',
+      density: '1.18-1.26 g/cm³',
+      tensileStrength: '24-40 MPa',
+      solubility: 'Insoluble in water, soluble in chloroform'
+    },
+    uses: ['Packaging', 'Medical devices', 'Agricultural films', 'Disposable items', 'Marine applications'],
+    advantages: ['Fully biodegradable', 'Bio-based', 'Similar properties to PP', 'Biodegrades in ocean', 'Compostable'],
+    limitations: ['Expensive', 'Brittle', 'Limited production scale', 'Thermal instability'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (weeks to months in various environments)',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - bio-based, biodegrades in nature'
+    }
+  },
+  // Additional Biopolymers
+  {
+    id: 'chitin-bio',
+    name: 'Chitin',
+    category: 'biopolymers',
+    formula: '(C₈H₁₃NO₅)ₙ',
+    molarMass: '203.19 g/mol (repeat unit)',
+    structure: 'Linear polysaccharide of N-acetylglucosamine',
+    synthesis: 'Extracted from crustacean shells, insect exoskeletons, or fungal cell walls',
+    image2D: '/src/assets/polymers/chitin-2d.png',
+    properties: {
+      density: '1.4 g/cm³',
+      solubility: 'Insoluble in water and common solvents',
+      tensileStrength: '40-50 MPa (crystalline)'
+    },
+    uses: ['Wound dressings', 'Food packaging films', 'Water treatment', 'Cosmetics', 'Agricultural applications'],
+    advantages: ['Abundant natural polymer', 'Biocompatible', 'Biodegradable', 'Antimicrobial', 'Non-toxic'],
+    limitations: ['Insoluble', 'Difficult to process', 'Requires chemical modification', 'Brittle'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - abundant waste from seafood industry'
+    }
+  },
+  {
+    id: 'chitosan-bio',
+    name: 'Chitosan',
+    category: 'biopolymers',
+    formula: '(C₆H₁₁NO₄)ₙ',
+    molarMass: '161.16 g/mol (repeat unit)',
+    structure: 'Deacetylated chitin with glucosamine units',
+    synthesis: 'Deacetylation of chitin using alkaline treatment',
+    image2D: '/src/assets/polymers/chitosan-2d.png',
+    properties: {
+      density: '1.4 g/cm³',
+      solubility: 'Soluble in acidic solutions',
+      tensileStrength: '30-40 MPa'
+    },
+    uses: ['Wound healing', 'Drug delivery', 'Water treatment', 'Food preservation', 'Tissue engineering'],
+    advantages: ['Biocompatible', 'Biodegradable', 'Antimicrobial', 'Soluble in acids', 'Hemostatic'],
+    limitations: ['pH dependent', 'Limited mechanical strength', 'Moisture sensitivity'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - from renewable sources'
+    }
+  },
+  {
+    id: 'collagen-bio',
+    name: 'Collagen',
+    category: 'biopolymers',
+    formula: '(Gly-X-Y)ₙ',
+    molarMass: '~300,000 g/mol',
+    structure: 'Triple helix protein structure',
+    synthesis: 'Extracted from animal tissues (skin, bones, tendons)',
+    image2D: '/src/assets/polymers/collagen-2d.png',
+    properties: {
+      density: '1.3 g/cm³',
+      solubility: 'Soluble in acidic solutions',
+      tensileStrength: '50-100 MPa (tissue dependent)'
+    },
+    uses: ['Tissue engineering', 'Wound dressings', 'Cosmetics', 'Food casings', 'Surgical sutures'],
+    advantages: ['Excellent biocompatibility', 'Promotes cell adhesion', 'Biodegradable', 'Natural ECM component'],
+    limitations: ['Animal-derived', 'Batch variability', 'Immunogenic potential', 'Expensive'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - animal source, but uses byproducts'
+    }
+  },
+  {
+    id: 'gelatin-bio',
+    name: 'Gelatin',
+    category: 'biopolymers',
+    formula: 'Derived from collagen',
+    molarMass: '15,000-400,000 g/mol',
+    structure: 'Denatured collagen protein',
+    synthesis: 'Hydrolysis of collagen from animal tissues',
+    image2D: '/src/assets/polymers/gelatin-2d.png',
+    properties: {
+      density: '1.4 g/cm³',
+      solubility: 'Soluble in hot water',
+      tensileStrength: '20-40 MPa (film)'
+    },
+    uses: ['Food industry', 'Pharmaceuticals (capsules)', 'Photography', 'Cosmetics', 'Biomedical scaffolds'],
+    advantages: ['Biodegradable', 'Biocompatible', 'Gelling properties', 'Edible', 'Low cost'],
+    limitations: ['Temperature sensitive', 'Animal-derived', 'Poor mechanical properties', 'Requires crosslinking'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - uses animal byproducts'
+    }
+  },
+  {
+    id: 'alginate-bio',
+    name: 'Alginate',
+    category: 'biopolymers',
+    formula: '(C₆H₈O₆)ₙ',
+    molarMass: '176.13 g/mol (average repeat unit)',
+    structure: 'Linear polysaccharide from seaweed',
+    synthesis: 'Extracted from brown seaweed',
+    image2D: '/src/assets/polymers/alginate-2d.png',
+    properties: {
+      density: '1.6 g/cm³',
+      solubility: 'Soluble in water (forms viscous solution)',
+      tensileStrength: '30-50 MPa (depends on crosslinking)'
+    },
+    uses: ['Wound dressings', 'Food thickener', 'Drug delivery', 'Cell encapsulation', 'Dental impressions'],
+    advantages: ['Biocompatible', 'Biodegradable', 'Gels with calcium', 'Marine-derived', 'Non-toxic'],
+    limitations: ['Weak mechanical properties', 'Dissolves in chelating agents', 'Batch variability'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - renewable marine resource'
+    }
+  },
+  {
+    id: 'silk-fibroin-bio',
+    name: 'Silk Fibroin',
+    category: 'biopolymers',
+    formula: '(Gly-Ala-Gly-Ala-Gly-Ser)ₙ',
+    molarMass: '~370,000 g/mol',
+    structure: 'Protein with β-sheet crystalline structure',
+    synthesis: 'Extracted from silkworm cocoons or spider silk',
+    image2D: '/src/assets/polymers/silk-fibroin-2d.png',
+    properties: {
+      density: '1.25 g/cm³',
+      tensileStrength: '300-740 MPa (fiber)',
+      solubility: 'Soluble in harsh conditions (LiBr solution)'
+    },
+    uses: ['Biomedical sutures', 'Tissue engineering', 'Drug delivery', 'Textiles', 'Cosmetics'],
+    advantages: ['Excellent biocompatibility', 'High strength', 'Biodegradable', 'Low immunogenicity', 'Processable'],
+    limitations: ['Expensive', 'Limited availability', 'Slow production', 'Requires dissolution for processing'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - renewable, requires minimal processing'
+    }
+  },
+  {
+    id: 'bacterial-cellulose-bio',
+    name: 'Bacterial Cellulose',
+    category: 'biopolymers',
+    formula: '(C₆H₁₀O₅)ₙ',
+    molarMass: '162.14 g/mol (repeat unit)',
+    structure: 'Pure cellulose produced by bacteria',
+    synthesis: 'Bacterial fermentation (Komagataeibacter)',
+    image2D: '/src/assets/polymers/bacterial-cellulose-2d.png',
+    properties: {
+      density: '1.5 g/cm³',
+      tensileStrength: '200-300 MPa',
+      solubility: 'Insoluble in water and most solvents'
+    },
+    uses: ['Wound dressings', 'Audio speakers', 'Food products', 'Paper', 'Tissue engineering'],
+    advantages: ['High purity', 'High crystallinity', 'Biocompatible', 'Moldable when wet', 'High water holding capacity'],
+    limitations: ['Expensive production', 'Slow growth', 'Difficult to scale', 'Requires sterilization'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - bio-produced, renewable'
+    }
+  },
+  // Additional Shape Memory Polymers
+  {
+    id: 'pu-smp-detailed',
+    name: 'Polyurethane Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: 'R-NHCOO-R\' (segmented)',
+    molarMass: 'Variable',
+    structure: 'Segmented polymer with hard and soft segments',
+    synthesis: 'Polyaddition of diisocyanates with polyols',
+    image2D: '/src/assets/polymers/pu-smp-2d.png',
+    properties: {
+      meltingPoint: '40-70°C (transition temperature)',
+      density: '1.0-1.2 g/cm³',
+      tensileStrength: '30-60 MPa',
+      solubility: 'Varies with formulation'
+    },
+    uses: ['Medical stents', 'Actuators', 'Smart textiles', 'Self-deploying structures', 'Aerospace applications'],
+    advantages: ['Programmable transition temperature', 'Good mechanical properties', 'Biocompatible versions available', 'Easy processing'],
+    limitations: ['Limited recovery stress', 'Can degrade over time', 'Expensive', 'Temperature dependent'],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Moderate - extends product life but petroleum-based'
+    }
+  },
+  {
+    id: 'pcl-smp-detailed',
+    name: 'PCL-based Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₆H₁₀O₂)ₙ',
+    molarMass: '114.14 g/mol (repeat unit)',
+    structure: 'Semi-crystalline polyester with shape memory effect',
+    synthesis: 'Ring-opening polymerization with specific molecular weight control',
+    image2D: '/src/assets/polymers/pcl-smp-2d.png',
+    properties: {
+      meltingPoint: '55-60°C (transition)',
+      density: '1.145 g/cm³',
+      tensileStrength: '16-20 MPa',
+      solubility: 'Soluble in chloroform'
+    },
+    uses: ['Biomedical devices', 'Self-tightening sutures', 'Drug delivery', 'Tissue engineering', 'Minimally invasive surgery'],
+    advantages: ['Biocompatible and biodegradable', 'Body temperature activation', 'Good shape recovery', 'FDA approved'],
+    limitations: ['Low mechanical strength', 'Slow degradation', 'Limited to body temperature applications', 'Expensive'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (2-4 years)',
+      recyclability: 'Limited',
+      toxicity: 'Non-toxic, biocompatible',
+      sustainability: 'High - biodegradable medical applications'
+    }
+  },
+  {
+    id: 'epoxy-smp',
+    name: 'Epoxy-based Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: 'Crosslinked epoxy network',
+    molarMass: 'N/A (thermoset)',
+    structure: 'Crosslinked network with dynamic or fixed netpoints',
+    synthesis: 'Curing of epoxy resins with specific crosslink density',
+    image2D: '/src/assets/polymers/epoxy-2d.png',
+    properties: {
+      meltingPoint: '40-150°C (glass transition)',
+      density: '1.1-1.4 g/cm³',
+      tensileStrength: '40-90 MPa',
+      solubility: 'Insoluble (thermoset)'
+    },
+    uses: ['Aerospace deployable structures', 'Self-healing composites', 'Morphing wings', 'Sensors', 'Actuators'],
+    advantages: ['High recovery stress', 'Excellent shape fixity', 'Good mechanical properties', 'Tunable transition temperature'],
+    limitations: ['Cannot be remolded', 'One-time programming', 'Brittle', 'Not biodegradable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable (thermoset)',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Low - difficult end-of-life management'
+    }
+  },
+  {
+    id: 'styrene-smp',
+    name: 'Styrene-based Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₈H₈)ₙ based',
+    molarMass: 'Variable',
+    structure: 'Block copolymer with hard polystyrene segments',
+    synthesis: 'Block copolymerization',
+    image2D: '/src/assets/polymers/ps-2d.png',
+    properties: {
+      meltingPoint: '60-100°C (transition)',
+      density: '1.0-1.05 g/cm³',
+      tensileStrength: '20-40 MPa',
+      solubility: 'Soluble in aromatic solvents'
+    },
+    uses: ['Smart packaging', 'Toys', 'Consumer products', 'Educational demonstrations', 'Prototyping'],
+    advantages: ['Low cost', 'Easy processing', 'Good shape recovery', 'Non-toxic'],
+    limitations: ['Limited applications', 'Moderate mechanical properties', 'Not biodegradable', 'Temperature range limited'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - petroleum-based but recyclable'
+    }
+  },
+  // Additional Self-Healing Polymers
+  {
+    id: 'microcapsule-sh',
+    name: 'Microcapsule-based Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer matrix + encapsulated healing agent',
+    molarMass: 'Variable',
+    structure: 'Polymer containing microcapsules with healing agent and catalyst',
+    synthesis: 'Incorporation of microcapsules during polymer processing',
+    image2D: '/src/assets/polymers/microcapsule-polymer-2d.png',
+    properties: {
+      density: 'Variable (typically 1.1-1.3 g/cm³)',
+      tensileStrength: '30-50 MPa',
+      solubility: 'Depends on matrix polymer'
+    },
+    uses: ['Protective coatings', 'Aerospace composites', 'Automotive parts', 'Infrastructure', 'Electronics encapsulation'],
+    advantages: ['Autonomous healing', 'Can heal large cracks', 'One-time healing at damage site', 'Proven technology'],
+    limitations: ['Single-use healing', 'Microcapsule preparation complex', 'Limited healing cycles', 'Expensive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Depends on healing agent',
+      sustainability: 'Moderate - extends service life significantly'
+    }
+  },
+  {
+    id: 'disulfide-sh',
+    name: 'Disulfide Bond Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Contains R-S-S-R\' linkages',
+    molarMass: 'Variable',
+    structure: 'Polymer with dynamic disulfide bonds',
+    synthesis: 'Polymerization with disulfide-containing monomers or crosslinkers',
+    image2D: '/src/assets/polymers/disulfide-polymer-2d.png',
+    properties: {
+      density: '1.0-1.3 g/cm³',
+      tensileStrength: '20-60 MPa',
+      solubility: 'Variable'
+    },
+    uses: ['Self-healing coatings', 'Recyclable thermosets', 'Biomedical devices', 'Adhesives', 'Electronics'],
+    advantages: ['Multiple healing cycles', 'Stimulus-responsive', 'Can be triggered by heat or redox', 'Recyclable'],
+    limitations: ['Requires specific conditions for healing', 'Oxidation sensitivity', 'Moderate healing efficiency'],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Can be reprocessed',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - recyclable and extends material life'
+    }
+  },
+  {
+    id: 'diels-alder-sh',
+    name: 'Diels-Alder Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Contains reversible DA bonds',
+    molarMass: 'Variable',
+    structure: 'Polymer with thermally reversible Diels-Alder crosslinks',
+    synthesis: 'Polymerization with furan and maleimide functional groups',
+    image2D: '/src/assets/polymers/dynamic-covalent-2d.png',
+    properties: {
+      density: '1.0-1.2 g/cm³',
+      tensileStrength: '30-70 MPa',
+      solubility: 'Variable'
+    },
+    uses: ['Self-healing composites', 'Recyclable thermosets', 'Coatings', 'Adhesives', 'Shape memory materials'],
+    advantages: ['Multiple healing cycles', 'Thermally triggered', 'Recyclable', 'Predictable chemistry', 'No catalyst needed'],
+    limitations: ['Requires heating (60-120°C)', 'Slower healing than some methods', 'Limited temperature range'],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Excellent - fully recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - extends life and recyclable'
+    }
+  },
+  {
+    id: 'vascular-sh',
+    name: 'Vascular Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with embedded vascular network',
+    molarMass: 'Variable',
+    structure: 'Polymer matrix with hollow fiber network containing healing agent',
+    synthesis: 'Incorporation of hollow fibers during composite fabrication',
+    image2D: '/src/assets/polymers/microcapsule-polymer-2d.png',
+    properties: {
+      density: 'Variable',
+      tensileStrength: 'Varies with matrix (30-100 MPa)',
+      solubility: 'Depends on matrix'
+    },
+    uses: ['Large-scale composites', 'Aerospace structures', 'Wind turbine blades', 'Marine vessels', 'Infrastructure'],
+    advantages: ['Multiple healing cycles', 'Can heal same location repeatedly', 'Suitable for large structures', 'Long service life'],
+    limitations: ['Complex manufacturing', 'Very expensive', 'Adds weight', 'Requires careful design'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Very difficult',
+      toxicity: 'Depends on healing agent',
+      sustainability: 'High for long-term applications - dramatically extends service life'
+    }
+  },
+  {
+    id: 'ionomeric-sh',
+    name: 'Ionomeric Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with ionic clusters',
+    molarMass: 'Variable',
+    structure: 'Polymer with ionic crosslinks that can reform',
+    synthesis: 'Copolymerization with ionic monomers',
+    image2D: '/src/assets/polymers/dynamic-covalent-2d.png',
+    properties: {
+      density: '0.95-1.1 g/cm³',
+      tensileStrength: '20-40 MPa',
+      solubility: 'Limited solubility'
+    },
+    uses: ['Self-healing films', 'Coatings', 'Membranes', 'Sensors', 'Flexible electronics'],
+    advantages: ['Room temperature healing', 'Fast healing', 'Multiple cycles', 'Transparent', 'No external stimulus needed'],
+    limitations: ['Moderate mechanical properties', 'Moisture sensitive', 'Limited to specific applications'],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - extends material lifetime'
+    }
   }
 ];
