@@ -5928,5 +5928,380 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Low to moderate toxicity',
       sustainability: 'Low - limited applications, complex synthesis'
     }
+  },
+  {
+    id: 'pet',
+    name: 'Polyethylene Terephthalate (PET)',
+    category: 'packaging',
+    formula: '(C₁₀H₈O₄)ₙ',
+    molarMass: '192.17 g/mol (repeat unit)',
+    structure: 'Semi-crystalline thermoplastic polyester with aromatic rings',
+    synthesis: 'Polycondensation of terephthalic acid and ethylene glycol at high temperature',
+    image2D: '/src/assets/polymers/pet-2d.png',
+    properties: {
+      meltingPoint: '250-260°C',
+      density: '1.38-1.41 g/cm³',
+      tensileStrength: '50-75 MPa',
+      solubility: 'Insoluble in water, soluble in some organic solvents at high temp'
+    },
+    uses: ['Beverage bottles', 'Food packaging', 'Textile fibers', 'Film applications', 'Engineering plastics'],
+    advantages: ['Excellent barrier properties', 'High strength', 'Transparent', 'Recyclable', 'Lightweight'],
+    limitations: ['Limited heat resistance', 'Requires high processing temperatures', 'Can absorb odors', 'UV degradation'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable (hundreds of years)',
+      recyclability: 'Highly recyclable (PETE #1)',
+      toxicity: 'Low toxicity, food safe',
+      sustainability: 'Moderate - petroleum-based but highly recyclable'
+    }
+  },
+  {
+    id: 'hdpe',
+    name: 'High-Density Polyethylene (HDPE)',
+    category: 'packaging',
+    formula: '(C₂H₄)ₙ',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Linear polymer with minimal branching, high crystallinity',
+    synthesis: 'Polymerization of ethylene using Ziegler-Natta or metallocene catalysts at low pressure',
+    image2D: '/src/assets/polymers/hdpe-2d.png',
+    properties: {
+      meltingPoint: '120-130°C',
+      density: '0.941-0.965 g/cm³',
+      tensileStrength: '26-33 MPa',
+      solubility: 'Insoluble in water and most solvents at room temperature'
+    },
+    uses: ['Milk jugs', 'Detergent bottles', 'Pipes and fittings', 'Cutting boards', 'Grocery bags'],
+    advantages: ['High strength-to-density ratio', 'Chemical resistance', 'Impact resistant', 'Recyclable', 'Low cost'],
+    limitations: ['Poor UV resistance without additives', 'Susceptible to stress cracking', 'Not transparent', 'Limited heat resistance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Highly recyclable (HDPE #2)',
+      toxicity: 'Non-toxic, food safe',
+      sustainability: 'Moderate - petroleum-based but recyclable, bio-based alternatives exist'
+    }
+  },
+  {
+    id: 'ldpe',
+    name: 'Low-Density Polyethylene (LDPE)',
+    category: 'packaging',
+    formula: '(C₂H₄)ₙ',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Branched polymer with lower crystallinity than HDPE',
+    synthesis: 'Free radical polymerization of ethylene at high pressure (1000-3000 atm)',
+    image2D: '/src/assets/polymers/ldpe-2d.png',
+    properties: {
+      meltingPoint: '105-115°C',
+      density: '0.910-0.940 g/cm³',
+      tensileStrength: '8-25 MPa',
+      solubility: 'Insoluble in water, swells in some solvents'
+    },
+    uses: ['Plastic bags', 'Food wrap', 'Squeeze bottles', 'Flexible tubing', 'Agricultural films'],
+    advantages: ['Excellent flexibility', 'Good chemical resistance', 'Easy to process', 'Transparent films', 'Low cost'],
+    limitations: ['Low strength compared to HDPE', 'Poor barrier properties', 'Limited heat resistance', 'UV degradation'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (LDPE #4) but less commonly recycled',
+      toxicity: 'Non-toxic, food safe',
+      sustainability: 'Low - petroleum-based, often single-use'
+    }
+  },
+  {
+    id: 'pp',
+    name: 'Polypropylene (PP)',
+    category: 'packaging',
+    formula: '(C₃H₆)ₙ',
+    molarMass: '42.08 g/mol (repeat unit)',
+    structure: 'Semi-crystalline thermoplastic with methyl side groups',
+    synthesis: 'Ziegler-Natta or metallocene catalyzed polymerization of propylene',
+    image2D: '/src/assets/polymers/pp-2d.png',
+    properties: {
+      meltingPoint: '130-171°C',
+      density: '0.895-0.92 g/cm³',
+      tensileStrength: '30-40 MPa',
+      solubility: 'Insoluble in cold water and most solvents'
+    },
+    uses: ['Food containers', 'Bottle caps', 'Automotive parts', 'Textiles and fibers', 'Medical devices'],
+    advantages: ['Excellent fatigue resistance', 'Good chemical resistance', 'High melting point', 'Lightweight', 'Sterilizable'],
+    limitations: ['UV degradation without stabilizers', 'Difficult to bond or paint', 'Brittle at low temperatures', 'Flammable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (PP #5)',
+      toxicity: 'Non-toxic, food and medical grade available',
+      sustainability: 'Moderate - petroleum-based but recyclable, bio-based versions in development'
+    }
+  },
+  {
+    id: 'pvc',
+    name: 'Polyvinyl Chloride (PVC)',
+    category: 'packaging',
+    formula: '(C₂H₃Cl)ₙ',
+    molarMass: '62.50 g/mol (repeat unit)',
+    structure: 'Atactic polymer with chlorine atoms on alternating carbon atoms',
+    synthesis: 'Free radical polymerization of vinyl chloride monomer',
+    image2D: '/src/assets/polymers/pvc-2d.png',
+    properties: {
+      meltingPoint: '100-260°C (depends on plasticizer content)',
+      density: '1.3-1.45 g/cm³',
+      tensileStrength: '40-51 MPa (rigid)',
+      solubility: 'Insoluble in water, soluble in THF and DMF'
+    },
+    uses: ['Pipes and fittings', 'Window frames', 'Blister packs', 'Wire insulation', 'Floor coverings'],
+    advantages: ['Excellent chemical resistance', 'Fire resistant', 'Durable and long-lasting', 'Low cost', 'Versatile (rigid or flexible)'],
+    limitations: ['Releases HCl when burned', 'Contains plasticizers that may leach', 'Poor heat stability', 'Environmental concerns'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (PVC #3) but limited infrastructure',
+      toxicity: 'Concerns about additives and combustion products',
+      sustainability: 'Low - chlorine source, plasticizer concerns, difficult to recycle'
+    }
+  },
+  {
+    id: 'ps',
+    name: 'Polystyrene (PS)',
+    category: 'packaging',
+    formula: '(C₈H₈)ₙ',
+    molarMass: '104.15 g/mol (repeat unit)',
+    structure: 'Atactic polymer with bulky phenyl side groups',
+    synthesis: 'Free radical polymerization of styrene monomer',
+    image2D: '/src/assets/polymers/ps-2d.png',
+    properties: {
+      meltingPoint: '240°C (amorphous, glass transition ~100°C)',
+      density: '1.04-1.065 g/cm³ (solid), 0.016-0.640 g/cm³ (foam)',
+      tensileStrength: '35-50 MPa',
+      solubility: 'Insoluble in water, soluble in aromatic solvents'
+    },
+    uses: ['Disposable cups and plates', 'Packaging foam', 'CD/DVD cases', 'Food containers', 'Insulation'],
+    advantages: ['Inexpensive', 'Easy to process', 'Good clarity', 'Excellent insulation (foam)', 'Rigid and strong'],
+    limitations: ['Brittle', 'Poor UV resistance', 'Not heat resistant', 'Environmental persistence', 'Releases styrene'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (PS #6) but rarely recycled',
+      toxicity: 'Concerns about styrene monomer residues',
+      sustainability: 'Very low - petroleum-based, often single-use, persistent in environment'
+    }
+  },
+  {
+    id: 'pbt',
+    name: 'Polybutylene Terephthalate (PBT)',
+    category: 'packaging',
+    formula: '(C₁₂H₁₂O₄)ₙ',
+    molarMass: '220.22 g/mol (repeat unit)',
+    structure: 'Semi-crystalline thermoplastic polyester',
+    synthesis: 'Polycondensation of terephthalic acid and 1,4-butanediol',
+    image2D: '/src/assets/polymers/pbt-2d.png',
+    properties: {
+      meltingPoint: '220-230°C',
+      density: '1.31 g/cm³',
+      tensileStrength: '50-60 MPa',
+      solubility: 'Insoluble in water and most solvents'
+    },
+    uses: ['Electrical connectors', 'Automotive parts', 'Appliance housings', 'Industrial fibers', 'Electronic components'],
+    advantages: ['Excellent dimensional stability', 'Good electrical properties', 'Chemical resistance', 'Fast crystallization', 'Good processability'],
+    limitations: ['Moderate heat resistance', 'Hydrolysis susceptibility', 'UV degradation', 'Higher cost than commodity plastics'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Technically recyclable but limited infrastructure',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - petroleum-based, durable applications'
+    }
+  },
+  {
+    id: 'pef',
+    name: 'Polyethylene Furanoate (PEF)',
+    category: 'packaging',
+    formula: '(C₁₀H₈O₅)ₙ',
+    molarMass: '208.17 g/mol (repeat unit)',
+    structure: 'Bio-based polyester with furan ring replacing benzene ring of PET',
+    synthesis: 'Polycondensation of 2,5-furandicarboxylic acid (FDCA) and ethylene glycol',
+    image2D: '/src/assets/polymers/pef-2d.png',
+    properties: {
+      meltingPoint: '210-220°C',
+      density: '1.43-1.45 g/cm³',
+      tensileStrength: '50-70 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['Beverage bottles', 'Food packaging', 'Films', 'Fibers', 'PET replacement applications'],
+    advantages: ['Bio-based (from renewable resources)', 'Better barrier properties than PET', 'Mechanical properties similar to PET', 'Recyclable', 'Lower carbon footprint'],
+    limitations: ['Currently more expensive than PET', 'Limited commercial production', 'New technology', 'Processing optimization needed'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable but bio-based',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - derived from renewable biomass (fructose), lower CO₂ emissions'
+    }
+  },
+  {
+    id: 'ppc',
+    name: 'Poly(propylene carbonate) (PPC)',
+    category: 'packaging',
+    formula: '(C₄H₆O₃)ₙ',
+    molarMass: '102.09 g/mol (repeat unit)',
+    structure: 'Aliphatic polycarbonate with alternating carbonate and propylene units',
+    synthesis: 'Copolymerization of CO₂ and propylene oxide using catalysts',
+    image2D: '/src/assets/polymers/ppc-2d.png',
+    properties: {
+      meltingPoint: '35-45°C (Tg)',
+      density: '1.3 g/cm³',
+      tensileStrength: '25-40 MPa',
+      solubility: 'Soluble in many organic solvents'
+    },
+    uses: ['Packaging films', 'Coatings', 'Adhesives', 'Medical applications', 'CO₂ utilization'],
+    advantages: ['Uses CO₂ as feedstock', 'Biodegradable', 'Good barrier properties', 'Transparent', 'Non-toxic'],
+    limitations: ['Low thermal stability', 'Limited mechanical strength', 'Moisture sensitivity', 'Relatively expensive'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (6-12 months in soil)',
+      recyclability: 'Limited recyclability',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - utilizes waste CO₂, reduces carbon footprint'
+    }
+  },
+  {
+    id: 'pbat',
+    name: 'Polybutylene Adipate Terephthalate (PBAT)',
+    category: 'packaging',
+    formula: '(C₁₆H₁₈O₆)ₙ',
+    molarMass: '306.31 g/mol (average repeat unit)',
+    structure: 'Biodegradable copolyester combining soft and hard segments',
+    synthesis: 'Polycondensation of adipic acid, terephthalic acid, and 1,4-butanediol',
+    image2D: '/src/assets/polymers/pbat-2d.png',
+    properties: {
+      meltingPoint: '110-120°C',
+      density: '1.25-1.27 g/cm³',
+      tensileStrength: '15-35 MPa',
+      solubility: 'Insoluble in water, soluble in chlorinated solvents'
+    },
+    uses: ['Compostable bags', 'Agricultural mulch films', 'Food packaging', 'Disposable cutlery', 'Flexible films'],
+    advantages: ['Biodegradable and compostable', 'Good flexibility', 'Similar properties to LDPE', 'Processable on conventional equipment', 'Blends well with PLA'],
+    limitations: ['Higher cost than conventional plastics', 'Lower mechanical strength', 'Requires industrial composting', 'Petroleum-based components'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (complies with EN 13432)',
+      recyclability: 'Limited recyclability due to biodegradable nature',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate to high - biodegradable but partially petroleum-based'
+    }
+  },
+  {
+    id: 'pbs',
+    name: 'Polybutylene Succinate (PBS)',
+    category: 'packaging',
+    formula: '(C₈H₁₂O₄)ₙ',
+    molarMass: '172.18 g/mol (repeat unit)',
+    structure: 'Biodegradable aliphatic polyester',
+    synthesis: 'Polycondensation of succinic acid and 1,4-butanediol',
+    image2D: '/src/assets/polymers/pbs-2d.png',
+    properties: {
+      meltingPoint: '90-120°C',
+      density: '1.26 g/cm³',
+      tensileStrength: '30-50 MPa',
+      solubility: 'Insoluble in water, soluble in chloroform and hot DMF'
+    },
+    uses: ['Packaging films', 'Agricultural mulch', 'Disposable products', 'Fibers', 'Medical applications'],
+    advantages: ['Biodegradable', 'Good mechanical properties', 'Processable like conventional plastics', 'Can be bio-based', 'Heat sealable'],
+    limitations: ['Higher cost', 'Limited availability', 'Lower heat resistance', 'Hydrolysis susceptibility'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable in soil and compost',
+      recyclability: 'Limited recyclability',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - can be fully bio-based from renewable resources'
+    }
+  },
+  {
+    id: 'tps',
+    name: 'Thermoplastic Starch (TPS)',
+    category: 'packaging',
+    formula: '(C₆H₁₀O₅)ₙ',
+    molarMass: '162.14 g/mol (repeat unit)',
+    structure: 'Modified starch processed with plasticizers to achieve thermoplastic properties',
+    synthesis: 'Destructurization of native starch using heat, pressure, and plasticizers (glycerol, water)',
+    image2D: '/src/assets/polymers/tps-2d.png',
+    properties: {
+      meltingPoint: '110-180°C (processing temperature)',
+      density: '1.2-1.3 g/cm³',
+      tensileStrength: '5-20 MPa',
+      solubility: 'Water-sensitive, swells in water'
+    },
+    uses: ['Biodegradable packaging', 'Loose-fill packaging', 'Agricultural films', 'Disposable items', 'Polymer blends'],
+    advantages: ['Fully bio-based', 'Biodegradable', 'Low cost raw material', 'Renewable', 'Compostable'],
+    limitations: ['High moisture sensitivity', 'Poor mechanical properties', 'Requires blending for most applications', 'Limited shelf life'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable and compostable',
+      recyclability: 'Not recyclable but compostable',
+      toxicity: 'Non-toxic, food safe',
+      sustainability: 'Very high - renewable, abundant, low energy production'
+    }
+  },
+  {
+    id: 'starch-bioplastic',
+    name: 'Starch-Based Bioplastic',
+    category: 'packaging',
+    formula: '(C₆H₁₀O₅)ₙ',
+    molarMass: '162.14 g/mol (repeat unit)',
+    structure: 'Composite material of starch blended with biodegradable polymers',
+    synthesis: 'Blending starch with polymers like PLA, PBAT, or PCL using extrusion',
+    image2D: '/src/assets/polymers/starch-bioplastic-2d.png',
+    properties: {
+      meltingPoint: 'Variable (60-180°C depending on formulation)',
+      density: '1.2-1.4 g/cm³',
+      tensileStrength: '10-40 MPa',
+      solubility: 'Moisture sensitive'
+    },
+    uses: ['Food packaging', 'Shopping bags', 'Disposable tableware', 'Agricultural films', 'Protective packaging'],
+    advantages: ['Renewable resource', 'Biodegradable', 'Cost-effective', 'Reduces plastic waste', 'Compostable'],
+    limitations: ['Moisture sensitivity', 'Variable properties', 'Shorter shelf life', 'Limited heat resistance', 'Processing challenges'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (rate depends on formulation)',
+      recyclability: 'Compostable rather than recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - made from renewable crops, reduces fossil fuel dependency'
+    }
+  },
+  {
+    id: 'bio-pet',
+    name: 'Bio-Based PET',
+    category: 'packaging',
+    formula: '(C₁₀H₈O₄)ₙ',
+    molarMass: '192.17 g/mol (repeat unit)',
+    structure: 'Same as conventional PET but ethylene glycol derived from bio-sources',
+    synthesis: 'Polycondensation using bio-based ethylene glycol from sugarcane and conventional terephthalic acid',
+    image2D: '/src/assets/polymers/bio-pet-2d.png',
+    properties: {
+      meltingPoint: '250-260°C',
+      density: '1.38-1.41 g/cm³',
+      tensileStrength: '50-75 MPa',
+      solubility: 'Same as conventional PET'
+    },
+    uses: ['Beverage bottles', 'Food packaging', 'Textile fibers', 'Films', 'All PET applications'],
+    advantages: ['Identical to conventional PET', 'Partially bio-based', 'Fully recyclable in existing streams', 'Lower carbon footprint', 'Drop-in replacement'],
+    limitations: ['Only 30% bio-based currently', 'Same non-biodegradable nature', 'Similar cost to fossil PET', 'Full bio-based PET still in development'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Fully recyclable with conventional PET (PETE #1)',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate to high - 30% renewable content, reduces fossil fuel use'
+    }
+  },
+  {
+    id: 'bio-pe',
+    name: 'Bio-Based Polyethylene (Bio-PE)',
+    category: 'packaging',
+    formula: '(C₂H₄)ₙ',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Chemically identical to conventional PE but derived from renewable sources',
+    synthesis: 'Polymerization of bio-ethylene derived from sugarcane ethanol dehydration',
+    image2D: '/src/assets/polymers/bio-pe-2d.png',
+    properties: {
+      meltingPoint: '105-135°C (depending on density)',
+      density: '0.91-0.97 g/cm³',
+      tensileStrength: '8-33 MPa',
+      solubility: 'Same as conventional PE'
+    },
+    uses: ['Packaging films', 'Bottles', 'Bags', 'Toys', 'All conventional PE applications'],
+    advantages: ['100% bio-based', 'Identical properties to fossil PE', 'Drop-in replacement', 'Recyclable in existing streams', 'Negative carbon footprint during growth'],
+    limitations: ['Non-biodegradable', 'Same environmental persistence', 'Dependent on sugarcane availability', 'Land use concerns'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Fully recyclable with conventional PE',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - renewable resource, captures CO₂ during sugarcane growth, reduces fossil fuel dependency'
+    }
   }
 ];
