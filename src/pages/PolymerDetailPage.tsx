@@ -145,14 +145,24 @@ export default function PolymerDetailPage() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-primary/30">
-              <h2 className="text-2xl font-bold mb-4 text-primary">3D Molecular Structure</h2>
+              <h2 className="text-2xl font-bold mb-4 text-primary">
+                {polymer.image3D ? '3D Material Visualization' : '3D Molecular Structure'}
+              </h2>
               <div className="aspect-square rounded-lg overflow-hidden border-2 border-primary/20 bg-background/50">
-                <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
-                  <MoleculeVisualization />
-                </Canvas>
+                {polymer.image3D ? (
+                  <img 
+                    src={polymer.image3D} 
+                    alt={`${polymer.name} 3D visualization`}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
+                    <MoleculeVisualization />
+                  </Canvas>
+                )}
               </div>
               <p className="text-sm text-muted-foreground mt-4 text-center">
-                Click and drag to rotate • Scroll to zoom
+                {polymer.image3D ? 'Material appearance and structure' : 'Click and drag to rotate • Scroll to zoom'}
               </p>
             </Card>
           </motion.div>

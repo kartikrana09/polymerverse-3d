@@ -7,6 +7,7 @@ export interface Polymer {
   structure: string;
   synthesis: string;
   image2D?: string;
+  image3D?: string;
   properties: {
     meltingPoint?: string;
     boilingPoint?: string;
@@ -6920,6 +6921,445 @@ export const samplePolymers: Polymer[] = [
       recyclability: 'Difficult to recycle',
       toxicity: 'Low toxicity',
       sustainability: 'Moderate - natural rock source but energy-intensive'
+    }
+  },
+  {
+    id: 'polyimide',
+    name: 'Polyimide (PI, Kapton)',
+    category: 'composite',
+    formula: '(C₂₂H₁₀N₂O₅)ₙ',
+    molarMass: '382.33 g/mol (repeat unit)',
+    structure: 'Aromatic polymer with imide linkages providing exceptional thermal stability',
+    synthesis: 'Polycondensation of aromatic dianhydrides with aromatic diamines',
+    image2D: '/src/assets/polymers/pi-2d.png',
+    image3D: '/src/assets/polymers/pi-3d.png',
+    properties: {
+      meltingPoint: 'Does not melt, Tg >350°C',
+      density: '1.42 g/cm³',
+      tensileStrength: '230 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['Flexible circuits', 'Aerospace insulation', 'High-temperature films', 'Electronic substrates', 'Wire insulation', 'Space applications'],
+    advantages: ['Extreme temperature resistance (-269°C to 400°C)', 'Excellent dimensional stability', 'Outstanding chemical resistance', 'Low thermal expansion', 'Good electrical properties'],
+    limitations: ['Very expensive', 'Difficult to process', 'Requires high-temperature curing', 'Limited availability', 'Hygroscopic'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Extremely difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - complex synthesis, long service life in critical applications'
+    }
+  },
+  {
+    id: 'pei',
+    name: 'Polyetherimide (PEI, Ultem)',
+    category: 'composite',
+    formula: '(C₃₇H₂₄N₂O₆)ₙ',
+    molarMass: '592.6 g/mol (repeat unit)',
+    structure: 'Amorphous thermoplastic with ether and imide linkages',
+    synthesis: 'Reaction of bisphenol A dianhydride with m-phenylenediamine',
+    image2D: '/src/assets/polymers/pei-2d.png',
+    image3D: '/src/assets/polymers/pei-3d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~217°C',
+      density: '1.27 g/cm³',
+      tensileStrength: '105 MPa',
+      solubility: 'Soluble in chlorinated solvents'
+    },
+    uses: ['Medical devices', 'Aircraft interiors', 'Automotive under-hood', 'Food service', 'Transparent structural parts', 'Electronics housings'],
+    advantages: ['High heat resistance', 'Excellent strength and stiffness', 'Transparent', 'Sterilizable', 'Flame retardant', 'Good dimensional stability'],
+    limitations: ['Expensive', 'Notch sensitive', 'UV degradation', 'Chemical attack by strong bases', 'Processing requires high temperatures'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable but rarely done',
+      toxicity: 'Non-toxic, FDA compliant',
+      sustainability: 'Moderate - long service life in demanding applications'
+    }
+  },
+  {
+    id: 'pekk',
+    name: 'Polyetherketoneketone (PEKK)',
+    category: 'composite',
+    formula: '(C₂₀H₁₂O₄)ₙ',
+    molarMass: '316.31 g/mol (repeat unit)',
+    structure: 'Semi-crystalline aromatic polymer with alternating ether and ketone groups',
+    synthesis: 'Step-growth polymerization of aromatic dihalides with diphenols',
+    image2D: '/src/assets/polymers/pekk-2d.png',
+    image3D: '/src/assets/polymers/pekk-3d.png',
+    properties: {
+      meltingPoint: '305-335°C (varies with isomer ratio)',
+      density: '1.30 g/cm³',
+      tensileStrength: '100-110 MPa',
+      solubility: 'Insoluble below 300°C'
+    },
+    uses: ['Aerospace structures', '3D printing (FDM)', 'Oil and gas components', 'Medical implants', 'Automotive parts', 'Chemical processing equipment'],
+    advantages: ['Excellent mechanical properties', 'High chemical resistance', 'Better processability than PEEK', 'Good fatigue resistance', 'Lower crystallization rate'],
+    limitations: ['Very expensive', 'Requires high processing temperatures', 'Limited suppliers', 'Moisture sensitive during processing'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable but rarely done',
+      toxicity: 'Non-toxic',
+      sustainability: 'Low - energy-intensive production, niche high-performance applications'
+    }
+  },
+  {
+    id: 'pes',
+    name: 'Polyethersulfone (PES)',
+    category: 'composite',
+    formula: '(C₁₂H₈O₃S)ₙ',
+    molarMass: '232.25 g/mol (repeat unit)',
+    structure: 'Amorphous thermoplastic with ether and sulfone linkages',
+    synthesis: 'Nucleophilic aromatic substitution of bisphenol with dichlorodiphenylsulfone',
+    image2D: '/src/assets/polymers/pes-2d.png',
+    image3D: '/src/assets/polymers/pes-3d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~225°C',
+      density: '1.37 g/cm³',
+      tensileStrength: '84 MPa',
+      solubility: 'Soluble in polar aprotic solvents'
+    },
+    uses: ['Filtration membranes', 'Medical devices', 'Food processing equipment', 'Automotive sensors', 'Electrical components', 'Hemodialysis membranes'],
+    advantages: ['High temperature resistance', 'Excellent hydrolytic stability', 'Good toughness', 'Transparent', 'Sterilizable', 'Chemical resistant'],
+    limitations: ['Expensive', 'Poor UV resistance', 'Attacked by strong bases', 'Stress cracking in some solvents', 'Limited color options'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable but not commonly done',
+      toxicity: 'Non-toxic, medical grade',
+      sustainability: 'Moderate - long service life in critical applications'
+    }
+  },
+  {
+    id: 'psu',
+    name: 'Polysulfone (PSU)',
+    category: 'composite',
+    formula: '(C₂₇H₂₂O₄S)ₙ',
+    molarMass: '442.53 g/mol (repeat unit)',
+    structure: 'Amorphous thermoplastic with sulfone groups and bisphenol A units',
+    synthesis: 'Polycondensation of bisphenol A with dichlorodiphenylsulfone',
+    image2D: '/src/assets/polymers/psu-2d.png',
+    image3D: '/src/assets/polymers/psu-3d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~190°C',
+      density: '1.24 g/cm³',
+      tensileStrength: '70 MPa',
+      solubility: 'Soluble in polar aprotic solvents'
+    },
+    uses: ['Medical devices', 'Food contact applications', 'Plumbing fittings', 'Microwave cookware', 'Electrical components', 'Automotive'],
+    advantages: ['Good heat resistance', 'Excellent hydrolytic stability', 'Tough and rigid', 'Transparent', 'Steam sterilizable', 'Good electrical properties'],
+    limitations: ['Moderate cost', 'Poor UV resistance', 'Susceptible to stress cracking', 'Limited chemical resistance to organics', 'Notch sensitive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Non-toxic, FDA approved',
+      sustainability: 'Moderate - durable applications, long service life'
+    }
+  },
+  {
+    id: 'ppsu',
+    name: 'Polyphenylsulfone (PPSU)',
+    category: 'composite',
+    formula: '(C₂₄H₁₆O₃S)ₙ',
+    molarMass: '384.45 g/mol (repeat unit)',
+    structure: 'Amorphous thermoplastic with phenylene and sulfone groups',
+    synthesis: 'Nucleophilic aromatic substitution polymerization',
+    image2D: '/src/assets/polymers/ppsu-2d.png',
+    image3D: '/src/assets/polymers/ppsu-3d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~220°C',
+      density: '1.29 g/cm³',
+      tensileStrength: '75 MPa',
+      solubility: 'Soluble in polar aprotic solvents'
+    },
+    uses: ['Medical surgical instruments', 'Baby bottles', 'Aircraft interiors', 'Plumbing manifolds', 'Food processing', 'Sterilizable components'],
+    advantages: ['Highest heat resistance of sulfone polymers', 'Outstanding toughness', 'Steam sterilizable (>1000 cycles)', 'Excellent hydrolytic stability', 'Transparent'],
+    limitations: ['Expensive', 'Poor UV resistance', 'Limited chemical resistance to organics', 'Processing requires high temperatures'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Non-toxic, medical and food grade',
+      sustainability: 'Moderate - long service life in demanding sterilization applications'
+    }
+  },
+  {
+    id: 'lcp',
+    name: 'Liquid Crystal Polymer (LCP)',
+    category: 'composite',
+    formula: 'Complex aromatic polyester',
+    molarMass: 'Variable',
+    structure: 'Highly ordered aromatic polyester with rigid rod-like molecules',
+    synthesis: 'Polycondensation of aromatic diols and diacids',
+    image2D: '/src/assets/polymers/lcp-2d.png',
+    image3D: '/src/assets/polymers/lcp-3d.png',
+    properties: {
+      meltingPoint: '280-350°C',
+      density: '1.35-1.45 g/cm³',
+      tensileStrength: '130-240 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['High-frequency connectors', 'Surface mount technology', 'Fiber optics components', 'Medical instruments', 'Precision parts', 'LED reflectors'],
+    advantages: ['Exceptional dimensional stability', 'Low coefficient of thermal expansion', 'Excellent chemical resistance', 'High strength and stiffness', 'Outstanding electrical properties'],
+    limitations: ['Very expensive', 'Anisotropic properties', 'Difficult to process', 'Limited color options', 'Notch sensitive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - high-end electronics applications, long service life'
+    }
+  },
+  {
+    id: 'pbi',
+    name: 'Polybenzimidazole (PBI)',
+    category: 'composite',
+    formula: '(C₂₀H₁₂N₄)ₙ',
+    molarMass: '308.34 g/mol (repeat unit)',
+    structure: 'Aromatic heterocyclic polymer with imidazole rings',
+    synthesis: 'Polycondensation of tetraaminobiphenyl with diphenyl isophthalate',
+    image2D: '/src/assets/polymers/pbi-2d.png',
+    image3D: '/src/assets/polymers/pbi-3d.png',
+    properties: {
+      meltingPoint: 'Does not melt, decomposes >600°C',
+      density: '1.3 g/cm³',
+      tensileStrength: '170 MPa (fiber)',
+      solubility: 'Soluble only in strong acids'
+    },
+    uses: ['Firefighter protective clothing', 'High-temperature gaskets', 'Fuel cell membranes', 'Aerospace thermal protection', 'Welding protective gear'],
+    advantages: ['Highest heat resistance of organic polymers', 'Non-flammable', 'Excellent chemical resistance', 'Good mechanical properties at high temperatures', 'Radiation resistant'],
+    limitations: ['Extremely expensive', 'Very difficult to process', 'Absorbs moisture', 'Limited availability', 'Degrades in strong bases'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - niche life-safety applications, very long service life'
+    }
+  },
+  {
+    id: 'peek-cf',
+    name: 'Carbon Fiber Reinforced PEEK (CF-PEEK)',
+    category: 'composite',
+    formula: 'PEEK matrix with carbon fibers',
+    molarMass: 'Composite material',
+    structure: 'PEEK thermoplastic matrix reinforced with continuous or chopped carbon fibers',
+    synthesis: 'Impregnation of carbon fibers with PEEK resin and consolidation',
+    image2D: '/src/assets/polymers/peek-cf-2d.png',
+    image3D: '/src/assets/polymers/peek-cf-3d.png',
+    properties: {
+      meltingPoint: '343°C (PEEK matrix)',
+      density: '1.4-1.5 g/cm³',
+      tensileStrength: '200-400 MPa (varies with fiber content)',
+      solubility: 'Insoluble'
+    },
+    uses: ['Aerospace structures', 'Medical implants (spinal cages)', 'Oil and gas downhole tools', 'Automotive racing parts', 'Industrial bearings'],
+    advantages: ['Outstanding strength-to-weight ratio', 'Excellent chemical resistance', 'High temperature capability', 'Biocompatible', 'Recyclable thermoplastic matrix'],
+    limitations: ['Very expensive', 'Difficult to process', 'Requires specialized equipment', 'Anisotropic properties', 'Limited suppliers'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Theoretically recyclable but rarely done',
+      toxicity: 'Non-toxic',
+      sustainability: 'Low - high-cost niche applications, very long service life'
+    }
+  },
+  {
+    id: 'ppa-gf',
+    name: 'Glass-Filled Polyphthalamide (GF-PPA)',
+    category: 'composite',
+    formula: 'PPA matrix with glass fibers',
+    molarMass: 'Composite material',
+    structure: 'Semi-aromatic polyamide reinforced with short glass fibers (30-50%)',
+    synthesis: 'Compounding of PPA resin with chopped glass fibers',
+    image2D: '/src/assets/polymers/ppa-gf-2d.png',
+    image3D: '/src/assets/polymers/ppa-gf-3d.png',
+    properties: {
+      meltingPoint: '290-310°C',
+      density: '1.4-1.5 g/cm³',
+      tensileStrength: '150-200 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Automotive connectors', 'LED lighting components', 'Water pump housings', 'Turbocharger components', 'Industrial electrical parts'],
+    advantages: ['Excellent high-temperature strength', 'Low moisture absorption', 'Good dimensional stability', 'Chemical resistance', 'Lower cost than unfilled'],
+    limitations: ['Expensive compared to PA6/66', 'Anisotropic properties', 'Surface finish issues', 'Difficult to bond or paint'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult due to glass fibers',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - long service life in demanding automotive applications'
+    }
+  },
+  {
+    id: 'cfrp',
+    name: 'Carbon Fiber Reinforced Polymer (CFRP)',
+    category: 'composite',
+    formula: 'Epoxy or other matrix with carbon fibers',
+    molarMass: 'Composite material',
+    structure: 'High-strength carbon fibers embedded in thermoset or thermoplastic matrix',
+    synthesis: 'Layup of carbon fiber fabric/prepreg followed by curing under heat and pressure',
+    image2D: '/src/assets/polymers/cfrp-2d.png',
+    image3D: '/src/assets/polymers/cfrp-3d.png',
+    properties: {
+      density: '1.5-1.6 g/cm³',
+      tensileStrength: '600-1000 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Aerospace structures', 'High-performance automotive', 'Sports equipment', 'Wind turbine blades', 'Bicycle frames', 'Marine racing'],
+    advantages: ['Exceptional strength-to-weight ratio', 'High stiffness', 'Fatigue resistant', 'Corrosion resistant', 'Tailorable properties'],
+    limitations: ['Very expensive', 'Difficult to repair', 'Anisotropic properties', 'Conductive (lightning strike issue)', 'Energy-intensive production'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Very difficult and expensive to recycle',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Low - high embodied energy, difficult end-of-life management'
+    }
+  },
+  {
+    id: 'aramid-composite',
+    name: 'Aramid Fiber Composite (Kevlar Composite)',
+    category: 'composite',
+    formula: 'Epoxy matrix with aramid fibers',
+    molarMass: 'Composite material',
+    structure: 'Para-aramid (Kevlar) fibers embedded in epoxy or vinyl ester resin',
+    synthesis: 'Wet layup or prepreg processing of aramid fabric with resin',
+    image2D: '/src/assets/polymers/aramid-composite-2d.png',
+    image3D: '/src/assets/polymers/aramid-composite-3d.png',
+    properties: {
+      density: '1.38-1.45 g/cm³',
+      tensileStrength: '3000-3600 MPa (fiber)',
+      solubility: 'Insoluble'
+    },
+    uses: ['Body armor', 'Ballistic helmets', 'Cut-resistant gloves', 'Aerospace honeycomb cores', 'Pressure vessels', 'Marine hulls'],
+    advantages: ['Outstanding impact resistance', 'Excellent strength-to-weight ratio', 'High energy absorption', 'Good fatigue resistance', 'Does not conduct electricity'],
+    limitations: ['Expensive', 'Difficult to cut and machine', 'Poor compression strength', 'UV sensitive', 'Absorbs moisture'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Very difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - niche protective applications, very long service life'
+    }
+  },
+  {
+    id: 'paek',
+    name: 'Polyaryletherketone (PAEK)',
+    category: 'composite',
+    formula: '(C₁₉H₁₂O₃)ₙ',
+    molarMass: '288.3 g/mol (repeat unit)',
+    structure: 'Family of semi-crystalline polymers with aromatic ether and ketone groups',
+    synthesis: 'Nucleophilic aromatic substitution reactions',
+    image2D: '/src/assets/polymers/paek-2d.png',
+    image3D: '/src/assets/polymers/paek-3d.png',
+    properties: {
+      meltingPoint: '330-380°C (varies with exact structure)',
+      density: '1.28-1.32 g/cm³',
+      tensileStrength: '90-110 MPa',
+      solubility: 'Insoluble below 300°C'
+    },
+    uses: ['Aerospace components', 'Oil and gas applications', 'Medical devices', 'Automotive under-hood', 'Industrial seals', 'Electrical insulators'],
+    advantages: ['Exceptional temperature resistance', 'Excellent chemical resistance', 'Good mechanical properties', 'Radiation resistant', 'Biocompatible'],
+    limitations: ['Very expensive', 'Difficult to process', 'Limited color options', 'Requires high processing temperatures', 'Moisture sensitive during processing'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable but rarely done',
+      toxicity: 'Non-toxic',
+      sustainability: 'Low - energy-intensive production, niche high-performance applications'
+    }
+  },
+  {
+    id: 'bfrp',
+    name: 'Basalt Fiber Reinforced Polymer (BFRP)',
+    category: 'composite',
+    formula: 'Polymer matrix with basalt fibers',
+    molarMass: 'Composite material',
+    structure: 'Natural basalt rock fibers embedded in epoxy, vinyl ester, or polyester resin',
+    synthesis: 'Melting basalt rock at 1400°C, drawing fibers, then impregnating with resin',
+    image2D: '/src/assets/polymers/bfrp-2d.png',
+    image3D: '/src/assets/polymers/bfrp-3d.png',
+    properties: {
+      density: '1.8-2.0 g/cm³',
+      tensileStrength: '300-500 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Marine applications', 'Construction reinforcement', 'Automotive parts', 'Corrosion-resistant structures', 'Fire-resistant applications'],
+    advantages: ['Good strength-to-weight ratio', 'Excellent chemical resistance', 'High temperature resistance', 'Non-toxic', 'Natural material', 'Wider temperature range than glass fiber'],
+    limitations: ['Higher cost than glass fiber', 'Limited availability', 'Lower strength than carbon fiber', 'Difficult to recycle', 'Relatively new technology'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity, no carcinogenic fibers',
+      sustainability: 'Moderate - natural abundant resource but energy-intensive processing'
+    }
+  },
+  {
+    id: 'phenolic-composite',
+    name: 'Phenolic Resin Composite',
+    category: 'composite',
+    formula: 'Phenol-formaldehyde network',
+    molarMass: 'Cross-linked thermoset',
+    structure: 'Cross-linked phenol-formaldehyde resin, often reinforced with fibers',
+    synthesis: 'Condensation of phenol and formaldehyde with heat and pressure',
+    image2D: '/src/assets/polymers/phenolic-composite-2d.png',
+    image3D: '/src/assets/polymers/phenolic-composite-3d.png',
+    properties: {
+      meltingPoint: 'Thermoset, does not melt',
+      density: '1.2-1.4 g/cm³',
+      tensileStrength: '40-60 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Electrical insulators', 'Circuit boards', 'Brake pads', 'Adhesives', 'Molding compounds', 'Foundry sand binders'],
+    advantages: ['Excellent fire resistance', 'Low smoke generation', 'Good electrical insulation', 'Low cost', 'Dimensional stability', 'Chemical resistant'],
+    limitations: ['Brittle', 'Dark color only', 'Formaldehyde emissions during curing', 'Cannot be remolded', 'Poor impact strength'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable (thermoset)',
+      toxicity: 'Formaldehyde emissions concern',
+      sustainability: 'Moderate - long service life but formaldehyde environmental concerns'
+    }
+  },
+  {
+    id: 'pps-composite',
+    name: 'Glass-Filled PPS Composite',
+    category: 'composite',
+    formula: 'PPS matrix with glass fibers',
+    molarMass: 'Composite material',
+    structure: 'Semi-crystalline PPS reinforced with short glass fibers (20-50%)',
+    synthesis: 'Compounding of PPS resin with chopped glass fibers',
+    image2D: '/src/assets/polymers/ppsx-2d.png',
+    image3D: '/src/assets/polymers/ppsx-3d.png',
+    properties: {
+      meltingPoint: '285°C',
+      density: '1.5-1.65 g/cm³',
+      tensileStrength: '130-170 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Automotive fuel systems', 'Electronic connectors', 'Pump housings', 'Chemical processing equipment', 'Industrial filters', 'Under-hood automotive parts'],
+    advantages: ['Excellent chemical resistance', 'High temperature stability', 'Inherently flame retardant', 'Dimensional stability', 'Low moisture absorption'],
+    limitations: ['Expensive', 'Brittle without reinforcement', 'Anisotropic properties', 'Poor UV resistance', 'Surface finish challenges'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult due to glass fibers',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - long service life in harsh chemical environments'
+    }
+  },
+  {
+    id: 'ptfe-composite',
+    name: 'PTFE Composite (Filled Teflon)',
+    category: 'composite',
+    formula: 'PTFE with fillers',
+    molarMass: 'Composite material',
+    structure: 'PTFE matrix filled with glass fiber, carbon, bronze, or other materials',
+    synthesis: 'Mixing PTFE powder with fillers followed by sintering',
+    image2D: '/src/assets/polymers/ptfe-2d.png',
+    image3D: '/src/assets/polymers/ptfe-3d.png',
+    properties: {
+      meltingPoint: '327°C (PTFE)',
+      density: '2.1-2.3 g/cm³',
+      tensileStrength: '20-35 MPa',
+      solubility: 'Insoluble in all solvents'
+    },
+    uses: ['Seals and gaskets', 'Bearings', 'Valve seats', 'Piston rings', 'Chemical processing equipment', 'Electrical insulators'],
+    advantages: ['Extremely low friction', 'Excellent chemical resistance', 'Wide temperature range', 'Non-stick properties', 'Improved wear resistance vs unfilled'],
+    limitations: ['Expensive', 'Difficult to process', 'Poor mechanical properties', 'Cold flow (creep)', 'Difficult to bond'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Non-toxic at normal temperatures',
+      sustainability: 'Low - very long service life but PFAS environmental concerns'
     }
   },
   // Recyclable/Green Polymers
