@@ -6304,6 +6304,406 @@ export const samplePolymers: Polymer[] = [
       sustainability: 'High - renewable resource, captures CO₂ during sugarcane growth, reduces fossil fuel dependency'
     }
   },
+  {
+    id: 'pom',
+    name: 'Polyoxymethylene (POM, Acetal)',
+    category: 'packaging',
+    formula: '(CH₂O)ₙ',
+    molarMass: '30.03 g/mol (repeat unit)',
+    structure: 'Highly crystalline thermoplastic with repeating -CH₂-O- units',
+    synthesis: 'Ring-opening polymerization of trioxane or direct polymerization of formaldehyde',
+    image2D: '/src/assets/polymers/pom-2d.png',
+    properties: {
+      meltingPoint: '165-175°C',
+      density: '1.41-1.42 g/cm³',
+      tensileStrength: '60-70 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['Precision gears', 'Bearings', 'Automotive parts', 'Zippers', 'Conveyor belts', 'Medical devices'],
+    advantages: ['Excellent dimensional stability', 'High stiffness and hardness', 'Low friction coefficient', 'Good chemical resistance', 'Easy to machine'],
+    limitations: ['Poor UV resistance', 'Susceptible to strong acids/bases', 'Limited high-temperature use', 'Formaldehyde release concern'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable but not widely done',
+      toxicity: 'Low toxicity but can release formaldehyde',
+      sustainability: 'Moderate - derived from fossil fuels'
+    }
+  },
+  {
+    id: 'pmma',
+    name: 'Polymethyl Methacrylate (PMMA, Acrylic)',
+    category: 'packaging',
+    formula: '(C₅H₈O₂)ₙ',
+    molarMass: '100.12 g/mol (repeat unit)',
+    structure: 'Amorphous thermoplastic with ester side groups',
+    synthesis: 'Free radical polymerization of methyl methacrylate',
+    image2D: '/src/assets/polymers/pmma-2d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~105°C',
+      density: '1.17-1.20 g/cm³',
+      tensileStrength: '48-76 MPa',
+      solubility: 'Soluble in chlorinated solvents, acetone'
+    },
+    uses: ['Display screens', 'Light fixtures', 'Aquariums', 'Medical devices', 'Automotive lighting', 'Signs and displays'],
+    advantages: ['Excellent optical clarity', 'UV resistant', 'Weatherproof', 'Easy to fabricate', 'Lightweight'],
+    limitations: ['Brittle at room temperature', 'Scratches easily', 'Moderate chemical resistance', 'Flammable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable through chemical recycling',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - petroleum-based but recyclable'
+    }
+  },
+  {
+    id: 'abs',
+    name: 'Acrylonitrile Butadiene Styrene (ABS)',
+    category: 'packaging',
+    formula: 'Variable composition terpolymer',
+    molarMass: 'Variable (20-30% acrylonitrile, 25% butadiene, 45-55% styrene)',
+    structure: 'Terpolymer with rigid SAN matrix and rubbery butadiene phase',
+    synthesis: 'Emulsion, suspension, or continuous mass polymerization',
+    image2D: '/src/assets/polymers/abs-2d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~105°C',
+      density: '1.04-1.07 g/cm³',
+      tensileStrength: '40-50 MPa',
+      solubility: 'Soluble in ketones, esters'
+    },
+    uses: ['Automotive components', '3D printing', 'Electronic housings', 'Toys (LEGO)', 'Luggage', 'Power tool housings'],
+    advantages: ['Good impact resistance', 'Excellent toughness', 'Easy to process', 'Good dimensional stability', 'Can be painted and glued'],
+    limitations: ['Poor UV resistance', 'Flammable', 'Moderate chemical resistance', 'Not suitable for outdoor use'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable but separation difficult',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based, requires energy-intensive production'
+    }
+  },
+  {
+    id: 'pa6',
+    name: 'Nylon 6 (PA6, Polycaprolactam)',
+    category: 'packaging',
+    formula: '(C₆H₁₁NO)ₙ',
+    molarMass: '113.16 g/mol (repeat unit)',
+    structure: 'Semi-crystalline polyamide with 6-carbon repeating units',
+    synthesis: 'Ring-opening polymerization of caprolactam',
+    image2D: '/src/assets/polymers/pa6-2d.png',
+    properties: {
+      meltingPoint: '220°C',
+      density: '1.12-1.14 g/cm³',
+      tensileStrength: '60-85 MPa',
+      solubility: 'Soluble in formic acid, phenol'
+    },
+    uses: ['Textile fibers', 'Carpet', 'Engineering parts', 'Film packaging', 'Automotive components', 'Industrial yarns'],
+    advantages: ['High strength and toughness', 'Excellent abrasion resistance', 'Good chemical resistance', 'Easy to dye', 'Good fatigue resistance'],
+    limitations: ['Hygroscopic (absorbs moisture)', 'Dimensional changes with moisture', 'UV degradation', 'Higher cost than polyolefins'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (type 7)',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - petroleum-based but durable'
+    }
+  },
+  {
+    id: 'pa66',
+    name: 'Nylon 66 (PA66)',
+    category: 'packaging',
+    formula: '(C₁₂H₂₂N₂O₂)ₙ',
+    molarMass: '226.32 g/mol (repeat unit)',
+    structure: 'Semi-crystalline polyamide from hexamethylene diamine and adipic acid',
+    synthesis: 'Condensation polymerization of hexamethylene diamine and adipic acid',
+    image2D: '/src/assets/polymers/pa66-2d.png',
+    properties: {
+      meltingPoint: '265°C',
+      density: '1.13-1.15 g/cm³',
+      tensileStrength: '70-90 MPa',
+      solubility: 'Soluble in formic acid, concentrated sulfuric acid'
+    },
+    uses: ['Automotive parts', 'Electrical connectors', 'Gears and bearings', 'Textile fibers', 'Industrial applications', 'Cable ties'],
+    advantages: ['Higher melting point than PA6', 'Excellent mechanical properties', 'Good thermal stability', 'Superior stiffness', 'Chemical resistance'],
+    limitations: ['More expensive than PA6', 'Hygroscopic', 'Difficult to process', 'UV sensitive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (type 7)',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - petroleum-based, long service life'
+    }
+  },
+  {
+    id: 'pc',
+    name: 'Polycarbonate (PC)',
+    category: 'packaging',
+    formula: '(C₁₆H₁₄O₃)ₙ',
+    molarMass: '254.28 g/mol (repeat unit)',
+    structure: 'Amorphous thermoplastic with carbonate groups and bisphenol A units',
+    synthesis: 'Interfacial polymerization of bisphenol A and phosgene or melt transesterification',
+    image2D: '/src/assets/polymers/pc-2d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~145°C',
+      density: '1.20-1.22 g/cm³',
+      tensileStrength: '55-75 MPa',
+      solubility: 'Soluble in chlorinated solvents, THF'
+    },
+    uses: ['Eyewear lenses', 'Automotive headlamp lenses', 'Electronic components', 'Medical devices', 'Safety equipment', 'CDs and DVDs'],
+    advantages: ['High impact strength', 'Excellent optical clarity', 'Good heat resistance', 'Dimensional stability', 'Self-extinguishing'],
+    limitations: ['Sensitive to hydrolysis', 'Poor scratch resistance', 'Notch sensitive', 'BPA concerns', 'Expensive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (type 7)',
+      toxicity: 'BPA leaching concerns',
+      sustainability: 'Moderate - long service life but BPA concerns'
+    }
+  },
+  {
+    id: 'petg',
+    name: 'PETG (PET Glycol-Modified)',
+    category: 'packaging',
+    formula: '(C₁₀H₈O₄)ₙ with CHDM modification',
+    molarMass: '~200 g/mol (repeat unit, varies)',
+    structure: 'Modified PET with cyclohexanedimethanol replacing some ethylene glycol',
+    synthesis: 'Polycondensation of terephthalic acid with ethylene glycol and CHDM',
+    image2D: '/src/assets/polymers/petg-2d.png',
+    properties: {
+      meltingPoint: 'Amorphous to low crystalline, Tg ~80°C',
+      density: '1.27 g/cm³',
+      tensileStrength: '50-55 MPa',
+      solubility: 'Limited solubility'
+    },
+    uses: ['Display stands', 'Point-of-sale displays', '3D printing', 'Medical packaging', 'Protective equipment', 'Thermoforming'],
+    advantages: ['Excellent clarity', 'Good impact resistance', 'Easy to thermoform', 'FDA approved', 'Chemical resistant', 'No crystallization issues'],
+    limitations: ['Lower heat resistance than PET', 'More expensive than PET', 'Sensitive to UV', 'Limited barrier properties'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable with PET (type 1)',
+      toxicity: 'Non-toxic, FDA approved',
+      sustainability: 'Moderate - petroleum-based but recyclable'
+    }
+  },
+  {
+    id: 'evoh',
+    name: 'Ethylene Vinyl Alcohol (EVOH)',
+    category: 'packaging',
+    formula: '(C₂H₄)ₓ(C₂H₄O)y',
+    molarMass: 'Variable (copolymer)',
+    structure: 'Random copolymer of ethylene and vinyl alcohol',
+    synthesis: 'Hydrolysis of ethylene vinyl acetate copolymer',
+    image2D: '/src/assets/polymers/evoh-2d.png',
+    properties: {
+      meltingPoint: '165-183°C (varies with composition)',
+      density: '1.14-1.20 g/cm³',
+      tensileStrength: '45-75 MPa',
+      solubility: 'Water soluble at high temperatures'
+    },
+    uses: ['Food packaging barrier layers', 'Fuel tanks', 'Bottles for chemicals', 'Medical packaging', 'Multi-layer films'],
+    advantages: ['Excellent oxygen barrier', 'Good transparency', 'Oil and grease resistance', 'Flavor protection', 'Can be recycled in multilayer systems'],
+    limitations: ['Moisture sensitive', 'Poor barrier in humid conditions', 'Expensive', 'Requires protective layers'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult in multilayer films',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - extends food shelf life reducing waste'
+    }
+  },
+  {
+    id: 'pva',
+    name: 'Polyvinyl Alcohol (PVA, PVOH)',
+    category: 'packaging',
+    formula: '(C₂H₄O)ₙ',
+    molarMass: '44.05 g/mol (repeat unit)',
+    structure: 'Water-soluble synthetic polymer with hydroxyl groups',
+    synthesis: 'Hydrolysis (saponification) of polyvinyl acetate',
+    image2D: '/src/assets/polymers/pva-2d.png',
+    properties: {
+      meltingPoint: '180-230°C (depends on degree of hydrolysis)',
+      density: '1.19-1.31 g/cm³',
+      tensileStrength: '60-140 MPa (dry)',
+      solubility: 'Water-soluble (temperature dependent)'
+    },
+    uses: ['Laundry detergent pods', 'Water-soluble films', 'Paper coatings', 'Textile sizing', 'Adhesives', 'Emulsifier'],
+    advantages: ['Biodegradable', 'Water-soluble', 'Excellent film-forming', 'Good oxygen barrier when dry', 'Non-toxic'],
+    limitations: ['Moisture sensitive', 'Loses properties in humid conditions', 'Moderate cost', 'Storage stability issues'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable in wastewater treatment',
+      recyclability: 'Dissolves in water, not conventionally recycled',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biodegradable, reduces packaging waste'
+    }
+  },
+  {
+    id: 'lldpe',
+    name: 'Linear Low-Density Polyethylene (LLDPE)',
+    category: 'packaging',
+    formula: '(C₂H₄)ₙ with short-chain branches',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Linear polymer with short side-chain branches',
+    synthesis: 'Copolymerization of ethylene with α-olefins (butene, hexene, octene)',
+    image2D: '/src/assets/polymers/lldpe-2d.png',
+    properties: {
+      meltingPoint: '122-124°C',
+      density: '0.915-0.925 g/cm³',
+      tensileStrength: '8-30 MPa',
+      solubility: 'Insoluble in water, soluble in hot aromatics'
+    },
+    uses: ['Stretch wrap', 'Grocery bags', 'Food packaging', 'Agricultural films', 'Liners', 'Flexible tubing'],
+    advantages: ['Better puncture resistance than LDPE', 'Higher tensile strength', 'Good chemical resistance', 'Easier processing than HDPE', 'Cost-effective'],
+    limitations: ['Lower clarity than LDPE', 'Moderate heat resistance', 'Non-biodegradable', 'Limited UV resistance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (type 4)',
+      toxicity: 'Non-toxic',
+      sustainability: 'Low - fossil fuel based, but recyclable'
+    }
+  },
+  {
+    id: 'eps',
+    name: 'Expanded Polystyrene (EPS)',
+    category: 'packaging',
+    formula: '(C₈H₈)ₙ (foamed)',
+    molarMass: '104.15 g/mol (repeat unit)',
+    structure: 'Foamed polystyrene with 95-98% air content',
+    synthesis: 'Expansion of polystyrene beads containing pentane blowing agent',
+    image2D: '/src/assets/polymers/eps-2d.png',
+    properties: {
+      meltingPoint: '~240°C (softens ~100°C)',
+      density: '0.016-0.035 g/cm³ (foamed)',
+      tensileStrength: '0.3-0.5 MPa',
+      solubility: 'Dissolves in aromatic and chlorinated solvents'
+    },
+    uses: ['Packaging materials', 'Insulation', 'Disposable food containers', 'Coolers', 'Protective packaging', 'Construction'],
+    advantages: ['Excellent cushioning', 'Very lightweight', 'Low cost', 'Good thermal insulation', 'Moisture resistant'],
+    limitations: ['Not biodegradable', 'Bulky waste', 'Flammable', 'Poor recycling rates', 'Environmental persistence'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (type 6) but rarely done',
+      toxicity: 'Non-toxic but styrene residue concerns',
+      sustainability: 'Low - major environmental pollutant, low recycling rate'
+    }
+  },
+  {
+    id: 'coc',
+    name: 'Cyclic Olefin Copolymer (COC)',
+    category: 'packaging',
+    formula: 'Ethylene-(norbornene derivatives) copolymer',
+    molarMass: 'Variable (copolymer)',
+    structure: 'Random copolymer of ethylene and cyclic olefin monomers',
+    synthesis: 'Metallocene-catalyzed copolymerization of ethylene and cyclic olefins',
+    image2D: '/src/assets/polymers/coc-2d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg 70-180°C (tunable)',
+      density: '1.02 g/cm³',
+      tensileStrength: '50-65 MPa',
+      solubility: 'Soluble in aromatic and chlorinated solvents'
+    },
+    uses: ['Pharmaceutical packaging', 'Diagnostic devices', 'Optical components', 'Medical vials', 'High-barrier films', 'Precision molded parts'],
+    advantages: ['Excellent clarity', 'Very low moisture absorption', 'High purity', 'Good barrier properties', 'Biocompatible', 'Sterilizable'],
+    limitations: ['Expensive', 'Limited temperature range', 'Brittle at low temperatures', 'Difficult to bond'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Theoretically recyclable but not widely done',
+      toxicity: 'Non-toxic, USP Class VI',
+      sustainability: 'Moderate - petroleum-based but high value applications'
+    }
+  },
+  {
+    id: 'apet',
+    name: 'Amorphous PET (APET)',
+    category: 'packaging',
+    formula: '(C₁₀H₈O₄)ₙ',
+    molarMass: '192.17 g/mol (repeat unit)',
+    structure: 'Amorphous (non-crystalline) form of polyethylene terephthalate',
+    synthesis: 'Same as PET but processed to maintain amorphous state',
+    image2D: '/src/assets/polymers/apet-2d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~70°C',
+      density: '1.33-1.36 g/cm³',
+      tensileStrength: '50-60 MPa',
+      solubility: 'Minimal solubility'
+    },
+    uses: ['Food trays', 'Blister packaging', 'Clamshell containers', 'Display packaging', 'Thermoformed products'],
+    advantages: ['Excellent clarity', 'Good impact resistance', 'Easy to thermoform', 'FDA approved', 'Recyclable', 'Cost-effective'],
+    limitations: ['Lower heat resistance than crystalline PET', 'Cannot be used for hot-fill applications', 'Moderate barrier properties'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable with PET (type 1)',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - recyclable but fossil fuel based'
+    }
+  },
+  {
+    id: 'pai',
+    name: 'Polyamide-Imide (PAI)',
+    category: 'packaging',
+    formula: 'Complex aromatic structure',
+    molarMass: 'Variable (oligomer/polymer)',
+    structure: 'Thermoplastic combining amide and imide linkages',
+    synthesis: 'Reaction of trimellitic anhydride with various aromatic diamines',
+    image2D: '/src/assets/polymers/pai-2d.png',
+    properties: {
+      meltingPoint: 'Amorphous, Tg ~280°C',
+      density: '1.42 g/cm³',
+      tensileStrength: '120-190 MPa',
+      solubility: 'Soluble in polar aprotic solvents'
+    },
+    uses: ['High-temperature bearings', 'Seals and gaskets', 'Aerospace components', 'Electrical connectors', 'Industrial parts', 'Valve seats'],
+    advantages: ['Excellent high-temperature properties', 'Outstanding wear resistance', 'High strength', 'Chemical resistant', 'Low coefficient of friction'],
+    limitations: ['Very expensive', 'Difficult to process', 'Requires high temperatures', 'Moisture sensitive', 'Limited availability'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - energy-intensive production, niche applications'
+    }
+  },
+  {
+    id: 'ppa',
+    name: 'Polyphthalamide (PPA)',
+    category: 'packaging',
+    formula: 'Semi-aromatic polyamide',
+    molarMass: 'Variable (based on composition)',
+    structure: 'Semi-crystalline polyamide with aromatic phthalic acid units',
+    synthesis: 'Polycondensation of phthalic acid with aliphatic diamines',
+    image2D: '/src/assets/polymers/ppa-2d.png',
+    properties: {
+      meltingPoint: '290-310°C',
+      density: '1.10-1.18 g/cm³',
+      tensileStrength: '85-165 MPa',
+      solubility: 'Limited solubility'
+    },
+    uses: ['Automotive under-hood parts', 'Electrical connectors', 'LED reflectors', 'Industrial components', 'Surface-mount technology', 'High-temp housings'],
+    advantages: ['Higher temperature resistance than PA6/66', 'Lower moisture absorption', 'Good dimensional stability', 'Excellent chemical resistance', 'Long-term heat aging'],
+    limitations: ['More expensive than standard nylons', 'Requires higher processing temperatures', 'Lower impact strength', 'Limited suppliers'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable but rarely done',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - long service life in demanding applications'
+    }
+  },
+  {
+    id: 'pps',
+    name: 'Polyphenylene Sulfide (PPS)',
+    category: 'packaging',
+    formula: '(C₆H₄S)ₙ',
+    molarMass: '108.16 g/mol (repeat unit)',
+    structure: 'Semi-crystalline thermoplastic with phenylene rings and sulfur linkages',
+    synthesis: 'Reaction of p-dichlorobenzene with sodium sulfide',
+    image2D: '/src/assets/polymers/pps-2d.png',
+    properties: {
+      meltingPoint: '285°C',
+      density: '1.35 g/cm³',
+      tensileStrength: '65-85 MPa (unfilled)',
+      solubility: 'Insoluble in most solvents below 200°C'
+    },
+    uses: ['Automotive fuel systems', 'Electronic components', 'Industrial filters', 'Chemical processing equipment', 'Coatings', 'Composites'],
+    advantages: ['Excellent chemical resistance', 'High temperature stability', 'Inherently flame retardant', 'Dimensional stability', 'Good electrical properties'],
+    limitations: ['Brittle in unfilled state', 'Expensive', 'Difficult to process', 'Poor UV resistance', 'Limited color options'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable but rarely done',
+      toxicity: 'Non-toxic',
+      sustainability: 'Moderate - long service life in harsh environments'
+    }
+  },
   // Elastomers
   {
     id: 'natural-rubber',
