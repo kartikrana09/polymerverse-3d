@@ -8003,5 +8003,514 @@ export const samplePolymers: Polymer[] = [
       toxicity: 'Low toxicity',
       sustainability: 'Good - extends material lifetime'
     }
+  },
+  // Additional Elastomers (to reach 20)
+  {
+    id: 'butyl-rubber',
+    name: 'Butyl Rubber (IIR)',
+    category: 'elastomers',
+    formula: '(C₄H₈·C₅H₈)ₙ',
+    molarMass: 'Variable (copolymer)',
+    structure: 'Copolymer of isobutylene with small amounts of isoprene',
+    synthesis: 'Cationic polymerization of isobutylene with isoprene',
+    image2D: '/src/assets/polymers/butyl-rubber-2d.png',
+    properties: {
+      density: '0.92 g/cm³',
+      tensileStrength: '17-20 MPa',
+      solubility: 'Insoluble in water, soluble in hydrocarbons'
+    },
+    uses: ['Tire inner liners', 'Pharmaceutical stoppers', 'Adhesives', 'Vibration dampeners', 'Roofing membranes'],
+    advantages: ['Excellent impermeability to gases', 'Outstanding weather resistance', 'Good chemical resistance', 'Low gas permeability'],
+    limitations: ['Poor resistance to petroleum oils', 'Limited high-temperature performance', 'Slow vulcanization'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'neoprene',
+    name: 'Chloroprene Rubber (CR, Neoprene)',
+    category: 'elastomers',
+    formula: '(C₄H₅Cl)ₙ',
+    molarMass: '88.54 g/mol (repeat unit)',
+    structure: 'Polychloroprene with 1,4-trans configuration',
+    synthesis: 'Free radical emulsion polymerization of chloroprene',
+    image2D: '/src/assets/polymers/neoprene-2d.png',
+    properties: {
+      density: '1.23 g/cm³',
+      tensileStrength: '25-35 MPa',
+      solubility: 'Insoluble in water, soluble in chlorinated solvents'
+    },
+    uses: ['Wetsuits', 'Automotive belts and hoses', 'Gaskets', 'Adhesives', 'Wire and cable jackets'],
+    advantages: ['Excellent weather and ozone resistance', 'Good oil resistance', 'Flame resistant', 'Moderate cost'],
+    limitations: ['Not suitable for strong oxidizing acids', 'Swells in aromatic solvents', 'Moderate heat resistance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Moderate - contains chlorine',
+      sustainability: 'Low - petroleum-based, chlorinated'
+    }
+  },
+  {
+    id: 'fluoroelastomer',
+    name: 'Fluoroelastomer (FKM, Viton)',
+    category: 'elastomers',
+    formula: 'Variable fluorinated structure',
+    molarMass: 'Variable',
+    structure: 'Copolymer of vinylidene fluoride and hexafluoropropylene',
+    synthesis: 'Emulsion polymerization of fluorinated monomers',
+    image2D: '/src/assets/polymers/fluoroelastomer-2d.png',
+    properties: {
+      density: '1.8-1.9 g/cm³',
+      tensileStrength: '10-20 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['O-rings and seals', 'Fuel system components', 'Chemical processing equipment', 'Aerospace applications', 'High-temp gaskets'],
+    advantages: ['Exceptional chemical resistance', 'High temperature stability (200°C+)', 'Excellent aging resistance', 'Low permeability'],
+    limitations: ['Very expensive', 'Poor low-temperature flexibility', 'Difficult processing', 'PFAS environmental concerns'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity but PFAS concerns',
+      sustainability: 'Very low - persistent in environment'
+    }
+  },
+  {
+    id: 'polybutadiene',
+    name: 'Polybutadiene Rubber (BR)',
+    category: 'elastomers',
+    formula: '(C₄H₆)ₙ',
+    molarMass: '54.09 g/mol (repeat unit)',
+    structure: 'Primarily 1,4-cis-polybutadiene',
+    synthesis: 'Solution polymerization using Ziegler-Natta or neodymium catalysts',
+    image2D: '/src/assets/polymers/polybutadiene-2d.png',
+    properties: {
+      density: '0.91 g/cm³',
+      tensileStrength: '12-16 MPa',
+      solubility: 'Soluble in hydrocarbons'
+    },
+    uses: ['Tire treads', 'Hoses and belts', 'Shoe soles', 'Golf balls', 'Polymer modification'],
+    advantages: ['Excellent abrasion resistance', 'Low glass transition temperature', 'Good resilience', 'Low cost'],
+    limitations: ['Poor tear strength alone', 'Low tensile strength', 'Limited chemical resistance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'synthetic-isoprene',
+    name: 'Synthetic Polyisoprene (IR)',
+    category: 'elastomers',
+    formula: '(C₅H₈)ₙ',
+    molarMass: '68.12 g/mol (repeat unit)',
+    structure: 'cis-1,4-Polyisoprene (synthetic version of natural rubber)',
+    synthesis: 'Solution polymerization using Ziegler-Natta catalysts',
+    image2D: '/src/assets/polymers/synthetic-isoprene-2d.png',
+    properties: {
+      density: '0.93 g/cm³',
+      tensileStrength: '25-30 MPa',
+      solubility: 'Soluble in hydrocarbons'
+    },
+    uses: ['Tires', 'Medical gloves', 'Adhesives', 'Footwear', 'Sporting goods'],
+    advantages: ['Similar to natural rubber', 'More consistent quality', 'No protein allergens', 'Good elasticity'],
+    limitations: ['More expensive than SBR', 'Poor oil resistance', 'Moderate weather resistance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Non-toxic',
+      sustainability: 'Low - petroleum-based synthetic'
+    }
+  },
+  {
+    id: 'epr',
+    name: 'Ethylene Propylene Rubber (EPR)',
+    category: 'elastomers',
+    formula: '(C₂H₄·C₃H₆)ₙ',
+    molarMass: 'Variable (copolymer)',
+    structure: 'Random copolymer of ethylene and propylene',
+    synthesis: 'Solution polymerization using Ziegler-Natta catalysts',
+    image2D: '/src/assets/polymers/epr-2d.png',
+    properties: {
+      density: '0.86 g/cm³',
+      tensileStrength: '7-10 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['Wire and cable insulation', 'Automotive weatherstripping', 'Roofing membranes', 'Hoses', 'Gaskets'],
+    advantages: ['Excellent weather resistance', 'Good electrical insulation', 'Heat resistant', 'Ozone resistant'],
+    limitations: ['Cannot be sulfur vulcanized', 'Poor oil resistance', 'Limited tear resistance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Limited',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'hnbr',
+    name: 'Hydrogenated Nitrile Rubber (HNBR)',
+    category: 'elastomers',
+    formula: 'Hydrogenated (C₄H₆·C₃H₃N)ₙ',
+    molarMass: 'Variable',
+    structure: 'Saturated version of NBR with reduced double bonds',
+    synthesis: 'Hydrogenation of NBR',
+    image2D: '/src/assets/polymers/hnbr-2d.png',
+    properties: {
+      density: '1.0 g/cm³',
+      tensileStrength: '20-31 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['Automotive timing belts', 'Seals for oil drilling', 'High-temp hoses', 'Oil seals', 'Turbocharger hoses'],
+    advantages: ['Superior heat resistance vs NBR', 'Excellent oil resistance', 'Good mechanical properties', 'Ozone resistant'],
+    limitations: ['More expensive than NBR', 'Poor resistance to polar solvents', 'Limited low-temp performance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'acm',
+    name: 'Acrylate Rubber (ACM)',
+    category: 'elastomers',
+    formula: '(C₅H₈O₂)ₙ',
+    molarMass: 'Variable',
+    structure: 'Polyacrylate elastomer',
+    synthesis: 'Emulsion polymerization of acrylic esters',
+    image2D: '/src/assets/polymers/acm-2d.png',
+    properties: {
+      density: '1.1 g/cm³',
+      tensileStrength: '7-14 MPa',
+      solubility: 'Insoluble in water and petroleum oils'
+    },
+    uses: ['Automotive transmission seals', 'Engine gaskets', 'Shaft seals', 'Hoses exposed to hot oil', 'Power steering systems'],
+    advantages: ['Excellent hot oil resistance', 'Good heat aging', 'Ozone resistant', 'Flexible at low temperatures'],
+    limitations: ['Poor water resistance', 'Limited tear resistance', 'Not suitable for steam', 'Expensive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'tpe',
+    name: 'Thermoplastic Elastomer (TPE)',
+    category: 'elastomers',
+    formula: 'Variable (block copolymers)',
+    molarMass: 'Variable',
+    structure: 'Block copolymer with hard and soft segments',
+    synthesis: 'Various methods depending on type (SBS, TPU, TPO, etc.)',
+    image2D: '/src/assets/polymers/tpe-2d.png',
+    properties: {
+      density: '0.9-1.2 g/cm³',
+      tensileStrength: '5-50 MPa (varies by type)',
+      solubility: 'Depends on type'
+    },
+    uses: ['Consumer goods', 'Automotive parts', 'Medical devices', 'Footwear', 'Soft-touch grips'],
+    advantages: ['Recyclable', 'Processable like thermoplastics', 'No vulcanization needed', 'Wide property range'],
+    limitations: ['Lower max temperature than thermosets', 'Creep under load', 'Solvent sensitivity'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - recyclable but petroleum-based'
+    }
+  },
+  {
+    id: 'ffkm',
+    name: 'Perfluoroelastomer (FFKM)',
+    category: 'elastomers',
+    formula: 'Perfluorinated structure',
+    molarMass: 'Variable',
+    structure: 'Fully fluorinated elastomer backbone',
+    synthesis: 'Copolymerization of perfluorinated monomers',
+    image2D: '/src/assets/polymers/ffkm-2d.png',
+    properties: {
+      density: '1.9-2.0 g/cm³',
+      tensileStrength: '10-15 MPa',
+      solubility: 'Insoluble in virtually all solvents'
+    },
+    uses: ['Semiconductor processing', 'Chemical processing', 'Oil and gas extraction', 'Pharmaceutical equipment', 'Extreme environment seals'],
+    advantages: ['Ultimate chemical resistance', 'Highest temperature capability (320°C)', 'Extremely low permeability', 'No swelling in chemicals'],
+    limitations: ['Extremely expensive', 'Poor low-temperature performance', 'Difficult processing', 'Limited suppliers'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity but PFAS concerns',
+      sustainability: 'Very low - persistent PFAS'
+    }
+  },
+  {
+    id: 'aem',
+    name: 'Ethylene Acrylic Elastomer (AEM)',
+    category: 'elastomers',
+    formula: '(C₂H₄·Acrylic ester)ₙ',
+    molarMass: 'Variable',
+    structure: 'Copolymer of ethylene and acrylic ester',
+    synthesis: 'High-pressure copolymerization',
+    image2D: '/src/assets/polymers/aem-2d.png',
+    properties: {
+      density: '1.05 g/cm³',
+      tensileStrength: '8-12 MPa',
+      solubility: 'Insoluble in petroleum oils'
+    },
+    uses: ['Automotive underhood applications', 'Power steering hoses', 'Engine mounts', 'Transmission seals', 'Turbocharger hoses'],
+    advantages: ['Excellent hot oil resistance', 'Good compression set', 'Thermal stability', 'Lower cost than ACM'],
+    limitations: ['Water sensitive cure system', 'Poor low-temperature flexibility', 'Limited tear resistance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity',
+      sustainability: 'Low - petroleum-based'
+    }
+  },
+  {
+    id: 'csm',
+    name: 'Chlorosulfonated Polyethylene (CSM, Hypalon)',
+    category: 'elastomers',
+    formula: 'PE with -Cl and -SO₂Cl groups',
+    molarMass: 'Variable',
+    structure: 'Modified polyethylene with chlorine and sulfonyl chloride groups',
+    synthesis: 'Chlorination and chlorosulfonation of polyethylene',
+    image2D: '/src/assets/polymers/csm-2d.png',
+    properties: {
+      density: '1.11-1.28 g/cm³',
+      tensileStrength: '14-24 MPa',
+      solubility: 'Soluble in aromatic solvents'
+    },
+    uses: ['Roofing membranes', 'Pond liners', 'Chemical resistant coatings', 'Wire and cable jackets', 'Industrial hoses'],
+    advantages: ['Excellent weather and ozone resistance', 'Good chemical resistance', 'Flame resistant', 'Wide color range'],
+    limitations: ['Production discontinued (2010)', 'Contains chlorine', 'Poor high-temperature properties'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Moderate - chlorinated',
+      sustainability: 'Low - discontinued due to environmental concerns'
+    }
+  },
+  {
+    id: 'eco',
+    name: 'Epichlorohydrin Rubber (ECO)',
+    category: 'elastomers',
+    formula: '(C₃H₅ClO)ₙ',
+    molarMass: '92.53 g/mol (repeat unit)',
+    structure: 'Polyether with pendant chloromethyl groups',
+    synthesis: 'Polymerization of epichlorohydrin',
+    image2D: '/src/assets/polymers/eco-2d.png',
+    properties: {
+      density: '1.27 g/cm³',
+      tensileStrength: '10-17 MPa',
+      solubility: 'Limited solubility in common solvents'
+    },
+    uses: ['Fuel hoses', 'Seals and O-rings', 'Gaskets', 'Diaphragms', 'Automotive applications'],
+    advantages: ['Excellent fuel and oil resistance', 'Low gas permeability', 'Good low-temperature flexibility', 'Ozone resistant'],
+    limitations: ['Water resistance limited', 'Moderate cost', 'Processing challenges', 'Contains chlorine'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Moderate - chlorinated compound',
+      sustainability: 'Low - petroleum-based, chlorinated'
+    }
+  },
+  {
+    id: 'polyurethane-elastomer',
+    name: 'Polyurethane Elastomer (PU)',
+    category: 'elastomers',
+    formula: 'R-NHCOO-R\' (segmented)',
+    molarMass: 'Variable',
+    structure: 'Segmented block copolymer with hard and soft segments',
+    synthesis: 'Reaction of polyols with diisocyanates',
+    image2D: '/src/assets/polymers/polyurethane-adhesive-2d.png',
+    properties: {
+      density: '1.05-1.25 g/cm³',
+      tensileStrength: '20-70 MPa',
+      solubility: 'Depends on formulation'
+    },
+    uses: ['Wheels and rollers', 'Solid tires', 'Seals', 'Footwear', 'Sports equipment'],
+    advantages: ['Excellent abrasion resistance', 'High load-bearing capacity', 'Good tear resistance', 'Wide hardness range'],
+    limitations: ['Hydrolyzes over time', 'Limited high-temperature performance', 'Sensitive to hot water', 'Can yellow'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low once cured',
+      sustainability: 'Moderate - long service life'
+    }
+  },
+  // Additional Adhesive & Coatings (to reach 20)
+  {
+    id: 'melamine-resin',
+    name: 'Melamine Formaldehyde Resin',
+    category: 'adhesive',
+    formula: '(C₃H₆N₆)ₙ·(CH₂O)ₘ',
+    molarMass: 'Variable (crosslinked)',
+    structure: 'Triazine ring structure crosslinked with formaldehyde',
+    synthesis: 'Condensation of melamine with formaldehyde',
+    image2D: '/src/assets/polymers/melamine-2d.png',
+    properties: {
+      meltingPoint: 'Thermoset (does not melt)',
+      density: '1.5 g/cm³',
+      tensileStrength: '50-70 MPa',
+      solubility: 'Insoluble once cured'
+    },
+    uses: ['Laminates (Formica)', 'Dinnerware', 'Plywood adhesives', 'Surface coatings', 'Paper treatments'],
+    advantages: ['Excellent hardness and scratch resistance', 'Heat resistant', 'Chemical resistant', 'Good surface finish'],
+    limitations: ['Brittle', 'Formaldehyde emissions concern', 'Not recyclable', 'Can crack under impact'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable (thermoset)',
+      toxicity: 'Moderate - formaldehyde emissions',
+      sustainability: 'Low - formaldehyde concerns'
+    }
+  },
+  {
+    id: 'urea-formaldehyde',
+    name: 'Urea Formaldehyde Resin',
+    category: 'adhesive',
+    formula: '(CH₄N₂O)ₙ·(CH₂O)ₘ',
+    molarMass: 'Variable (crosslinked)',
+    structure: 'Urea units linked by methylene bridges',
+    synthesis: 'Condensation reaction of urea and formaldehyde',
+    image2D: '/src/assets/polymers/urea-formaldehyde-2d.png',
+    properties: {
+      meltingPoint: 'Thermoset',
+      density: '1.5 g/cm³',
+      tensileStrength: '40-55 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Wood adhesives (plywood, particle board)', 'Molding compounds', 'Textile finishes', 'Paper adhesives', 'Foam insulation'],
+    advantages: ['Low cost', 'Fast curing', 'Good bonding to wood', 'Colorless', 'Hard finish'],
+    limitations: ['Formaldehyde emissions', 'Moisture sensitive', 'Brittle', 'Not suitable outdoors'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Moderate to high - formaldehyde emissions',
+      sustainability: 'Low - health and environmental concerns'
+    }
+  },
+  {
+    id: 'phenolic-resin',
+    name: 'Phenolic Resin (Bakelite)',
+    category: 'adhesive',
+    formula: '(C₆H₆O·CH₂O)ₙ',
+    molarMass: 'Variable (crosslinked)',
+    structure: 'Phenol units linked with formaldehyde bridges',
+    synthesis: 'Condensation of phenol with formaldehyde',
+    image2D: '/src/assets/polymers/phenolic-2d.png',
+    properties: {
+      meltingPoint: 'Thermoset',
+      density: '1.25-1.30 g/cm³',
+      tensileStrength: '40-60 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Brake pads and linings', 'Electrical insulators', 'Foundry resins', 'Abrasive wheels', 'Laminates'],
+    advantages: ['Excellent heat resistance', 'High mechanical strength', 'Good electrical insulation', 'Chemical resistant'],
+    limitations: ['Brittle', 'Dark color limits applications', 'Formaldehyde emissions', 'Cannot be remolded'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable (thermoset)',
+      toxicity: 'Moderate - formaldehyde emissions',
+      sustainability: 'Low - historical importance but environmental concerns'
+    }
+  },
+  {
+    id: 'alkyd-resin',
+    name: 'Alkyd Resin',
+    category: 'adhesive',
+    formula: 'Polyester modified with fatty acids',
+    molarMass: 'Variable',
+    structure: 'Polyester backbone modified with oils',
+    synthesis: 'Condensation of polyol, dibasic acid, and fatty acids',
+    image2D: '/src/assets/polymers/epoxy-2d.png',
+    properties: {
+      density: '1.0-1.1 g/cm³',
+      tensileStrength: '20-40 MPa',
+      solubility: 'Soluble in organic solvents'
+    },
+    uses: ['Paints and varnishes', 'Industrial coatings', 'Marine coatings', 'Architectural coatings', 'Automotive finishes'],
+    advantages: ['Good gloss and adhesion', 'Weather resistant', 'Good flow properties', 'Economical'],
+    limitations: ['Slow drying', 'Yellowing with age', 'Limited chemical resistance', 'VOC emissions'],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Moderate - can use renewable oils'
+    }
+  },
+  {
+    id: 'polyester-resin',
+    name: 'Unsaturated Polyester Resin',
+    category: 'adhesive',
+    formula: 'Variable polyester with unsaturated bonds',
+    molarMass: 'Variable',
+    structure: 'Unsaturated polyester dissolved in styrene',
+    synthesis: 'Condensation of diols with unsaturated dicarboxylic acids',
+    image2D: '/src/assets/polymers/pet-2d.png',
+    properties: {
+      density: '1.1-1.4 g/cm³',
+      tensileStrength: '40-90 MPa',
+      solubility: 'Insoluble once cured'
+    },
+    uses: ['Fiberglass composites', 'Boat hulls', 'Automotive body panels', 'Bathtubs', 'Corrosion-resistant equipment'],
+    advantages: ['Low cost', 'Good mechanical properties', 'Chemical resistance', 'Fast room-temperature cure'],
+    limitations: ['Styrene emissions', 'Shrinks during cure', 'Brittle', 'Limited UV resistance'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable (thermoset)',
+      toxicity: 'Moderate - styrene emissions',
+      sustainability: 'Low - VOC concerns'
+    }
+  },
+  {
+    id: 'vinyl-ester',
+    name: 'Vinyl Ester Resin',
+    category: 'adhesive',
+    formula: 'Epoxy-modified unsaturated polyester',
+    molarMass: 'Variable',
+    structure: 'Epoxy backbone with vinyl end groups',
+    synthesis: 'Reaction of epoxy resin with unsaturated acid',
+    image2D: '/src/assets/polymers/epoxy-2d.png',
+    properties: {
+      density: '1.05-1.20 g/cm³',
+      tensileStrength: '70-85 MPa',
+      solubility: 'Insoluble once cured'
+    },
+    uses: ['Corrosion-resistant tanks', 'Marine applications', 'Piping', 'Chemical storage', 'High-performance composites'],
+    advantages: ['Better than polyester in corrosion resistance', 'Lower shrinkage', 'Good mechanical properties', 'Fast cure'],
+    limitations: ['More expensive than polyester', 'Styrene emissions', 'Limited shelf life', 'Exothermic cure'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Moderate - styrene emissions',
+      sustainability: 'Low - VOC emissions'
+    }
+  },
+  {
+    id: 'anaerobic-adhesive',
+    name: 'Anaerobic Adhesive',
+    category: 'adhesive',
+    formula: 'Methacrylate-based',
+    molarMass: 'Variable',
+    structure: 'Dimethacrylate oligomers with initiator system',
+    synthesis: 'Methacrylate polymerization in absence of oxygen',
+    image2D: '/src/assets/polymers/acrylic-adhesive-2d.png',
+    properties: {
+      density: '1.0-1.1 g/cm³',
+      tensileStrength: '10-20 MPa (bond strength)',
+      solubility: 'Insoluble once cured'
+    },
+    uses: ['Threadlockers', 'Gasket sealants', 'Retaining compounds', 'Pipe sealants', 'Flange sealants'],
+    advantages: ['Single component', 'Cures on metal in absence of air', 'Excellent vibration resistance', 'Easy to apply'],
+    limitations: ['Only works on metal substrates', 'Limited gap filling', 'Inhibited by some surface treatments', 'Slow cure on inactive metals'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - enables repair and maintenance'
+    }
   }
 ];
