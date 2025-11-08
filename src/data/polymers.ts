@@ -7487,6 +7487,370 @@ export const samplePolymers: Polymer[] = [
       sustainability: 'Very high - environmental cleanup, waste valorization'
     }
   },
+  {
+    id: 'rps',
+    name: 'Recycled Polystyrene (rPS)',
+    category: 'recyclable',
+    formula: '(C₈H₈)ₙ',
+    molarMass: '104.15 g/mol (repeat unit)',
+    structure: 'Styrene polymer recycled from post-consumer waste',
+    synthesis: 'Mechanical recycling: collection, sorting, dissolution, or repolymerization',
+    image2D: '/src/assets/polymers/ps-2d.png',
+    properties: {
+      density: '1.04-1.05 g/cm³',
+      tensileStrength: '35-55 MPa',
+      solubility: 'Soluble in aromatic solvents'
+    },
+    uses: ['Packaging', 'Insulation', 'Consumer electronics', 'Office supplies', 'Picture frames'],
+    advantages: ['Reduces landfill waste', 'Lower energy than virgin production', 'Cost-effective', 'Good insulation'],
+    limitations: ['Limited recycling infrastructure', 'Quality degradation', 'Contamination issues', 'Bulky to transport'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (Type 6) but limited facilities',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - diverts waste from landfills'
+    }
+  },
+  {
+    id: 'rpvc',
+    name: 'Recycled PVC (rPVC)',
+    category: 'recyclable',
+    formula: '(C₂H₃Cl)ₙ',
+    molarMass: '62.49 g/mol (repeat unit)',
+    structure: 'Polyvinyl chloride from recycled sources',
+    synthesis: 'Mechanical or chemical recycling from construction and piping waste',
+    image2D: '/src/assets/polymers/pvc-2d.png',
+    properties: {
+      density: '1.38-1.45 g/cm³',
+      tensileStrength: '40-60 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['Pipes', 'Window frames', 'Flooring', 'Cable insulation', 'Construction materials'],
+    advantages: ['Durable', 'Cost-effective recycling', 'Long service life', 'Chemical resistance'],
+    limitations: ['Contains chlorine', 'Requires sorting from other plastics', 'Limited downcycling', 'Stabilizer concerns'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (Type 3) in specialized facilities',
+      toxicity: 'Potential additive concerns',
+      sustainability: 'Moderate - diverts construction waste, but chlorine content'
+    }
+  },
+  {
+    id: 'rldpe',
+    name: 'Recycled LDPE (rLDPE)',
+    category: 'recyclable',
+    formula: '(C₂H₄)ₙ',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Branched polyethylene recycled from films and bags',
+    synthesis: 'Mechanical recycling from post-consumer and agricultural films',
+    image2D: '/src/assets/polymers/ldpe-2d.png',
+    properties: {
+      density: '0.910-0.925 g/cm³',
+      tensileStrength: '8-25 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['Trash bags', 'Agricultural films', 'Packaging films', 'Squeeze bottles', 'Coatings'],
+    advantages: ['Flexible', 'Good processability', 'Low cost', 'Chemical resistance'],
+    limitations: ['Lower strength than virgin', 'Contamination issues', 'Limited collection', 'Sorting challenges'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (Type 4)',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - diverts agricultural and packaging waste'
+    }
+  },
+  {
+    id: 'rlldpe',
+    name: 'Recycled LLDPE (rLLDPE)',
+    category: 'recyclable',
+    formula: '(C₂H₄)ₙ',
+    molarMass: '28.05 g/mol (repeat unit)',
+    structure: 'Linear low-density polyethylene with short branches, recycled',
+    synthesis: 'Mechanical recycling from stretch films and packaging',
+    image2D: '/src/assets/polymers/lldpe-2d.png',
+    properties: {
+      density: '0.915-0.925 g/cm³',
+      tensileStrength: '20-40 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['Stretch wrap', 'Films', 'Flexible packaging', 'Liners', 'Agricultural applications'],
+    advantages: ['Better tensile strength than LDPE', 'Good puncture resistance', 'Flexible', 'Recyclable'],
+    limitations: ['Requires clean feedstock', 'Processing complexity', 'Market availability'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable with PE streams',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - circular economy for flexible packaging'
+    }
+  },
+  {
+    id: 'rabs',
+    name: 'Recycled ABS (rABS)',
+    category: 'recyclable',
+    formula: '(C₈H₈·C₄H₆·C₃H₃N)ₙ',
+    molarMass: 'Variable (terpolymer)',
+    structure: 'Acrylonitrile-butadiene-styrene terpolymer, recycled',
+    synthesis: 'Mechanical recycling from e-waste, automotive parts, and appliances',
+    image2D: '/src/assets/polymers/abs-2d.png',
+    properties: {
+      density: '1.04-1.07 g/cm³',
+      tensileStrength: '40-50 MPa',
+      solubility: 'Soluble in ketones, esters'
+    },
+    uses: ['Electronics housings', 'Automotive parts', 'Toys', '3D printing filament', 'Appliance components'],
+    advantages: ['Good impact resistance', 'Dimensional stability', 'Easy to process', 'High-value recycling'],
+    limitations: ['UV sensitivity', 'Quality variation', 'Requires sorting', 'Flame retardant concerns'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (Type 7)',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - diverts e-waste, reduces virgin plastic demand'
+    }
+  },
+  {
+    id: 'rpetg',
+    name: 'Recycled PETG (rPETG)',
+    category: 'recyclable',
+    formula: '(C₁₀H₈O₄)ₙ with CHDM',
+    molarMass: 'Variable',
+    structure: 'PET copolyester with cyclohexanedimethanol, recycled',
+    synthesis: 'Mechanical or chemical recycling from packaging and signage',
+    image2D: '/src/assets/polymers/petg-2d.png',
+    properties: {
+      density: '1.27 g/cm³',
+      tensileStrength: '50-60 MPa',
+      solubility: 'Limited solubility'
+    },
+    uses: ['3D printing', 'Display materials', 'Medical packaging', 'Protective barriers', 'Retail fixtures'],
+    advantages: ['Good clarity', 'Impact resistance', 'Easy to thermoform', 'Chemical resistance'],
+    limitations: ['Limited recycling infrastructure', 'Not food-contact approved when recycled', 'Mixed with PET streams'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Potentially recyclable with PET',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - reduces single-use plastics'
+    }
+  },
+  {
+    id: 'reps',
+    name: 'Recycled EPS (rEPS)',
+    category: 'recyclable',
+    formula: '(C₈H₈)ₙ',
+    molarMass: '104.15 g/mol (repeat unit)',
+    structure: 'Expanded polystyrene foam, densified and recycled',
+    synthesis: 'Densification and mechanical recycling of post-consumer foam',
+    image2D: '/src/assets/polymers/eps-2d.png',
+    properties: {
+      density: '0.016-0.64 g/cm³ (varies by processing)',
+      solubility: 'Soluble in organic solvents'
+    },
+    uses: ['Insulation', 'Protective packaging', 'Picture frames', 'Construction materials', 'Molded products'],
+    advantages: ['Lightweight', 'Volume reduction', 'Thermal insulation', 'Diverts landfill waste'],
+    limitations: ['Bulky to collect', 'Contamination', 'Limited facilities', 'Transportation costs'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (Type 6) with specialized equipment',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - reduces packaging waste volume'
+    }
+  },
+  {
+    id: 'rpla-recycled',
+    name: 'Recycled PLA (rPLA)',
+    category: 'recyclable',
+    formula: '(C₃H₄O₂)ₙ',
+    molarMass: '72.06 g/mol (repeat unit)',
+    structure: 'Polylactic acid recycled mechanically or chemically',
+    synthesis: 'Chemical or mechanical recycling, or depolymerization to lactide',
+    image2D: '/src/assets/polymers/pla-2d.png',
+    properties: {
+      meltingPoint: '150-160°C',
+      density: '1.24 g/cm³',
+      tensileStrength: '45-60 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['3D printing', 'Packaging', 'Textiles', 'Medical devices', 'Disposable items'],
+    advantages: ['Bio-based', 'Can be chemically recycled', 'Maintains properties', 'Closes bioplastic loop'],
+    limitations: ['Requires separate collection', 'Contamination issues', 'Limited infrastructure', 'Hydrolysis sensitivity'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (industrial composting)',
+      recyclability: 'Chemically recyclable to monomer',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - renewable and recyclable'
+    }
+  },
+  {
+    id: 'rpc',
+    name: 'Recycled Polycarbonate (rPC)',
+    category: 'recyclable',
+    formula: '(C₁₆H₁₄O₃)ₙ',
+    molarMass: '254.28 g/mol (repeat unit)',
+    structure: 'Bisphenol A polycarbonate, recycled',
+    synthesis: 'Mechanical or chemical recycling from optical media, electronics, automotive',
+    image2D: '/src/assets/polymers/pc-2d.png',
+    properties: {
+      density: '1.20-1.22 g/cm³',
+      tensileStrength: '55-70 MPa',
+      solubility: 'Soluble in methylene chloride'
+    },
+    uses: ['Optical media', 'Electronics', 'Automotive glazing', 'Safety equipment', 'Construction'],
+    advantages: ['High impact resistance', 'Optical clarity', 'Heat resistance', 'High-value recycling'],
+    limitations: ['Hydrolytic degradation', 'Yellowing', 'BPA concerns', 'Sorting required'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable (Type 7)',
+      toxicity: 'BPA migration concerns',
+      sustainability: 'Good - diverts e-waste and optical media'
+    }
+  },
+  {
+    id: 'rpmma',
+    name: 'Recycled PMMA (rPMMA)',
+    category: 'recyclable',
+    formula: '(C₅H₈O₂)ₙ',
+    molarMass: '100.12 g/mol (repeat unit)',
+    structure: 'Polymethyl methacrylate (acrylic), recycled',
+    synthesis: 'Mechanical recycling or depolymerization to MMA monomer',
+    image2D: '/src/assets/polymers/pmma-2d.png',
+    properties: {
+      density: '1.17-1.20 g/cm³',
+      tensileStrength: '60-75 MPa',
+      solubility: 'Soluble in acetone, chloroform'
+    },
+    uses: ['Signage', 'Lighting fixtures', 'Automotive lenses', 'Displays', 'Architectural glazing'],
+    advantages: ['Excellent optical clarity', 'Weatherability', 'Chemical recycling possible', 'High purity achievable'],
+    limitations: ['Brittle', 'Scratches easily', 'Collection challenges', 'Contamination sensitive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Chemically recyclable to monomer',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - closed-loop recycling possible'
+    }
+  },
+  {
+    id: 'rpa6',
+    name: 'Recycled Nylon 6 (rPA6)',
+    category: 'recyclable',
+    formula: '(C₆H₁₁NO)ₙ',
+    molarMass: '113.16 g/mol (repeat unit)',
+    structure: 'Polyamide 6 from recycled fishing nets and carpets',
+    synthesis: 'Mechanical or chemical recycling, depolymerization to caprolactam',
+    image2D: '/src/assets/polymers/pa6-2d.png',
+    properties: {
+      meltingPoint: '215-220°C',
+      density: '1.12-1.14 g/cm³',
+      tensileStrength: '70-85 MPa',
+      solubility: 'Soluble in formic acid'
+    },
+    uses: ['Textiles', 'Automotive parts', 'Carpets', 'Engineering plastics', 'Sportswear'],
+    advantages: ['Strong and durable', 'Chemical recycling to virgin quality', 'Ocean plastic recovery', 'Circular fashion'],
+    limitations: ['Moisture absorption', 'Requires clean feedstock', 'Complex sorting', 'Processing costs'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Highly recyclable, chemical recycling available',
+      toxicity: 'Low toxicity',
+      sustainability: 'Very high - ocean cleanup, textile waste reduction'
+    }
+  },
+  {
+    id: 'rpa66',
+    name: 'Recycled Nylon 66 (rPA66)',
+    category: 'recyclable',
+    formula: '(C₁₂H₂₂N₂O₂)ₙ',
+    molarMass: '226.32 g/mol (repeat unit)',
+    structure: 'Polyamide 66 from recycled automotive and industrial sources',
+    synthesis: 'Mechanical recycling or depolymerization from post-industrial waste',
+    image2D: '/src/assets/polymers/pa66-2d.png',
+    properties: {
+      meltingPoint: '255-265°C',
+      density: '1.13-1.15 g/cm³',
+      tensileStrength: '75-90 MPa',
+      solubility: 'Soluble in formic acid'
+    },
+    uses: ['Automotive components', 'Industrial applications', 'Electrical connectors', 'Gears', 'Bearings'],
+    advantages: ['High strength', 'Heat resistance', 'Chemical resistance', 'High-value applications'],
+    limitations: ['Moisture sensitivity', 'Limited post-consumer collection', 'Sorting complexity', 'Expensive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable through specialized processes',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - automotive waste reduction'
+    }
+  },
+  {
+    id: 'rpbt',
+    name: 'Recycled PBT (rPBT)',
+    category: 'recyclable',
+    formula: '(C₁₂H₁₂O₄)ₙ',
+    molarMass: '220.22 g/mol (repeat unit)',
+    structure: 'Polybutylene terephthalate recycled from electronics and automotive',
+    synthesis: 'Mechanical recycling or glycolysis from post-industrial sources',
+    image2D: '/src/assets/polymers/pbt-2d.png',
+    properties: {
+      meltingPoint: '220-225°C',
+      density: '1.30-1.38 g/cm³',
+      tensileStrength: '50-60 MPa',
+      solubility: 'Limited solubility'
+    },
+    uses: ['Electrical connectors', 'Automotive components', 'Electronics housings', 'Switches', 'Sensors'],
+    advantages: ['Good electrical properties', 'Chemical resistance', 'Dimensional stability', 'Heat resistance'],
+    limitations: ['Limited collection infrastructure', 'Flame retardant additives', 'Processing challenges', 'Sorting needed'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - e-waste reduction'
+    }
+  },
+  {
+    id: 'rpom',
+    name: 'Recycled POM (rPOM)',
+    category: 'recyclable',
+    formula: '(CH₂O)ₙ',
+    molarMass: '30.03 g/mol (repeat unit)',
+    structure: 'Polyoxymethylene acetal recycled from industrial sources',
+    synthesis: 'Mechanical recycling from post-industrial manufacturing waste',
+    image2D: '/src/assets/polymers/pom-2d.png',
+    properties: {
+      meltingPoint: '165-175°C',
+      density: '1.41-1.42 g/cm³',
+      tensileStrength: '60-70 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['Gears', 'Bearings', 'Automotive parts', 'Zippers', 'Mechanical parts'],
+    advantages: ['Excellent mechanical properties', 'Low friction', 'Good dimensional stability', 'High-value recycling'],
+    limitations: ['Mostly post-industrial', 'Limited post-consumer collection', 'Thermal degradation risk', 'Formaldehyde release'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable in closed-loop systems',
+      toxicity: 'Formaldehyde concerns during processing',
+      sustainability: 'Moderate - industrial waste recovery'
+    }
+  },
+  {
+    id: 'rapet',
+    name: 'Recycled APET (rAPET)',
+    category: 'recyclable',
+    formula: '(C₁₀H₈O₄)ₙ',
+    molarMass: '192.17 g/mol (repeat unit)',
+    structure: 'Amorphous PET recycled from thermoformed packaging',
+    synthesis: 'Mechanical recycling from clear packaging, trays, and blisters',
+    image2D: '/src/assets/polymers/apet-2d.png',
+    properties: {
+      density: '1.33-1.35 g/cm³',
+      tensileStrength: '50-60 MPa',
+      solubility: 'Insoluble in water'
+    },
+    uses: ['Food packaging trays', 'Blister packs', 'Clamshells', 'Display packaging', 'Protective covers'],
+    advantages: ['Good clarity', 'Thermoformable', 'Food-contact approved', 'High recycling rates'],
+    limitations: ['Sorting from bottles', 'Lower IV than bottles', 'Contamination', 'Market fluctuations'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Highly recyclable (Type 1)',
+      toxicity: 'Low toxicity',
+      sustainability: 'High - food packaging circular economy'
+    }
+  },
   // Additional Biodegradable Polymers
   {
     id: 'pla-biodeg',
