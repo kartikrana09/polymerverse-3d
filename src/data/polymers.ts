@@ -8082,6 +8082,196 @@ export const samplePolymers: Polymer[] = [
       sustainability: 'High - bio-produced, renewable'
     }
   },
+  {
+    id: 'cellulose-acetate-bio',
+    name: 'Cellulose Acetate',
+    category: 'biopolymers',
+    formula: '(C₆H₇O₂(OH)ₓ(OCOCH₃)ᵧ)ₙ',
+    molarMass: '260-320 g/mol (average repeat unit)',
+    structure: 'Semi-synthetic cellulose ester with acetyl groups',
+    synthesis: 'Acetylation of cellulose from wood pulp with acetic anhydride',
+    image2D: '/src/assets/polymers/cellulose-acetate-2d.png',
+    properties: {
+      density: '1.28-1.32 g/cm³',
+      tensileStrength: '45-60 MPa',
+      solubility: 'Soluble in acetone and other polar solvents'
+    },
+    uses: ['Textile fibers', 'Film base', 'Filters (cigarettes)', 'Eyeglass frames', 'Medical membranes'],
+    advantages: ['Biodegradable', 'Good optical clarity', 'Hypoallergenic', 'Renewable source'],
+    limitations: ['Moisture sensitive', 'Moderate heat resistance', 'Requires specific solvents', 'Limited durability'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (2-5 months in composting)',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - derived from renewable cellulose'
+    }
+  },
+  {
+    id: 'hyaluronic-acid-bio',
+    name: 'Hyaluronic Acid',
+    category: 'biopolymers',
+    formula: '(C₁₄H₂₁NO₁₁)ₙ',
+    molarMass: '379.31 g/mol (repeat unit)',
+    structure: 'Glycosaminoglycan with repeating disaccharide units',
+    synthesis: 'Bacterial fermentation or extraction from rooster combs',
+    image2D: '/src/assets/polymers/hyaluronic-acid-2d.png',
+    properties: {
+      density: '~1.0 g/cm³ (hydrated)',
+      solubility: 'Highly water-soluble'
+    },
+    uses: ['Cosmetics (anti-aging)', 'Joint injections (arthritis)', 'Eye surgery', 'Wound healing', 'Drug delivery'],
+    advantages: ['Biocompatible', 'Biodegradable', 'High water retention', 'Natural in body', 'Non-immunogenic'],
+    limitations: ['Expensive', 'Rapidly degrades in vivo', 'Requires stabilization', 'Limited mechanical strength'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (days to weeks in body)',
+      recyclability: 'Not applicable',
+      toxicity: 'Non-toxic, naturally occurring',
+      sustainability: 'High - bio-produced'
+    }
+  },
+  {
+    id: 'fibrin-bio',
+    name: 'Fibrin',
+    category: 'biopolymers',
+    formula: 'Complex protein polymer',
+    molarMass: '~340,000 g/mol (fibrinogen)',
+    structure: 'Cross-linked protein network from fibrinogen',
+    synthesis: 'Enzymatic conversion of fibrinogen by thrombin (blood clotting)',
+    image2D: '/src/assets/polymers/fibrin-2d.png',
+    properties: {
+      density: '~1.3 g/cm³',
+      tensileStrength: '0.1-2 MPa (hydrogel)',
+      solubility: 'Forms insoluble network'
+    },
+    uses: ['Surgical sealants', 'Tissue engineering scaffolds', 'Wound healing', 'Drug delivery', 'Hemostatic agents'],
+    advantages: ['Biocompatible', 'Naturally biodegradable', 'Promotes cell adhesion', 'Mimics natural healing', 'FDA approved'],
+    limitations: ['Weak mechanical properties', 'Rapid degradation', 'Batch variability', 'Risk of disease transmission'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (days to weeks)',
+      recyclability: 'Not applicable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - naturally occurring'
+    }
+  },
+  {
+    id: 'mycelium-bio',
+    name: 'Mycelium-based Biopolymer',
+    category: 'biopolymers',
+    formula: 'Complex chitin-glucan composite',
+    molarMass: 'Variable',
+    structure: 'Fungal mycelium network with chitin and glucans',
+    synthesis: 'Fungal growth on agricultural waste substrates',
+    image2D: '/src/assets/polymers/mycelium-2d.png',
+    properties: {
+      density: '0.1-0.3 g/cm³ (foam-like)',
+      tensileStrength: '0.5-3 MPa',
+      solubility: 'Insoluble'
+    },
+    uses: ['Packaging materials', 'Building insulation', 'Leather alternatives', 'Acoustic panels', 'Furniture'],
+    advantages: ['Fully biodegradable', 'Grows on waste', 'Low energy production', 'Compostable', 'Carbon negative'],
+    limitations: ['Moisture sensitive', 'Limited strength', 'Variable properties', 'Slow growth time'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (weeks)',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - carbon negative, waste utilization'
+    }
+  },
+  {
+    id: 'lignin-bio',
+    name: 'Lignin',
+    category: 'biopolymers',
+    formula: 'C₉H₁₀O₂(OCH₃)ₙ (approximate)',
+    molarMass: '2,000-15,000 g/mol',
+    structure: 'Complex phenolic polymer from plant cell walls',
+    synthesis: 'Extracted from wood pulping process or biomass',
+    image2D: '/src/assets/polymers/lignin-2d.png',
+    properties: {
+      density: '1.3-1.4 g/cm³',
+      solubility: 'Soluble in alkaline solutions and organic solvents'
+    },
+    uses: ['Bio-based resins', 'Carbon fiber precursor', 'Dispersants', 'Adhesives', 'Antioxidants'],
+    advantages: ['Abundant byproduct', 'Renewable', 'Aromatic structure useful', 'Low cost', 'UV protection'],
+    limitations: ['Complex structure', 'Variable composition', 'Difficult to process', 'Dark color'],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Non-toxic',
+      sustainability: 'Excellent - waste valorization, abundant'
+    }
+  },
+  {
+    id: 'cnc-bio',
+    name: 'Cellulose Nanocrystals (CNC)',
+    category: 'biopolymers',
+    formula: '(C₆H₁₀O₅)ₙ',
+    molarMass: '162.14 g/mol (repeat unit)',
+    structure: 'Crystalline cellulose nanorods',
+    synthesis: 'Acid hydrolysis of cellulose to isolate crystalline regions',
+    image2D: '/src/assets/polymers/cnc-2d.png',
+    properties: {
+      density: '1.6 g/cm³',
+      tensileStrength: '~7.5 GPa (crystal)',
+      solubility: 'Forms stable colloidal suspensions in water'
+    },
+    uses: ['Polymer nanocomposites', 'Coatings', 'Films', 'Barrier materials', 'Biomedical applications'],
+    advantages: ['High strength', 'Renewable', 'Biodegradable', 'Low density', 'Excellent reinforcement'],
+    limitations: ['Moisture sensitive', 'Expensive extraction', 'Difficult dispersion', 'Aggregation issues'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable',
+      recyclability: 'Compostable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - renewable, bio-based'
+    }
+  },
+  {
+    id: 'bio-nylon-bio',
+    name: 'Bio-based Nylon (PA11)',
+    category: 'biopolymers',
+    formula: '(C₁₁H₂₁NO)ₙ',
+    molarMass: '183.29 g/mol (repeat unit)',
+    structure: 'Polyamide from castor oil-derived monomers',
+    synthesis: 'Polymerization of 11-aminoundecanoic acid from castor oil',
+    image2D: '/src/assets/polymers/bio-nylon-2d.png',
+    properties: {
+      meltingPoint: '185-190°C',
+      density: '1.04 g/cm³',
+      tensileStrength: '55-60 MPa',
+      solubility: 'Insoluble in most solvents'
+    },
+    uses: ['Automotive fuel lines', 'Sporting goods', '3D printing', 'Cable sheathing', 'Medical tubing'],
+    advantages: ['Renewable source', 'Good chemical resistance', 'Low moisture absorption', 'Recyclable'],
+    limitations: ['Expensive', 'Limited heat resistance vs PA66', 'Not biodegradable', 'Processing challenges'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - 100% bio-based carbon, renewable'
+    }
+  },
+  {
+    id: 'peptide-hydrogel-bio',
+    name: 'Peptide Hydrogel',
+    category: 'biopolymers',
+    formula: 'Short amino acid sequences',
+    molarMass: '500-5,000 g/mol',
+    structure: 'Self-assembling peptide network forming hydrogel',
+    synthesis: 'Solid-phase peptide synthesis followed by self-assembly',
+    image2D: '/src/assets/polymers/peptide-hydrogel-2d.png',
+    properties: {
+      density: '~1.0 g/cm³ (hydrated)',
+      solubility: 'Forms hydrogel in aqueous conditions'
+    },
+    uses: ['Tissue engineering', '3D cell culture', 'Drug delivery', 'Wound healing', 'Regenerative medicine'],
+    advantages: ['Biocompatible', 'Biodegradable', 'Tunable properties', 'Cell-friendly', 'Minimal immune response'],
+    limitations: ['Expensive synthesis', 'Weak mechanical properties', 'Limited stability', 'Batch variability'],
+    environmentalImpact: {
+      biodegradability: 'Fully biodegradable (enzymatic)',
+      recyclability: 'Not applicable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biomedical applications'
+    }
+  },
   // Additional Shape Memory Polymers
   {
     id: 'pu-smp-detailed',
