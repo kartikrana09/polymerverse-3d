@@ -8737,6 +8737,381 @@ export const samplePolymers: Polymer[] = [
       sustainability: 'Moderate - petroleum-based but recyclable'
     }
   },
+  {
+    id: 'pmma-smp',
+    name: 'PMMA-based Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₅H₈O₂)ₙ',
+    molarMass: '100.12 g/mol (repeat unit)',
+    structure: 'Poly(methyl methacrylate) with tailored molecular weight and crosslinking',
+    synthesis: 'Free radical polymerization with controlled crosslinking',
+    image2D: '/src/assets/polymers/pmma-smp-2d.png',
+    properties: {
+      meltingPoint: '105-120°C (glass transition)',
+      density: '1.17-1.20 g/cm³',
+      tensileStrength: '50-75 MPa',
+      solubility: 'Soluble in acetone, chloroform'
+    },
+    uses: ['Medical devices', 'Optical components', 'Microactuators', 'Drug delivery', 'Dental applications'],
+    advantages: ['Excellent optical clarity', 'Good biocompatibility', 'Precise shape recovery', 'Stable properties'],
+    limitations: ['Brittle', 'High transition temperature', 'Limited strain capacity', 'Expensive'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult to recycle',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - long service life'
+    }
+  },
+  {
+    id: 'polynorbornene-smp',
+    name: 'Polynorbornene Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₇H₁₀)ₙ',
+    molarMass: '94.15 g/mol (repeat unit)',
+    structure: 'Ring-opened polynorbornene with controlled tacticity',
+    synthesis: 'Ring-opening metathesis polymerization (ROMP)',
+    image2D: '/src/assets/polymers/polynorbornene-smp-2d.png',
+    properties: {
+      meltingPoint: '35-90°C (transition range)',
+      density: '0.98-1.05 g/cm³',
+      tensileStrength: '25-45 MPa',
+      solubility: 'Soluble in common organic solvents'
+    },
+    uses: ['Actuators', 'Smart textiles', 'Biomedical implants', 'Sensors', 'Self-deploying structures'],
+    advantages: ['Tunable transition temperature', 'Good mechanical properties', 'Fast response', 'Biocompatible'],
+    limitations: ['Complex synthesis', 'High cost', 'Oxidation sensitivity', 'Limited availability'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - specialized applications'
+    }
+  },
+  {
+    id: 'polyacrylate-smp',
+    name: 'Polyacrylate Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₃H₄O₂)ₙ',
+    molarMass: '72.06 g/mol (repeat unit)',
+    structure: 'Crosslinked polyacrylate network',
+    synthesis: 'Free radical polymerization with multifunctional crosslinkers',
+    image2D: '/src/assets/polymers/polyacrylate-smp-2d.png',
+    properties: {
+      meltingPoint: '20-80°C (transition range)',
+      density: '1.05-1.15 g/cm³',
+      tensileStrength: '15-35 MPa',
+      solubility: 'Swellable in water and polar solvents'
+    },
+    uses: ['Smart adhesives', 'Soft robotics', 'Biomedical devices', 'Responsive coatings', 'Tissue engineering'],
+    advantages: ['Tunable properties', 'Low cost', 'Easy processing', 'Water-responsive variants'],
+    limitations: ['Moderate strength', 'Creep under load', 'Hydrolytic degradation', 'Limited high-temp applications'],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Limited',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - widely available monomers'
+    }
+  },
+  {
+    id: 'trans-polyisoprene-smp',
+    name: 'Trans-Polyisoprene Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₅H₈)ₙ',
+    molarMass: '68.12 g/mol (repeat unit)',
+    structure: 'Trans-1,4-polyisoprene with crystalline domains',
+    synthesis: 'Stereospecific polymerization of isoprene',
+    image2D: '/src/assets/polymers/trans-polyisoprene-smp-2d.png',
+    properties: {
+      meltingPoint: '55-70°C (crystalline transition)',
+      density: '0.91-0.93 g/cm³',
+      tensileStrength: '20-30 MPa',
+      solubility: 'Soluble in hydrocarbons and chlorinated solvents'
+    },
+    uses: ['Natural rubber alternatives', 'Medical devices', 'Sealants', 'Damping materials', 'Smart elastomers'],
+    advantages: ['Natural rubber-like properties', 'Good elasticity', 'Bio-based potential', 'Non-toxic'],
+    limitations: ['Oxidation susceptibility', 'UV degradation', 'Limited mechanical strength', 'Narrow transition range'],
+    environmentalImpact: {
+      biodegradability: 'Slowly biodegradable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - can be bio-based'
+    }
+  },
+  {
+    id: 'cyanoacrylate-smp',
+    name: 'Cyanoacrylate Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₅H₅NO₂)ₙ',
+    molarMass: '111.10 g/mol (repeat unit)',
+    structure: 'Crosslinked polycyanoacrylate network',
+    synthesis: 'Anionic polymerization with moisture trigger',
+    image2D: '/src/assets/polymers/cyanoacrylate-smp-2d.png',
+    properties: {
+      meltingPoint: '150-180°C (glass transition)',
+      density: '1.05-1.10 g/cm³',
+      tensileStrength: '40-60 MPa',
+      solubility: 'Limited solubility in organic solvents'
+    },
+    uses: ['Medical adhesives', 'Wound closure', 'Drug delivery', 'Microdevices', 'Surgical applications'],
+    advantages: ['Fast curing', 'Strong adhesion', 'Biocompatible', 'Antimicrobial properties'],
+    limitations: ['Brittle', 'Heat generation during curing', 'Limited repositioning', 'High cost'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (slow)',
+      recyclability: 'Not recyclable',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Moderate - medical applications extend to bio-compatibility'
+    }
+  },
+  {
+    id: 'pcl-network-smp',
+    name: 'Crosslinked PCL Network Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₆H₁₀O₂)ₙ with crosslinks',
+    molarMass: '114.14 g/mol (repeat unit)',
+    structure: 'Chemically or physically crosslinked PCL network',
+    synthesis: 'Ring-opening polymerization followed by crosslinking',
+    image2D: '/src/assets/polymers/pcl-network-smp-2d.png',
+    properties: {
+      meltingPoint: '55-60°C (crystalline transition)',
+      density: '1.14-1.15 g/cm³',
+      tensileStrength: '20-40 MPa',
+      solubility: 'Swellable in chlorinated solvents'
+    },
+    uses: ['Tissue scaffolds', 'Stents', 'Sutures', 'Drug release systems', 'Orthopedic devices'],
+    advantages: ['Biodegradable', 'Biocompatible', 'FDA approved', 'Multiple healing cycles'],
+    limitations: ['Low transition temperature', 'Slow degradation', 'Moderate mechanical strength', 'Cost'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (2-4 years)',
+      recyclability: 'Not applicable (biodegradable)',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biodegradable medical polymer'
+    }
+  },
+  {
+    id: 'pla-smp',
+    name: 'PLA-based Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₃H₄O₂)ₙ',
+    molarMass: '72.06 g/mol (repeat unit)',
+    structure: 'Polylactic acid with controlled crystallinity',
+    synthesis: 'Ring-opening polymerization of lactide',
+    image2D: '/src/assets/polymers/pla-smp-2d.png',
+    properties: {
+      meltingPoint: '60-65°C (crystalline transition)',
+      density: '1.24 g/cm³',
+      tensileStrength: '50-70 MPa',
+      solubility: 'Soluble in chlorinated solvents and hot benzene'
+    },
+    uses: ['3D printing', 'Medical implants', 'Packaging', 'Biodegradable actuators', 'Drug delivery'],
+    advantages: ['Biodegradable', 'Bio-based', 'Easy processing', 'FDA approved'],
+    limitations: ['Brittle', 'Limited heat resistance', 'Hydrolytic degradation', 'Narrow processing window'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (6-24 months)',
+      recyclability: 'Chemically recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - renewable feedstock, biodegradable'
+    }
+  },
+  {
+    id: 'plla-smp',
+    name: 'PLLA Crystalline Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₃H₄O₂)ₙ (L-enantiomer)',
+    molarMass: '72.06 g/mol (repeat unit)',
+    structure: 'Semi-crystalline poly-L-lactide with high stereoregularity',
+    synthesis: 'Ring-opening polymerization of L-lactide',
+    image2D: '/src/assets/polymers/plla-smp-2d.png',
+    properties: {
+      meltingPoint: '170-180°C (melting)',
+      density: '1.25 g/cm³',
+      tensileStrength: '60-70 MPa',
+      solubility: 'Soluble in chlorinated solvents'
+    },
+    uses: ['Medical sutures', 'Bone screws', 'Stents', 'Tissue engineering', 'Orthopedic fixation'],
+    advantages: ['High strength', 'Biodegradable', 'Excellent biocompatibility', 'Tunable degradation'],
+    limitations: ['High transition temperature', 'Brittle', 'Expensive', 'Slow degradation'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (2-5 years)',
+      recyclability: 'Chemically recyclable',
+      toxicity: 'Non-toxic',
+      sustainability: 'Very high - bio-based and biodegradable'
+    }
+  },
+  {
+    id: 'polyether-smp',
+    name: 'Polyether-based Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(R-O)ₙ',
+    molarMass: 'Variable',
+    structure: 'Segmented polyether with crystalline or glassy domains',
+    synthesis: 'Ring-opening polymerization or step-growth polymerization',
+    image2D: '/src/assets/polymers/polyether-smp-2d.png',
+    properties: {
+      meltingPoint: '20-60°C (transition)',
+      density: '1.0-1.1 g/cm³',
+      tensileStrength: '10-30 MPa',
+      solubility: 'Soluble in polar organic solvents'
+    },
+    uses: ['Soft actuators', 'Flexible electronics', 'Biomedical devices', 'Smart textiles', 'Sealants'],
+    advantages: ['Flexible', 'Low transition temperature', 'Good elasticity', 'Biocompatible'],
+    limitations: ['Low strength', 'Oxidation sensitivity', 'Creep', 'Limited high-temp applications'],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - petroleum-based'
+    }
+  },
+  {
+    id: 'polyester-urethane-smp',
+    name: 'Polyester-Urethane Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: 'R-COO-R\'-NHCOO-R"',
+    molarMass: 'Variable',
+    structure: 'Segmented copolymer with polyester soft segments and urethane hard segments',
+    synthesis: 'Polyaddition of diisocyanates with polyester polyols',
+    image2D: '/src/assets/polymers/polyester-urethane-smp-2d.png',
+    properties: {
+      meltingPoint: '40-60°C (transition)',
+      density: '1.1-1.2 g/cm³',
+      tensileStrength: '30-50 MPa',
+      solubility: 'Soluble in DMF, THF'
+    },
+    uses: ['Medical devices', 'Automotive parts', 'Smart textiles', 'Footwear', 'Coatings'],
+    advantages: ['Excellent shape memory', 'Biodegradable variants', 'Good mechanical properties', 'Versatile'],
+    limitations: ['Complex synthesis', 'Isocyanate handling', 'Cost', 'Hydrolytic sensitivity'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable (depends on polyester type)',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Moderate - petroleum or bio-based polyols'
+    }
+  },
+  {
+    id: 'acrylate-network-smp',
+    name: 'Acrylate Network Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: 'Crosslinked (meth)acrylate network',
+    molarMass: 'N/A (thermoset)',
+    structure: 'Highly crosslinked network from multifunctional acrylates',
+    synthesis: 'UV or thermal curing of acrylate monomers/oligomers',
+    image2D: '/src/assets/polymers/acrylate-network-smp-2d.png',
+    properties: {
+      meltingPoint: '40-100°C (glass transition)',
+      density: '1.1-1.2 g/cm³',
+      tensileStrength: '30-60 MPa',
+      solubility: 'Insoluble (crosslinked)'
+    },
+    uses: ['Coatings', 'Adhesives', 'Microfluidics', '4D printing', 'Smart surfaces'],
+    advantages: ['Fast curing', 'Precise control', 'High resolution patterning', 'Tailorable properties'],
+    limitations: ['Limited reprocessing', 'Brittle', 'Shrinkage during curing', 'UV sensitivity for storage'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Not recyclable (thermoset)',
+      toxicity: 'Low toxicity when fully cured',
+      sustainability: 'Low - difficult end-of-life management'
+    }
+  },
+  {
+    id: 'silicone-smp',
+    name: 'Silicone-based Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(R₂SiO)ₙ',
+    molarMass: 'Variable',
+    structure: 'Siloxane backbone with organic side groups',
+    synthesis: 'Hydrolysis and condensation of silanes or ring-opening polymerization',
+    image2D: '/src/assets/polymers/silicone-smp-2d.png',
+    properties: {
+      meltingPoint: '-50 to 200°C (transition range)',
+      density: '0.97-1.07 g/cm³',
+      tensileStrength: '5-15 MPa',
+      solubility: 'Soluble in non-polar solvents'
+    },
+    uses: ['Medical implants', 'Flexible electronics', 'Soft robotics', 'Sealants', 'Aerospace'],
+    advantages: ['Wide temperature range', 'Biocompatible', 'Chemical resistance', 'Long service life'],
+    limitations: ['Low mechanical strength', 'High cost', 'Difficult processing', 'Not biodegradable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Very low toxicity',
+      sustainability: 'Moderate - long service life but not recyclable'
+    }
+  },
+  {
+    id: 'eva-smp',
+    name: 'EVA Copolymer Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₂H₄)ₘ(C₄H₆O₂)ₙ',
+    molarMass: 'Variable',
+    structure: 'Random copolymer of ethylene and vinyl acetate',
+    synthesis: 'High-pressure free radical copolymerization',
+    image2D: '/src/assets/polymers/eva-smp-2d.png',
+    properties: {
+      meltingPoint: '40-90°C (depending on VA content)',
+      density: '0.93-0.95 g/cm³',
+      tensileStrength: '10-20 MPa',
+      solubility: 'Soluble in aromatic and chlorinated solvents at high temp'
+    },
+    uses: ['Footwear', 'Hot melt adhesives', 'Solar panel encapsulation', 'Packaging', 'Sports equipment'],
+    advantages: ['Low cost', 'Easy processing', 'Good flexibility', 'Non-toxic'],
+    limitations: ['Limited strength', 'Poor chemical resistance', 'UV degradation', 'Not biodegradable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - recyclable but petroleum-based'
+    }
+  },
+  {
+    id: 'peva-smp',
+    name: 'PEVA Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: '(C₂H₄)ₘ(C₄H₆O₂)ₙ',
+    molarMass: 'Variable',
+    structure: 'Poly(ethylene-co-vinyl acetate) with controlled morphology',
+    synthesis: 'Copolymerization with specific VA content for SMP behavior',
+    image2D: '/src/assets/polymers/peva-smp-2d.png',
+    properties: {
+      meltingPoint: '50-80°C (transition)',
+      density: '0.94-0.96 g/cm³',
+      tensileStrength: '15-25 MPa',
+      solubility: 'Swellable in aromatic solvents'
+    },
+    uses: ['Smart packaging', 'Toys', 'Shower curtains', 'Medical devices', 'Consumer goods'],
+    advantages: ['Non-toxic', 'Low cost', 'Easy processing', 'Flexible'],
+    limitations: ['Limited temperature range', 'Moderate properties', 'UV sensitivity', 'Not biodegradable'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Very low toxicity',
+      sustainability: 'Moderate - recyclable and widely available'
+    }
+  },
+  {
+    id: 'ionomer-smp',
+    name: 'Ionomer Shape Memory Polymer',
+    category: 'shape-memory',
+    formula: 'Polymer with ionic groups (e.g., -COO⁻ M⁺)',
+    molarMass: 'Variable',
+    structure: 'Polymer backbone with pendant ionic groups forming ionic crosslinks',
+    synthesis: 'Copolymerization with ionic monomers or post-polymerization modification',
+    image2D: '/src/assets/polymers/ionomer-smp-2d.png',
+    properties: {
+      meltingPoint: '40-100°C (ionic cluster transition)',
+      density: '0.94-1.1 g/cm³',
+      tensileStrength: '20-35 MPa',
+      solubility: 'Limited solubility in polar solvents'
+    },
+    uses: ['Golf ball covers', 'Packaging films', 'Medical devices', 'Smart membranes', 'Adhesives'],
+    advantages: ['Self-healing capability', 'Tough', 'Transparent', 'Processable'],
+    limitations: ['Water sensitivity', 'Complex processing', 'Cost', 'Limited high-temp applications'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - durable and recyclable'
+    }
+  },
   // Additional Self-Healing Polymers
   {
     id: 'microcapsule-sh',
