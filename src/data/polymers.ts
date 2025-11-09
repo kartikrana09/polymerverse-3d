@@ -9233,6 +9233,342 @@ export const samplePolymers: Polymer[] = [
       sustainability: 'Good - extends material lifetime'
     }
   },
+  {
+    id: 'hydrogen-bond-sh',
+    name: 'Hydrogen-Bonding Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with H-bond donors/acceptors',
+    molarMass: 'Variable',
+    structure: 'Polymer chains with complementary hydrogen bonding groups',
+    synthesis: 'Polymerization with monomers containing urea, urethane, or amide groups',
+    image2D: '/src/assets/polymers/h-bond-sh-2d.png',
+    properties: {
+      density: '1.0-1.3 g/cm³',
+      tensileStrength: '10-50 MPa',
+      solubility: 'Soluble in polar solvents'
+    },
+    uses: ['Coatings', 'Adhesives', 'Flexible electronics', 'Soft robotics', 'Biomedical devices'],
+    advantages: ['Room temperature healing', 'Multiple healing cycles', 'No catalyst needed', 'Fast healing kinetics'],
+    limitations: ['Moisture sensitive', 'Temperature dependent', 'Moderate mechanical properties', 'Limited high-temp use'],
+    environmentalImpact: {
+      biodegradability: 'Variable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - extends material life'
+    }
+  },
+  {
+    id: 'metal-coordination-sh',
+    name: 'Metal-Coordination Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with metal-ligand bonds',
+    molarMass: 'Variable',
+    structure: 'Polymer with ligands coordinated to metal ions',
+    synthesis: 'Complexation of metal ions with ligand-containing polymers',
+    image2D: '/src/assets/polymers/metal-coord-sh-2d.png',
+    properties: {
+      density: '1.1-1.5 g/cm³',
+      tensileStrength: '20-70 MPa',
+      solubility: 'Limited solubility'
+    },
+    uses: ['Self-healing coatings', 'Structural materials', 'Soft actuators', 'Sensors', 'Hydrogels'],
+    advantages: ['Strong mechanical properties', 'Reversible bonds', 'Color-changing capability', 'Tunable properties'],
+    limitations: ['Metal ion leaching', 'pH sensitive', 'Complex synthesis', 'Cost'],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Depends on metal type',
+      sustainability: 'Moderate - metal content impacts'
+    }
+  },
+  {
+    id: 'polyurethane-sh',
+    name: 'Self-Healing Polyurethane',
+    category: 'self-healing',
+    formula: 'R-NHCOO-R\' with reversible bonds',
+    molarMass: 'Variable',
+    structure: 'Segmented polyurethane with dynamic urethane or hydrogen bonds',
+    synthesis: 'Polyaddition with specific design for reversible bonds',
+    image2D: '/src/assets/polymers/pu-sh-2d.png',
+    properties: {
+      density: '1.0-1.3 g/cm³',
+      tensileStrength: '25-60 MPa',
+      solubility: 'Soluble in DMF, THF'
+    },
+    uses: ['Coatings', 'Automotive parts', 'Footwear', 'Adhesives', 'Flexible substrates'],
+    advantages: ['Excellent mechanical properties', 'Multiple healing cycles', 'Processable', 'Commercial viability'],
+    limitations: ['Isocyanate handling', 'Moisture sensitive', 'Complex formulation', 'Cost'],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity when cured',
+      sustainability: 'Moderate - extends product life'
+    }
+  },
+  {
+    id: 'supramolecular-sh',
+    name: 'Supramolecular Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Variable with host-guest interactions',
+    molarMass: 'Variable',
+    structure: 'Polymer with supramolecular interactions (cyclodextrin, crown ethers)',
+    synthesis: 'Host-guest complex formation or multivalent interactions',
+    image2D: '/src/assets/polymers/supramolecular-sh-2d.png',
+    properties: {
+      density: '1.0-1.2 g/cm³',
+      tensileStrength: '5-40 MPa',
+      solubility: 'Variable depending on structure'
+    },
+    uses: ['Drug delivery', 'Soft materials', 'Adhesives', 'Sensors', 'Biomaterials'],
+    advantages: ['Autonomous healing', 'Responsive to stimuli', 'Versatile design', 'Biocompatible options'],
+    limitations: ['Often weak mechanically', 'Complex synthesis', 'High cost', 'Limited durability'],
+    environmentalImpact: {
+      biodegradability: 'Variable - can be biodegradable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Generally low toxicity',
+      sustainability: 'Moderate to high depending on components'
+    }
+  },
+  {
+    id: 'mechanophore-sh',
+    name: 'Mechanophore-based Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with mechanically responsive units',
+    molarMass: 'Variable',
+    structure: 'Polymer containing mechanophores that activate under stress',
+    synthesis: 'Incorporation of mechanophore units during polymerization',
+    image2D: '/src/assets/polymers/mechanophore-polymer-2d.png',
+    properties: {
+      density: '1.0-1.3 g/cm³',
+      tensileStrength: '30-80 MPa',
+      solubility: 'Variable'
+    },
+    uses: ['Stress sensors', 'Self-reporting materials', 'Coatings', 'Composites', 'Smart materials'],
+    advantages: ['Damage detection', 'Localized healing', 'Stimulus-free activation', 'Novel functionality'],
+    limitations: ['Complex synthesis', 'Expensive', 'Limited healing capacity', 'Research stage'],
+    environmentalImpact: {
+      biodegradability: 'Generally non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - high-value applications'
+    }
+  },
+  {
+    id: 'spiropyran-sh',
+    name: 'Spiropyran-based Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with spiropyran photochromic units',
+    molarMass: 'Variable',
+    structure: 'Polymer containing spiropyran units that change upon UV exposure',
+    synthesis: 'Copolymerization with spiropyran-containing monomers',
+    image2D: '/src/assets/polymers/spiropyran-polymer-2d.png',
+    properties: {
+      density: '1.1-1.3 g/cm³',
+      tensileStrength: '20-50 MPa',
+      solubility: 'Soluble in organic solvents'
+    },
+    uses: ['Photo-responsive materials', 'Smart coatings', 'Sensors', 'Optical switches', 'Security applications'],
+    advantages: ['Light-triggered healing', 'Reversible color change', 'Remote activation', 'No heat required'],
+    limitations: ['UV sensitivity for storage', 'Fatigue over cycles', 'Complex synthesis', 'Cost'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - specialized applications'
+    }
+  },
+  {
+    id: 'azobenzene-sh',
+    name: 'Azobenzene Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with -N=N- photoswitchable groups',
+    molarMass: 'Variable',
+    structure: 'Polymer containing azobenzene units that isomerize under light',
+    synthesis: 'Polymerization with azobenzene-functionalized monomers',
+    image2D: '/src/assets/polymers/azobenzene-polymer-2d.png',
+    properties: {
+      density: '1.1-1.2 g/cm³',
+      tensileStrength: '25-60 MPa',
+      solubility: 'Soluble in aromatic solvents'
+    },
+    uses: ['Photo-actuators', 'Smart surfaces', 'Optical storage', 'Molecular machines', 'Drug delivery'],
+    advantages: ['Light-controlled healing', 'Fast response', 'Reversible', 'Remote activation'],
+    limitations: ['UV degradation', 'Limited cycle life', 'Complex synthesis', 'Thermal back-relaxation'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Difficult',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - niche applications'
+    }
+  },
+  {
+    id: 'thiol-disulfide-sh',
+    name: 'Thiol-Disulfide Exchange Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with SH and S-S groups',
+    molarMass: 'Variable',
+    structure: 'Polymer with free thiols and disulfide bonds undergoing exchange',
+    synthesis: 'Polymerization with thiol and disulfide-containing monomers',
+    image2D: '/src/assets/polymers/thiol-disulfide-sh-2d.png',
+    properties: {
+      density: '1.0-1.3 g/cm³',
+      tensileStrength: '15-50 MPa',
+      solubility: 'Variable'
+    },
+    uses: ['Biomedical materials', 'Coatings', 'Adhesives', 'Drug delivery', 'Tissue engineering'],
+    advantages: ['Biocompatible', 'Redox responsive', 'Multiple healing', 'Mild conditions'],
+    limitations: ['Oxidation sensitive', 'Requires reducing agent or heat', 'Odor issues', 'Limited stability'],
+    environmentalImpact: {
+      biodegradability: 'Potentially biodegradable',
+      recyclability: 'Reprocessable',
+      toxicity: 'Low to moderate (thiol odor)',
+      sustainability: 'Good - biomedical compatibility'
+    }
+  },
+  {
+    id: 'boronic-ester-sh',
+    name: 'Boronic Ester Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with B-O ester linkages',
+    molarMass: 'Variable',
+    structure: 'Polymer with reversible boronic ester bonds',
+    synthesis: 'Condensation of boronic acids with diols',
+    image2D: '/src/assets/polymers/boronic-ester-sh-2d.png',
+    properties: {
+      density: '1.0-1.2 g/cm³',
+      tensileStrength: '10-40 MPa',
+      solubility: 'Soluble in polar organic solvents'
+    },
+    uses: ['Glucose sensors', 'Drug delivery', 'Self-healing hydrogels', 'Responsive materials', 'Biomedical'],
+    advantages: ['pH responsive', 'Sugar responsive', 'Biocompatible', 'Multiple healing cycles'],
+    limitations: ['Hydrolysis in water', 'pH dependent', 'Moderate strength', 'Complex synthesis'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable under certain conditions',
+      recyclability: 'Limited',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - biomedical applications'
+    }
+  },
+  {
+    id: 'hydrazone-sh',
+    name: 'Hydrazone Bond Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with C=N-NH linkages',
+    molarMass: 'Variable',
+    structure: 'Polymer with reversible hydrazone bonds',
+    synthesis: 'Condensation of hydrazides with aldehydes/ketones',
+    image2D: '/src/assets/polymers/hydrazone-sh-2d.png',
+    properties: {
+      density: '1.0-1.3 g/cm³',
+      tensileStrength: '15-45 MPa',
+      solubility: 'Soluble in polar solvents'
+    },
+    uses: ['Hydrogels', 'Drug delivery', 'Tissue engineering', 'Coatings', 'Adhesives'],
+    advantages: ['pH responsive', 'Biocompatible', 'Fast exchange', 'Mild synthesis'],
+    limitations: ['Hydrolysis susceptible', 'Limited pH range', 'Moderate stability', 'Water sensitive'],
+    environmentalImpact: {
+      biodegradability: 'Potentially biodegradable',
+      recyclability: 'Reprocessable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Good - biomedical potential'
+    }
+  },
+  {
+    id: 'oxime-carbamate-sh',
+    name: 'Oxime-Carbamate Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with oxime and carbamate groups',
+    molarMass: 'Variable',
+    structure: 'Polymer with exchangeable oxime-carbamate bonds',
+    synthesis: 'Reaction of oximes with isocyanates or CO₂',
+    image2D: '/src/assets/polymers/oxime-carbamate-sh-2d.png',
+    properties: {
+      density: '1.1-1.3 g/cm³',
+      tensileStrength: '25-55 MPa',
+      solubility: 'Limited solubility'
+    },
+    uses: ['Coatings', 'Elastomers', 'Adhesives', 'Sealants', 'Composite matrices'],
+    advantages: ['Good mechanical properties', 'Thermal healing', 'Recyclable', 'Stable'],
+    limitations: ['Requires elevated temperature', 'Complex synthesis', 'Limited commercial availability', 'Cost'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - recyclability extends life'
+    }
+  },
+  {
+    id: 'acylhydrazone-sh',
+    name: 'Acylhydrazone Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with R-CO-NH-N=CR₂ bonds',
+    molarMass: 'Variable',
+    structure: 'Polymer with dynamic acylhydrazone linkages',
+    synthesis: 'Condensation of acylhydrazides with aldehydes/ketones',
+    image2D: '/src/assets/polymers/acylhydrazone-sh-2d.png',
+    properties: {
+      density: '1.0-1.2 g/cm³',
+      tensileStrength: '20-50 MPa',
+      solubility: 'Soluble in polar organic solvents'
+    },
+    uses: ['Hydrogels', 'Biomedical devices', 'Drug delivery', 'Tissue scaffolds', 'Smart materials'],
+    advantages: ['pH responsive', 'Biocompatible', 'Tunable kinetics', 'Water-compatible synthesis'],
+    limitations: ['pH dependent', 'Hydrolytic instability', 'Moderate mechanical properties', 'Limited temperature range'],
+    environmentalImpact: {
+      biodegradability: 'Biodegradable',
+      recyclability: 'Reprocessable',
+      toxicity: 'Non-toxic',
+      sustainability: 'High - biomedical and biodegradable'
+    }
+  },
+  {
+    id: 'hindered-urea-sh',
+    name: 'Hindered Urea Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Polymer with bulky urea groups',
+    molarMass: 'Variable',
+    structure: 'Polymer with sterically hindered urea forming quadruple H-bonds',
+    synthesis: 'Reaction of hindered amines with isocyanates',
+    image2D: '/src/assets/polymers/hindered-urea-sh-2d.png',
+    properties: {
+      density: '1.0-1.2 g/cm³',
+      tensileStrength: '30-70 MPa',
+      solubility: 'Limited solubility in organic solvents'
+    },
+    uses: ['High-performance coatings', 'Elastomers', 'Adhesives', 'Automotive parts', 'Aerospace'],
+    advantages: ['Strong mechanical properties', 'Room temperature healing', 'Multiple cycles', 'Excellent toughness'],
+    limitations: ['Complex synthesis', 'High cost', 'Requires specific structure design', 'Processing challenges'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Potentially recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Moderate - high-value applications extend life'
+    }
+  },
+  {
+    id: 'vitrimer-sh',
+    name: 'Vitrimer Self-Healing Polymer',
+    category: 'self-healing',
+    formula: 'Crosslinked network with exchangeable bonds',
+    molarMass: 'N/A (network)',
+    structure: 'Permanent network with dynamic covalent bonds (transesterification)',
+    synthesis: 'Polymerization with catalyst enabling bond exchange',
+    image2D: '/src/assets/polymers/vitrimer-sh-2d.png',
+    properties: {
+      density: '1.1-1.3 g/cm³',
+      tensileStrength: '40-80 MPa',
+      solubility: 'Insoluble (can swell)'
+    },
+    uses: ['Recyclable thermosets', 'Composites', 'Coatings', 'Adhesives', 'Structural materials'],
+    advantages: ['Excellent mechanical properties', 'Fully recyclable', 'Reprocessable', 'Healable'],
+    limitations: ['Requires elevated temperature for healing', 'Catalyst needed', 'Complex formulation', 'Limited commercial availability'],
+    environmentalImpact: {
+      biodegradability: 'Non-biodegradable',
+      recyclability: 'Fully recyclable',
+      toxicity: 'Low toxicity',
+      sustainability: 'Very high - recyclable thermoset breakthrough'
+    }
+  },
   // Additional Elastomers (to reach 20)
   {
     id: 'butyl-rubber',
