@@ -11,7 +11,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { toast } from 'sonner';
 import { motion } from 'framer-motion';
-import { Shield, Plus, LogOut } from 'lucide-react';
+import { Shield, Plus, LogOut, Image } from 'lucide-react';
 import { polymerCategories } from '@/data/polymers';
 
 export default function AdminDashboard() {
@@ -19,6 +19,8 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState(false);
   const [user, setUser] = useState<any>(null);
+  const [generatingImages, setGeneratingImages] = useState(false);
+  const [imageGenProgress, setImageGenProgress] = useState<string>('');
   
   // Form state
   const [formData, setFormData] = useState({
@@ -109,6 +111,76 @@ export default function AdminDashboard() {
     }
   };
 
+  const handleGenerateImages = async () => {
+    setGeneratingImages(true);
+    setImageGenProgress('Starting image generation...');
+
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        toast.error('Not authenticated');
+        return;
+      }
+
+      // Generate images in batches of 20
+      let totalProcessed = 0;
+      let hasMore = true;
+
+      while (hasMore) {
+        setImageGenProgress(`Generating batch... (${totalProcessed} processed so far)`);
+
+        const response = await fetch(
+          `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/generate-polymer-images`,
+          {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${session.access_token}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ batch: 20 })
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`Failed to generate images: ${response.statusText}`);
+        }
+
+        const result = await response.json();
+        totalProcessed += result.successful || 0;
+
+        if (result.failed > 0) {
+          console.warn(`${result.failed} images failed to generate`);
+        }
+
+        // Check if there are more polymers to process
+        if (result.successful === 0) {
+          hasMore = false;
+        }
+
+        setImageGenProgress(`Generated ${totalProcessed} images so far...`);
+
+        // Add a small delay between batches to avoid rate limiting
+        if (hasMore) {
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        }
+      }
+
+      setImageGenProgress(`Completed! Generated ${totalProcessed} images total.`);
+      toast.success(`Successfully generated ${totalProcessed} polymer images!`);
+      
+      setTimeout(() => {
+        setGeneratingImages(false);
+        setImageGenProgress('');
+      }, 3000);
+
+    } catch (error: any) {
+      console.error('Error generating images:', error);
+      toast.error('Failed to generate images: ' + error.message);
+      setGeneratingImages(false);
+      setImageGenProgress('');
+    }
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -154,6 +226,34 @@ export default function AdminDashboard() {
               Sign Out
             </Button>
           </div>
+
+          <Card className="glass-effect card-glow p-8 border-primary/20 mb-6">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-2">
+                <Image className="h-5 w-5 text-primary" />
+                <h2 className="text-2xl font-bold">Generate Polymer Images</h2>
+              </div>
+            </div>
+            
+            <p className="text-muted-foreground mb-4">
+              Automatically generate 2D molecular structure images for all polymers that don't have images yet.
+            </p>
+            
+            {imageGenProgress && (
+              <div className="mb-4 p-4 bg-primary/10 border border-primary/20 rounded-lg">
+                <p className="text-sm">{imageGenProgress}</p>
+              </div>
+            )}
+            
+            <Button
+              onClick={handleGenerateImages}
+              disabled={generatingImages}
+              className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90"
+            >
+              <Image className="h-4 w-4 mr-2" />
+              {generatingImages ? 'Generating Images...' : 'Generate All Missing Images'}
+            </Button>
+          </Card>
 
           <Card className="glass-effect card-glow p-8 border-primary/20">
             <div className="flex items-center gap-2 mb-6">
